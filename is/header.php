@@ -21,6 +21,37 @@ session_start();
 	<!--<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />-->
 	<style type="text/css">@import url("css/styles.css");</style>
 	
+		<?php
+	if(isset($_COOKIE["Light"])){
+		$light = $_COOKIE["Light"];
+	}else{ 
+		$light = setcookie("Light", "neutral", time()+3600*24,"/");
+	}
+	
+	if($light == "on"){
+		echo '<link rel="stylesheet" href="css/night.css" type="text/css"/>';
+	}
+	?>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	$('#lights').click(function() {
+			var lightsVal = "<?php echo $light; ?>";
+			
+			$.ajax({
+			type: "GET",
+			url: "is/lights.php",
+			data: { value: lightsVal }
+			})
+
+			.done(function( msg ) {
+			location.reload();
+			});
+			});
+			});
+	</script>
+	
 	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 		<title>SubZero Components - Arissa Brown</title>
@@ -45,6 +76,8 @@ session_start();
 						<li><a href="client.php">My Account</a></li>
 						<li>|</li> 
 						<li><a href="#">Sign Out</a></li>
+						<li>|</li> 
+						<li><a href="#" id="lights">Toggle Day/Night Mode</a></li>
 					</ul>
 				</div>
 			</div>
