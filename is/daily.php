@@ -5,7 +5,8 @@ ini_set('display_errors','On');
  error_reporting(E_ALL);
 
 
-include ('dash.php');
+//include ('dash.php');
+//included in home.php instead to prevent it from being called twice by cartf.php and total.php
 
 $query="SELECT * FROM products ORDER BY rand() LIMIT 1 ";
 	

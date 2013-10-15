@@ -1,8 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<?php
-session_start();
-?>	
+
+<?php 
+	include ('is/config.inc.php'); //Starts session and adds helper functions
+	
+	/* if (!headers_sent()){
+		redirect_invalid_user();
+		}
+	else {
+		include_once('./is/header.php');
+		trigger_error('You do not have permission to access this page. Please log in and try
+			again.');
+		include_once('./is/footer.php');
+		} //Redirects invalid users */
+?>
 		
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -60,7 +71,12 @@ session_start();
 <body>
 <?php
 	// to count items in the cart
-	$cartCount = count($_SESSION['cart']);
+	if (isset($_SESSION['cart'])) {
+		$cartCount = count($_SESSION['cart']);
+		}
+	else {
+		$cartCount = 0;
+		}
 ?>
 <div class="wrap">
 	<div class="container topnav">
@@ -97,10 +113,10 @@ session_start();
 						<li><a href="#">Trade</a></li>
 					</ul>
 					<div id="scontain">
-						<form id="search" method="get" action="post">
+						<form id="search" method="get" action="search.php">
 							<div class="test"><!--id='sbar' class="sbar" class="sbtn"-->
-								<input type="text"  size="45" maxlength="120" value="Search" class="sbar" />
-								<input type="button" value="Search"  />
+								<input type="text" name="keyword" size="45" maxlength="120" value="Search" class="sbar" />
+								<input type="submit" value="Search"  />
 							</div>
 						</form>
 					</div>

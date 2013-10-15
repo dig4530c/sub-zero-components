@@ -74,4 +74,4 @@
 				
 				</div>
 		</div>
-		<?php include ('is/footer.php'); ?>
+<?php include ('is/footer.php'); ?>

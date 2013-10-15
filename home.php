@@ -1,7 +1,7 @@
-
-	
-
-		<?php include ('is/header.php'); ?>
+<?php 
+include ('is/header.php'); 
+include ('is/dash.php');
+?>
 
 		<!-- stuff -->
 		<div class="container homec "><!-- home container-->
@@ -58,5 +58,4 @@
 			</div><!--end daily row--> 
 		</div>
 		</div><!--end container class -->
-		<?php include ('is/footer.php'); ?>
-	
+<?php include ('is/footer.php'); ?>

@@ -3,9 +3,9 @@
 ini_set('display_errors','On');
  error_reporting(E_ALL);
  
- 
-include ('dash.php');
 
+//include ('dash.php');
+//included in cart.php instead to prevent it from being called twice by cartf.php and total.php
 
 	if(isset($_GET['action']) && $_GET['action'] == 'removed'){
 			echo "<div>" . $_GET['name'] . " was removed from cart.</div>";
