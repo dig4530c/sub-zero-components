@@ -1,4 +1,7 @@
-<?php include ('is/header.php'); ?>
+<?php 
+$page_title = "Sub Zero Components - Checkout";
+include ('is/header.php'); 
+?>
 
 		<!-- stuff -->
 		<div class="container  "><!--  container-->

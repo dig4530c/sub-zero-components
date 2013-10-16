@@ -65,7 +65,16 @@
 	
 	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-		<title>SubZero Components - Arissa Brown</title>
+		<title>
+			<?php 
+				if(isset($page_title)){
+					echo $page_title;
+					}
+				else {
+					echo 'Sub Zero Components';
+					}
+			?>
+		</title>
 </head> 
 
 <body>

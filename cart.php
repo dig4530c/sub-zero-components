@@ -1,4 +1,5 @@
 <?php 
+$page_title = "Sub Zero Components - Cart";
 include ('is/header.php'); 
 include ('is/dash.php');
 ?>

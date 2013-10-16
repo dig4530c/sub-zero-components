@@ -1,9 +1,9 @@
+<?php
+$page_title = "Sub Zero Components - Shop";
+include ('is/header.php'); 
 
-		<?php include ('is/header.php'); ?>
-	<?php 
-	
-		$id = $_GET['id'];
-		 if(isset($_GET['action']) && $_GET['action'] == 'add'){
+$id = $_GET['id'];
+if(isset($_GET['action']) && $_GET['action'] == 'add'){
     echo "<div>" . $_GET['name'] . " was added to your cart.</div>";
 }
 
