@@ -1,4 +1,4 @@
-<?php //WORK IN PROGRESS
+<?php
 $page_title = "Sub Zero Components - Register";
 include ('is/header.php'); 
 require ('is/dash.php');
@@ -72,28 +72,28 @@ require ('is/dash.php');
 								 '$e', '".get_password_hash($p)."', '$fn', '$ln', ADDDATE(NOW(), INTERVAL 1 MONTH))";
 								$r = mysqli_query($mysqli, $q); 
 								}
-							}
-						else {
-							if ($rows == 2){ //Both are taken.
-								$reg_errors['email'] = 'This email address has already been registered. If you have 
-								 forgotten your password, use the link at right to have your password sent to you.';
-								$reg_errors['username'] = 'This username has already been registered. Please try another.';
-								}
-							else { //One or both may be taken.
-								$row = mysqli_fetch_array($r, MYSQLI_NUM);
-								if (($row[0] == $_POST['email']) && ($row[1] == $_POST['username'])) { //Both match.
+							else {
+								if ($rows == 2){ //Both are taken.
 									$reg_errors['email'] = 'This email address has already been registered. If you have 
 									 forgotten your password, use the link at right to have your password sent to you.';
-									$reg_errors['username'] = 'This username has already been registered. If you have 
-									 forgotten your password, use the link at right to have your password sent to you.';
-									}
-								elseif ($row[0] == $_POST['email']){ //Email match.
-									$reg_errors['email'] = 'This email address has already been registered. If you have 
-									 forgotten your password, use the link at right to have your password sent to you.';
-									}
-								elseif ($row[1] == $_POST['username']){ //Email match.
 									$reg_errors['username'] = 'This username has already been registered. Please try another.';
 									}
+								else { //One or both may be taken.
+									$row = mysqli_fetch_array($r, MYSQLI_NUM);
+									if (($row[0] == $_POST['email']) && ($row[1] == $_POST['username'])) { //Both match.
+										$reg_errors['email'] = 'This email address has already been registered. If you have 
+										 forgotten your password, use the link at right to have your password sent to you.';
+										$reg_errors['username'] = 'This username has already been registered. If you have 
+										 forgotten your password, use the link at right to have your password sent to you.';
+										}
+									elseif ($row[0] == $_POST['email']){ //Email match.
+										$reg_errors['email'] = 'This email address has already been registered. If you have 
+										 forgotten your password, use the link at right to have your password sent to you.';
+										}
+									elseif ($row[1] == $_POST['username']){ //Email match.
+										$reg_errors['username'] = 'This username has already been registered. Please try another.';
+										}
+									} 
 								} // End of $rows == 2 ELSE.
 							} // End of empty($reg_errors) IF.
 							
@@ -107,7 +107,7 @@ require ('is/dash.php');
 						else {
 							trigger_error('You could not be registered due to a system error. We apologize for any inconvenience.');
 							}
-					// End of the main form submission conditional (WIP!!!)
+						 } // End of the main form submission conditional.
 					
 					//Required for creating forms
 					require ('./is/form_functions.inc.php'); 
