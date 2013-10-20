@@ -19,7 +19,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'exists'){
 include ('dash.php');
 
 
-$query="SELECT * FROM products ORDER BY rand() ";
+$query="SELECT * FROM products ORDER BY Cost ";
 	
 	$result=$mysqli->query($query)
 		or die ($mysqli->error);

@@ -14,7 +14,8 @@ include ('is/header.php');
 							<div>
 								<ul>
 									<li>Case Fans</li>
-									<li>CPU Fans</li>
+									<li>Heatsinks</li>
+									<li>Laptop Cooling</li>
 									<li>Liquid Cooling</li>
 								</ul>
 							</div>
