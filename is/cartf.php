@@ -41,10 +41,6 @@ ini_set('display_errors','On');
 					//echo "there are .$num. of rows";
 
 
-					//while ($row=$result->fetch_assoc())
-					
-					//$subtotal = 0;
-
 					if ($num>0){
 						while ($row=$result->fetch_assoc()){
 						
@@ -67,6 +63,9 @@ ini_set('display_errors','On');
 								";
 								}
 							}
+							
+							
+							echo "<a href='is/empty.php'>Empty Cart</a>";
 				}
 			
 		}
