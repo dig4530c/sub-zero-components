@@ -23,7 +23,7 @@ if (empty($login_errors)){
 	 get_password_hash($p)."')";
 	$r = mysqli_query($mysqli, $q);
 	if (mysqli_num_rows($r) == 1){
-		$row = mysqli_fetch_array($r, MYSQLI_NUM); //Check MYQLI_NUM later
+		$row = mysqli_fetch_array($r, MYSQLI_NUM);
 		$_SESSION['user_id'] = $row[0];
 		$_SESSION['username'] = $row[1];
 		if ($row[2] == 'admin') $_SESSION['user_admin'] = true;

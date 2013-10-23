@@ -3,7 +3,7 @@ require ('./is/config.inc.php');
 //redirect_invalid_user();
 $page_title = 'Change Your Password';
 include('./is/header.php');
-require (MYSQL); //define MYSQL
+require (MYSQL);
 
 // Errors array
 $pass_errors = array();
