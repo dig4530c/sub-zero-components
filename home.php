@@ -1,7 +1,10 @@
 <?php 
 $page_title = "Sub Zero Components - Home";
-include ('is/header.php'); 
 include ('is/dash.php');
+/* if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+	include ('./is/login.php');
+	} */
+include ('is/header.php'); 
 ?>
 
 		<!-- stuff -->
