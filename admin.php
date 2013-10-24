@@ -7,40 +7,25 @@ include ('is/header.php');
 		<div class="container  "><!--  container-->
 			<div class="row space">
 				<div class="row">
-			
-					<div class="threecol "><!--sidebar col-->
-						<div id="sidebar">
-							<div><h3><a href="#" class='super' id='apanel'>Administrator Panel</a></h3></div>
-							<div>
-								<ul>
-									<li><a href="#" class='see'  id='pro' >Manage Products</a></li>
-									<li><a href="#" class="morder" >Manage Orders</a></li>
-									<li><a href="#"class='see' id='users'>Manage Users</a></li>
-									<li><a href="#" class="mpay" >Update Payment Methods</a></li>
-								</ul>
-							</div>
+					<div class="fourcol">
+					</div>
+					<div class="threecol ">
+						<div class='space'></div>
+						<div class='space'></div>
+						<div class="title">
+							<h2>Administrator Login</h2>
+						</div>
+						<div id='alogin'>
+							<form>
+								<label for="name">Username</label>
+								<input type="text" id="username" required />
+								<label for="name">Password</label>
+								<input type="text" id="pass" required />
+								<input type="submit" value="Login &rarr;">
+							</form>
 						</div>
 					</div>
-					<div class="ninecol last"> <!--user info col-->
-						<div id="admin">
-							<h1>Welcome, Administrator InsertUserName!</h1>
-								<div id='superuser'>
-									<ul>
-										<li><a href='#' class='see'  id='pro'>Manage Products</a></li>
-										<li><a class='see' id='users' href='#'>Show Users</a></li>
-									</ul>
-								</div>
-						</div>
-						<div id="mpro" class='show'>
-							<h1>Manage Products</h1>
-							<?php include ('is/managep.php'); ?>
-						</div>
-						
-						<div id="musers" class='show'>
-							<h1>All Users</h1>
-							<?php include ('is/manageu.php'); ?>
-						</div>
-						
+					<div class="fivecol last">
 					</div>
 				</div><!--end row-->
 				
