@@ -1,3 +1,7 @@
+/* general */
+.title{color:#fff;}
+
+
 /* homepage */
 .homec{
 	background: #000;
@@ -24,7 +28,7 @@
 }
 
 /*admin*/
-#admin,#admin a{
+#admin,#admin a, #alogin{
 	color: #FFF;
 }
 

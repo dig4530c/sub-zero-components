@@ -52,5 +52,14 @@ $(document).ready(function() {
 				$('#musers').hide();
 				$('#superuser').show();
 			});
+			
+		//cart
+		
+	/*	if (('#cart') == 'Your cart is empty. Start shopping!') {
+			$('#cbtn').hide();
+		}
+		else {
+			$('#cbtn').show();
+		}*/
 		
 });

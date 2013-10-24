@@ -21,6 +21,7 @@ include ('is/header.php');
 								<input type="text" id="username" required />
 								<label for="name">Password</label>
 								<input type="text" id="pass" required />
+								<div class='space'></div>
 								<input type="submit" value="Login &rarr;">
 							</form>
 						</div>

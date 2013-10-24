@@ -10,9 +10,11 @@ include ('is/dash.php');
 				<div class="row">
 			
 					<div class="ninecol "> <!--cart col-->
-					<h1>Your Cart</h1>
 						<div>
-							 <?php include ('is/cartf.php'); ?>
+							<h1>Your Cart</h1>
+								<div id='cart'>
+									 <?php include ('is/cartf.php'); ?>
+								</div>
 						</div>
 					</div>
 					<div class="threecol last">
