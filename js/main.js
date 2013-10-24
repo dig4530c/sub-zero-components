@@ -37,24 +37,20 @@ $(document).ready(function() {
 		
 		
 	//admin dashboard
-	var admin ="<h1>Welcome, Administrator UCFStudent</h1><div id='superuser'><ul><li><a href='#' class='mpro' >Manage Products</a></li><li><a  href='#' class='morder' >Manage Orders</a></li><li><a class='muser'  href='#'>Manage Users</a></li><li><a class='mpay' href='#'>Change Payment Methods</a></li></ul></div>";
-	
-	$("#admin").html(admin); 
-		
-		$(".mpro").click(function() {
-				$("#admin").html("<h1>Manage Products</h1><p> </p>");
+			
+			$('#mpro').hide(); 
+            $('#musers').hide();
+			
+			$('.see').click(function(){
+				$('#superuser').hide();
+				$('.show').hide();
+				$('#m'+$(this).attr('id')).show();
 			});
-		$(".morder").click(function() {
-				$("#admin").html("<h1>Manage Orders</h1><p></p>");
-			});
-		$(".muser").click(function() {
-				$("#admin").html("<h1>Manage Users</h1>");
-			});
-		$(".mpay").click(function() {
-				$("#admin").html("<h1>Change Payment Methods</h1>");
-			});
-		$(".apanel").click(function() {
-				$("#admin").html(admin); 
+			
+			$('.super').click(function(){
+				$('#mpro').hide(); 
+				$('#musers').hide();
+				$('#superuser').show();
 			});
 		
 });

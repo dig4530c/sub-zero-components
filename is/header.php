@@ -130,14 +130,27 @@ function copy_ship_info(f) {
 			<div class="twelevecol last">
 				<div id="topnav">
 					<ul>
-						<li>Hello,</li>
-						<li><span id="name"><a href="client.php">UCFStudent</a></span></li>
+						<?php 
+							if(isset($_SESSION['username'])){
+								echo "
+									<li>Hello,</li>
+									<li><span id='name'><a href='client.php'>".$_SESSION['username']."</a></span></li>
+									<li>|</li> 
+									<li><a href='client.php'>My Account</a></li>
+									<li>|</li> 
+									<li><a href='#'>Sign Out</a></li>
+									";
+								}
+							else {
+								echo "
+									<li><a href='login.php'>Login</a></li>
+									<li>|</li> 
+									<li><a href='register.php'>Register</a></li>
+									";
+								}
+						?>
 						<li>|</li> 
 						<li><a href="cart.php">View Cart <?php echo "({$cartCount})"; ?></a></li>
-						<li>|</li> 
-						<li><a href="client.php">My Account</a></li>
-						<li>|</li> 
-						<li><a href="#">Sign Out</a></li>
 						<li>|</li> 
 						<li><a href="#" id="lights">Toggle Day/Night Mode</a></li>
 					</ul>

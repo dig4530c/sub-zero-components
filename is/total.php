@@ -61,6 +61,6 @@ ini_set('display_errors','On');
 				}
 			
 		}
-		else{	echo "<div>$0.00</div>";}							
+		else{	echo "<span>$0.00</span>";}							
 										
 ?>
