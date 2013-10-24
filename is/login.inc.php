@@ -19,7 +19,7 @@ else {
 	
 //If no errors exists, query the database
 if (empty($login_errors)){
-	$q = "SELECT id, username, type, IF(date_expires > NOW(), true, false) FROM users WHERE (email = '$e' AND pass='".
+	$q = "SELECT id, username, user_type, IF(date_expires > NOW(), true, false) FROM users WHERE (email = '$e' AND pass='".
 	 get_password_hash($p)."')";
 	$r = mysqli_query($mysqli, $q);
 	if (mysqli_num_rows($r) == 1){
