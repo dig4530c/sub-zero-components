@@ -13,7 +13,7 @@ require ('is/dash.php');
 							<h3>Sidebar</h3>
 						</div>
 					</div>
-					<div class="ninecol last"> <!--registration col-->
+					<div class="ninecol last user-registration"> <!--registration col-->
 					<?php 
 					$reg_errors = array();
 					if ($_SERVER['REQUEST_METHOD'] == 'POST'){
