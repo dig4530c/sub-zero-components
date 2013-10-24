@@ -13,9 +13,10 @@ function create_form_input($name, $type, $errors){
 		else {
 			echo ' />';
 			}
-		elseif ($type == 'textarea'){
-			if (array_key_exists($name, $errors)) echo '<span class="error">'.$errors[$name].'</span>';
-			echo '<textarea name="'.$name.'" id="'.$name.'" rows="5" cols="75"';
+		}
+	elseif ($type == 'textarea'){
+		if (array_key_exists($name, $errors)) echo '<span class="error">'.$errors[$name].'</span>';
+		echo '<textarea name="'.$name.'" id="'.$name.'" rows="5" cols="75"';
 			if (array_key_exists($name, $errors)) {
 				echo ' class="error">';
 				}
@@ -24,6 +25,5 @@ function create_form_input($name, $type, $errors){
 				}
 			if ($value) echo $value;
 			echo '</textarea>';
-			} 
 		} //End of primary IF-ELSE
 	} //End of the create_form_input() function.

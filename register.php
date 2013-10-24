@@ -67,7 +67,7 @@ require ('is/dash.php');
 							$q = "SELECT email, username FROM users WHERE email='$e' OR username='$u'";
 							$r = mysqli_query($mysqli, $q);
 							$rows = mysqli_num_rows($r);
-							if ($rows == 0 { //No problems!
+							if ($rows == 0) { //No problems!
 								$q = "INSERT INTO users (username, email, pass, first_name, last_name) VALUES('$u',
 								 '$e', '".get_password_hash($p)."', '$fn', '$ln', ADDDATE(NOW(), INTERVAL 1 MONTH))";
 								$r = mysqli_query($mysqli, $q); 
@@ -119,25 +119,25 @@ require ('is/dash.php');
 							<!--Registration Form-->
 							<form action="register.php" method="post" accept-charset="utf-8">
 								<p><label for="first_name"><strong>First Name</strong></label>
-								 <br /><?php creat_form_input('first_name', 'text', $reg_errors); ?></p>
+								 <br /><?php create_form_input('first_name', 'text', $reg_errors); ?></p>
 								 
 								<p><label for="last_name"><strong>Last Name</strong></label>
-								 <br /><?php creat_form_input('last_name', 'text', $reg_errors); ?></p>
+								 <br /><?php create_form_input('last_name', 'text', $reg_errors); ?></p>
 								 
 								<p><label for="username"><strong>Desired Username</strong></label>
-								 <br /><?php creat_form_input('username', 'text', $reg_errors); ?>
+								 <br /><?php create_form_input('username', 'text', $reg_errors); ?>
 								 <small>Only letters and numbers are allowed.</small></p>
 								 
 								<p><label for="email"><strong>Email Address</strong></label>
-								 <br /><?php creat_form_input('email', 'text', $reg_errors); ?></p>
+								 <br /><?php create_form_input('email', 'text', $reg_errors); ?></p>
 								 
 								<p><label for="pass1"><strong>Password</strong></label>
-								 <br /><?php creat_form_input('pass1', 'password', $reg_errors); ?>
+								 <br /><?php create_form_input('pass1', 'password', $reg_errors); ?>
 								 <small>Must be between 6 and 20 characters long, with at least one 
 								 lowercase letter, one uppercase letter, and one number.</small></p>
 								 
 								<p><label for="pass2"><strong>Confirm Password</strong></label>
-								 <br /><?php creat_form_input('pass2', 'password', $reg_errors); ?></p>
+								 <br /><?php create_form_input('pass2', 'password', $reg_errors); ?></p>
 								 
 								<input type="submit" name="submit_button" value="Next &rarr;" id="submit_button"
 								 class="form-button" />
