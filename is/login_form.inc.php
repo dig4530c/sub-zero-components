@@ -12,8 +12,8 @@ require_once('./is/form_functions.inc.php');
 		echo '<span class="error">'.$login_errors['login'].'</span><br />';
 		}
 	?>
-	<label for="email"><strong>Email Address</strong></label><br /> <!--Style labels instead of using <br /> -->
-	<?php create_form_input('email', 'text', $login_errors); ?><br />
+	<label for="username"><strong>Username</strong></label><br /> <!--Style labels instead of using <br /> -->
+	<?php create_form_input('username', 'text', $login_errors); ?><br />
 	<label for="pass"><strong>Password</strong></label><br />
 	<?php create_form_input('pass', 'password', $login_errors); ?>
 	<a href="forgot_password.php">Forgot?</a><br />

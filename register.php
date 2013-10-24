@@ -12,29 +12,32 @@ require ('is/dash.php');
 						<div id="sidebar">
 							<h3>Sidebar</h3>
 						</div>
+						<?php
+							//TESTING// if (isset($_SESSION['errors'])) echo '<strong>'.$_SESSION['errors'].'</strong>';
+						?>
 					</div>
 					<div class="ninecol last user-registration"> <!--registration col-->
 					<?php 
 					$reg_errors = array();
 					if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 						//Check first name
-						if (preg_match('/^[A-Z\'.-]{2-20}$/i', $_POST['first_name'])){
+						if (preg_match('/^[A-Z\'.-]{2,20}$/i', $_POST['first_name'])){
 							$fn = mysqli_real_escape_string($mysqli, $_POST['first_name']);
 							}
 						else {
-							$reg_errors['first-name'] = 'Please enter your first name!';
+							$reg_errors['first_name'] = 'Please enter your first name!';
 							}
 						
 						//Check last name
-						if (preg_match('/^[A-Z\'.-]{2-40}$/i', $_POST['last_name'])){
+						if (preg_match('/^[A-Z\'.-]{2,40}$/i', $_POST['last_name'])){
 							$ln = mysqli_real_escape_string($mysqli, $_POST['last_name']);
 							}
 						else {
-							$reg_errors['last-name'] = 'Please enter your last name!';
+							$reg_errors['last_name'] = 'Please enter your last name!';
 							}
 							
 						//Check username
-						if (preg_match('/^[A-Z0-9]{2-30}$/i', $_POST['username'])){
+						if (preg_match('/^[A-Z0-9]{2,30}$/i', $_POST['username'])){
 							$u = mysqli_real_escape_string($mysqli, $_POST['username']);
 							}
 						else {
@@ -148,6 +151,7 @@ require ('is/dash.php');
 			</div>
 		</div>
 <?php 
-include ('is/footer.php'); 
+include ('is/footer.php');
+$_SESSION['errors'] = count($reg_errors);
 exit();
 ?>
