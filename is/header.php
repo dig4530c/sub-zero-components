@@ -75,6 +75,43 @@
 					}
 			?>
 		</title>
+        
+</script>
+
+<!-- KD Adding js -->
+<script type="text/javascript">
+
+function copy_ship_info(f) {
+  if(billing.checkbilling.checked == true) {
+   	billing.billing_firstname.value = shipping.shipping_firstname.value; //(works within same form)
+	
+	billing.billing_lastname.value=shipping.shipping_lastname.value;
+	billing.billing_address.value=shipping.shipping_address.value;
+	billing.billing_city.value=shipping.shipping_city.value;
+	billing.billing_phone.value=shipping.shipping_phone.value;
+	billing.billing_zip.value=shipping.shipping_zip.value;
+	
+	state_object="document.billing.billing_state";
+	document.billing.billing_state.value=document.shipping.shipping_state.value;
+	
+	console.log('You Checked');
+   // f.billing_lastname.value = f.shippingcity.value;
+  }
+  
+  else {
+	console.log('You Un Checked');
+	document.billing.billing_firstname.value=""; <!--- billing/form name?.input name--->
+	document.billing.billing_lastname.value="";
+	document.billing.billing_address.value="";
+	document.billing.billing_city.value="";
+	document.billing.billing_phone.value="";
+	document.billing.billing_zip.value="";	
+	}
+
+}
+
+
+</script>
 </head> 
 
 <body>
