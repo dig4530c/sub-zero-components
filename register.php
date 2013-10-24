@@ -45,7 +45,7 @@ require ('is/dash.php');
 							}
 							
 						//Check Email
-						if (filter_var($_POST['emai'], FILTER_VALIDATE_EMAIL)){ //Use pregmatch email if PHP ver does not support filter_var()
+						if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){ 
 							$e = mysqli_real_escape_string($mysqli, $_POST['email']);
 							}
 						else {
