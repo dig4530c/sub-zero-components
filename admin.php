@@ -10,12 +10,12 @@ include ('is/header.php');
 			
 					<div class="threecol "><!--sidebar col-->
 						<div id="sidebar">
-							<div><h3><a href="#" class='apanel'>Administrator Panel</a></h3></div>
+							<div><h3><a href="#" class='super' id='apanel'>Administrator Panel</a></h3></div>
 							<div>
 								<ul>
-									<li><a href="#" class="mpro" >Manage Products</a></li>
+									<li><a href="#" class='see'  id='pro' >Manage Products</a></li>
 									<li><a href="#" class="morder" >Manage Orders</a></li>
-									<li><a href="#" class="muser" >Manage Users</a></li>
+									<li><a href="#"class='see' id='users'>Manage Users</a></li>
 									<li><a href="#" class="mpay" >Update Payment Methods</a></li>
 								</ul>
 							</div>
@@ -23,8 +23,24 @@ include ('is/header.php');
 					</div>
 					<div class="ninecol last"> <!--user info col-->
 						<div id="admin">
-							<!--<h1>Your Account</h1><h2>Account Info</h2><div><p><span>Username: </span>Student</p><p><span>Account Number: </span>#00001</p><p><span>Account Level: </span><a href="admin.php">Administrator</a></p><p><span>Total Number of Orders: </span>250</p></div>-->
+							<h1>Welcome, Administrator InsertUserName!</h1>
+								<div id='superuser'>
+									<ul>
+										<li><a href='#' class='see'  id='pro'>Manage Products</a></li>
+										<li><a class='see' id='users' href='#'>Show Users</a></li>
+									</ul>
+								</div>
 						</div>
+						<div id="mpro" class='show'>
+							<h1>Manage Products</h1>
+							<?php include ('is/managep.php'); ?>
+						</div>
+						
+						<div id="musers" class='show'>
+							<h1>All Users</h1>
+							<?php include ('is/manageu.php'); ?>
+						</div>
+						
 					</div>
 				</div><!--end row-->
 				
