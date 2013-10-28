@@ -1,11 +1,13 @@
 <?php
-if (!isset($login_errors)) $login_errors = array();
+if (!isset($login_errors)){
+	$login_errors = array();
+	}
 require_once('./is/form_functions.inc.php');
 ?>
 <div class="title">
-	<h4>Login</h4>
+	<h3>Login</h3>
 </div>
-<form action="home.php" method="post" accept-charset="utf-8">
+<form action="login.php" method="post" accept-charset="utf-8">
 	<p>
 	<?php 
 	if (array_key_exists('login', $login_errors)){

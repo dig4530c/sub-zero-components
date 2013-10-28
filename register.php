@@ -8,15 +8,7 @@ require ('is/dash.php');
 		<div class="container  "><!--  container-->
 			<div class="row space">
 				<div class="row">
-					<div class="threecol "><!--sidebar col-->
-						<div id="sidebar">
-							<h3>Sidebar</h3>
-						</div>
-						<?php
-							//TESTING// if (isset($_SESSION['errors'])) echo '<strong>'.$_SESSION['errors'].'</strong>';
-						?>
-					</div>
-					<div class="ninecol last user-registration"> <!--registration col-->
+					<div class="twelvecol user registration"> <!--registration col-->
 					<?php 
 					$reg_errors = array();
 					if ($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -53,7 +45,7 @@ require ('is/dash.php');
 							}
 							
 						//Check Password
-						if (preg_match('/^(\w*(?=\w*\d)(?=\w*[a-z])(?=\w*[A-Z])\w*){6,20}$/', $_POST['pass1'])){
+						if (preg_match('/^[a-zA-Z0-9\!\@\#\$\&\*\^\~]{6,20}$/', $_POST['pass1'])){
 							if($_POST['pass1'] == $_POST['pass2']){
 								$p = mysqli_real_escape_string($mysqli, $_POST['pass1']);
 								}
@@ -72,7 +64,7 @@ require ('is/dash.php');
 							$rows = mysqli_num_rows($r);
 							if ($rows == 0) { //No problems!
 								$q = "INSERT INTO users (username, email, pass, first_name, last_name) VALUES('$u',
-								 '$e', '".get_password_hash($p)."', '$fn', '$ln', ADDDATE(NOW(), INTERVAL 1 MONTH))";
+								 '$e', '".get_password_hash($p)."', '$fn', '$ln')";
 								$r = mysqli_query($mysqli, $q); 
 								}
 							else {
@@ -102,10 +94,8 @@ require ('is/dash.php');
 							
 						//If successful, thank new customer and send out email
 						if (mysqli_affected_rows($mysqli) == 1){
-							echo '<h3>Thanks!</h3><p>Thank you for registering! You will receive an email shortly
-							 confirming your registration.</p>';
-							$body = "Thank you for registering at Subzerocomponents.com.\n\n";
-							mail($_POST['email'], 'Registration Confirmation', $body, 'From: admin@subzerocomponents.com');
+							header("Location: ./registration_complete.php");
+							exit();
 							}
 						else {
 							trigger_error('You could not be registered due to a system error. We apologize for any inconvenience.');
@@ -136,8 +126,7 @@ require ('is/dash.php');
 								 
 								<p><label for="pass1"><strong>Password</strong></label>
 								 <br /><?php create_form_input('pass1', 'password', $reg_errors); ?>
-								 <small>Must be between 6 and 20 characters long, with at least one 
-								 lowercase letter, one uppercase letter, and one number.</small></p>
+								 <small>Must be between 6 and 20 characters long.</small></p>
 								 
 								<p><label for="pass2"><strong>Confirm Password</strong></label>
 								 <br /><?php create_form_input('pass2', 'password', $reg_errors); ?></p>
@@ -152,6 +141,5 @@ require ('is/dash.php');
 		</div>
 <?php 
 include ('is/footer.php');
-$_SESSION['errors'] = count($reg_errors);
 exit();
 ?>

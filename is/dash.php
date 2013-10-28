@@ -24,7 +24,7 @@ function escape_data($data){
 	} // End of the escape data function.
 
 //Password hashing
-function get_pasword_hash($password) {
+function get_password_hash($password) {
 	global $mysqli;
-	return mysqli_real_escape_string ($mysqli, hash_hmac('sha256', $password, 'c#haRl891', true));
+	return mysqli_real_escape_string ($mysqli, hash_hmac('sha256', $password, 'c#haRl891', true)); echo 'IT WORKS';
 	}

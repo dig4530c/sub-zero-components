@@ -2,7 +2,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <?php 
-	include ('is/config.inc.php'); //Starts session and adds helper functions
+	include_once ('is/config.inc.php'); //Starts session and adds helper functions
 	
 	/* if (!headers_sent()){
 		redirect_invalid_user();
@@ -138,7 +138,7 @@ function copy_ship_info(f) {
 									<li>|</li> 
 									<li><a href='client.php'>My Account</a></li>
 									<li>|</li> 
-									<li><a href='#'>Sign Out</a></li>
+									<li><a href='logout.php'>Sign Out</a></li>
 									";
 								}
 							else {
