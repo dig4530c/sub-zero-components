@@ -1,7 +1,7 @@
 <?php
 require ('./is/config.inc.php');
 //redirect_invalid_user();
-$page_title = 'Change Your Password';
+$page_title = 'Sub Zero Components - Change Your Password';
 include('./is/header.php');
 require (MYSQL);
 
@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		}
 		
 	//Validate new password
-	if (preg_match('/^(\w*(?=\w*\d)(?=\w*[a-z])(?=\w*[A-Z])\w*){6,20}$/', $_POST['pass1'])){
+	if (preg_match('/^[a-zA-Z0-9\!\@\#\$\&\*\^\~]{6,20}$/', $_POST['pass1'])){
 		if ($_POST['pass1'] == $_POST['pass2']){
 			$p = mysqli_real_escape_string($mysqli, $_POST['pass1']);
 			}
@@ -40,8 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 			if ($r = mysqli_query($mysqli, $q)){ // If it ran well.
 				
 				//Indicate to the user the successful change
-				echo '<h3>Your password has been changed.</h3>';
-				include ('./is/footer.php');
+				header('Location: ./password_changed.php');
 				exit();
 				}
 			else { // If it did not run well.
@@ -57,27 +56,38 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 //Display form
 require ('./is/form_functions.inc.php');
 ?>
-<h3>Change Your Password</h3>
-<p>Use the form below to change your password.</p>
-<form action="change_password.php" method="post" accept-charset="utf-8">
-	<p>
-		<label for="pass1"><strong>Current Password</strong></label><br />
-		<?php create_form_input('current', 'password', $pass_errors); ?>
-	</p>
-	<p>
-		<label for="pass1"><strong>New Password</strong></label><br />
-		<?php create_form_input('pass1', 'password', $pass_errors); ?>
-		<small>Must be between 6 and 20 characters long, with at least one lowercase letter,
-		 one uppercase letter, and one number.
-		</small>
-	</p>
-	<p>
-		<label for="pass2"><strong>Confirm New Password</strong></label><br />
-		<?php create_form_input('pass2', 'password', $pass_errors); ?>
-	</p>
-	<input type="submit" name="submit_button" value="Change &rarr;" id="submit_button" class="formbutton" />
-</form>
-
+<!-- stuff -->
+<div class="container  "><!--  container-->
+	<div class="row space">
+		<div class="row">
+			<div class="threecol "><!--sidebar col-->
+				<?php include ('./is/client_sidebar.php'); ?>
+			</div>
+			<div class="ninecol last"> <!--change password col-->
+				<div id="user-account">
+					<h3>Change Your Password</h3>
+					<p>Use the form below to change your password.</p>
+					<form action="change_password.php" method="post" accept-charset="utf-8">
+						<p>
+							<label for="current"><strong>Current Password</strong></label><br />
+							<?php create_form_input('current', 'password', $pass_errors); ?>
+						</p>
+						<p>
+							<label for="pass1"><strong>New Password</strong></label><br />
+							<?php create_form_input('pass1', 'password', $pass_errors); ?>
+							<small>Must be between 6 and 20 characters long.</small>
+						</p>
+						<p>
+							<label for="pass2"><strong>Confirm New Password</strong></label><br />
+							<?php create_form_input('pass2', 'password', $pass_errors); ?>
+						</p>
+						<input type="submit" name="submit_button" value="Change &rarr;" id="submit_button" class="formbutton" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <?php
 include ('./is/footer.php');
 ?>

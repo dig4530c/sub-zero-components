@@ -4,7 +4,7 @@ require('./is/config.inc.php');
 $_SESSION = array();
 session_destroy();
 setcookie(session_name(), '', time()-300);
-$page_title = 'Logout';
+$page_title = 'Sub Zero Components - Logout';
 include ('./is/header.php');
 ?>
 

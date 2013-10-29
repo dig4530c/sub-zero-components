@@ -9,31 +9,28 @@ include ('is/header.php');
 				<div class="row">
 			
 					<div class="threecol "><!--sidebar col-->
-						<div id="sidebar">
-							<div><h3>Account Home</h3></div>
+						<?php include ('./is/client_sidebar.php'); ?>
+					</div>
+					<div class="ninecol last"><!--user info col-->
+						<div id="user-account"><!--Changed to 'user-account' because 'user' injects JS script.
+						 Not sure if you want to use AJAX or not to display this, Arissa. -Ed -->
+							<h1>Your Account</h1>
+							<h2>Account Info</h2>
 							<div>
-								<ul>
-									<li><a href="#" class="dash">Dashboard</a></li>
-									<li><a href="admin.php" >Admin. Panel</a></li>
-								</ul>
-							</div>
-							<div><h3>Orders</h3></div>
-							<div>
-								<ul>
-									<li><a href="#" class="order">Track Orders</a></li>
-									<li><a href="#" class="orderh">Order History</a></li>
-									
-								</ul>
+								<p><span>Username: </span><?php echo $_SESSION['username']?></p>
+								<p><span>Account Number: </span><?php echo $_SESSION['user_id'] ?></p>
+								<p><span>Account Level: </span>
+								<?php 
+								if (array_key_exists('user_admin', $_SESSION)) echo 'Administrator';
+								elseif (array_key_exists('user_super', $_SESSION)) echo 'Super';
+								else echo 'Regular';
+								?>
+								</p>
+								<p><span>Total Number of Orders: </span>250</p><!--Make orders dynamic?-->
 							</div>
 						</div>
 					</div>
-					<div class="ninecol last"> <!--user info col-->
-						<div id="user">
-							<!--<h1>Your Account</h1><h2>Account Info</h2><div><p><span>Username: </span>Student</p><p><span>Account Number: </span>#00001</p><p><span>Account Level: </span><a href="admin.php">Administrator</a></p><p><span>Total Number of Orders: </span>250</p></div>-->
-						</div>
-					</div>
-				</div><!--end row-->
-				
-				</div>
+				</div><!--end row-->	
+			</div>
 		</div>
 <?php include ('is/footer.php'); ?>

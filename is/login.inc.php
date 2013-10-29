@@ -26,6 +26,7 @@ if (empty($login_errors)){
 		$_SESSION['user_id'] = $row[0];
 		$_SESSION['username'] = $row[1];
 		if ($row[2] == 'admin') $_SESSION['user_admin'] = true;
+		elseif ($row[2] == 'super') $_SESSION['user_super'] = true;
 		header("Location: ./home.php");
 		exit();
 		}

@@ -1,6 +1,6 @@
 <?php
 require('./is/config.inc.php');
-$page_title = 'Forgot Your Password?';
+$page_title = 'Sub Zero Components - Forgot Password';
 include ('./is/header.php');
 require (MYSQL);
 
