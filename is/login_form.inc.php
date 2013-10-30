@@ -19,6 +19,6 @@ require_once('./is/form_functions.inc.php');
 	<label for="pass"><strong>Password</strong></label><br />
 	<?php create_form_input('pass', 'password', $login_errors); ?>
 	<a href="forgot_password.php">Forgot?</a><br />
-	<input type="submit" value="Login &rarr;"></p>
+	<input type="submit" value="Login"></p>
 </form>
 	

@@ -248,15 +248,18 @@ font-size: 1.1em;
 /*user page*/
 
 #userinfo { /*container for user profile info */
-border-radius: 10px; 
--moz-border-radius: 10px; 
--webkit-border-radius: 10px; 
-border: 2px solid #349ACE;
-background-color:#349ACE;
-color:white;
-padding-bottom:30px;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 2px solid #349ACE;
+	background-color:#349ACE;
+	color:white;
+	padding-bottom:30px;
 }
 
+#user-account ul {
+	list-style: none;
+	}
 /*
 =====================================================
 */

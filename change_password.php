@@ -40,8 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 			if ($r = mysqli_query($mysqli, $q)){ // If it ran well.
 				
 				//Indicate to the user the successful change
-				header('Location: ./password_changed.php');
-				exit();
+				$update_message['pass'] = "Your password has been changed.";
 				}
 			else { // If it did not run well.
 				trigger_error('Your password could not be changed due to a system error. We apologize for any inconvenience.');
@@ -81,7 +80,15 @@ require ('./is/form_functions.inc.php');
 							<label for="pass2"><strong>Confirm New Password</strong></label><br />
 							<?php create_form_input('pass2', 'password', $pass_errors); ?>
 						</p>
-						<input type="submit" name="submit_button" value="Change &rarr;" id="submit_button" class="formbutton" />
+						<input type="submit" name="submit_button" value="Change Password" id="submit_button" class="formbutton" />
+						<a href="client.php">Cancel</a>
+						<?php 
+						if (isset($update_message['pass'])){
+							echo "
+								<div class='notice'>".$update_message['pass']."</div>
+								";
+							}
+						?>
 					</form>
 				</div>
 			</div>
