@@ -131,7 +131,7 @@ require ('is/dash.php');
 								<p><label for="pass2"><strong>Confirm Password</strong></label>
 								 <br /><?php create_form_input('pass2', 'password', $reg_errors); ?></p>
 								 
-								<input type="submit" name="submit_button" value="Next &rarr;" id="submit_button"
+								<input type="submit" name="submit_button" value="Submit" id="submit_button"
 								 class="form-button" />
 							</form>
 						</div>

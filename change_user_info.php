@@ -1,43 +1,107 @@
 <?php
 $page_title = "Change User Info";
 include ('./is/header.php');
+require (MYSQL);
 require ('./is/form_functions.inc.php');
 
 //Errors array
 $user_info_errors = array();
 
+//Update Message Array
+$update_message = array();
+
 //Changed Fields array
 $changed_fields = array();
 
+//Field Count
+$field_count = 0;
+
 //Validation
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-	if (!empty($_POST['first_name'])){
+
+	//First Name
+	if (preg_match('/^[A-Z\'.-]{2,20}$/i', $_POST['first_name'])){ //Validates as name
 		$fn = mysqli_real_escape_string($mysqli, $_POST['first_name']);
+		$field_count++;
 		}
-	if (!empty($_POST['last_name'])){
+	elseif (!empty($_POST['first_name'])){ //Doesn't validate as name
+		$user_info_errors['first_name'] = "Please enter a name from 2 to 20 letters.";
+		}
+	
+	//Last Name
+	if (preg_match('/^[A-Z\'.-]{2,40}$/i', $_POST['last_name'])){ //Validates as name
 		$ln = mysqli_real_escape_string($mysqli, $_POST['last_name']);
+		$field_count++;
 		}	
-	if (!empty($_POST['email'])){
-		$e = mysqli_real_escape_string($mysqli, $_POST['email']);
-		}		
-	if (!empty($_POST['pass'])){
-		$p = mysqli_real_escape_string($mysqli, $_POST['pass']);
+	elseif (!empty($_POST['last_name'])){ //Doesn't validate as name
+		$user_info_errors['last_name'] = "Please enter a name from 2 to 40 letters.";
 		}
-	else {
-		$user_info_errors['pass'] = 'The password you have entered is incorrect.';
+	
+	//Email
+	if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){ //Validates as email
+		$e = mysqli_real_escape_string($mysqli, $_POST['email']);
+		$field_count++;
+		}
+	elseif (!empty($_POST['email'])){ //Doesn't validate as email
+		$user_info_errors['email'] = "Please enter a valid email address.";
 		}
 		
-	if (empty($user_info_errors)){
-		$update_q = "
-			UPDATE users ".
-			if (isset($fn)) echo "SET first_name = '$fn' WHERE pass='".get_password_hash($p)."' AND id={$_SESSION['user_id']};";
-			if (isset($ln)) echo "SET last_name = '$ln' WHERE pass='".get_password_hash($p)."' AND id={$_SESSION['user_id']};";
-			if (isset($e)) echo "SET email = '$e' WHERE pass='".get_password_hash($p)."' AND id={$_SESSION['user_id']};";
-			."
-			";
-		if ($update_r = mysqli_query($mysqli, $update_q)){
-			$update_message['user_info'] = "You have successfully updated your information.";
+	//Password
+	if (!empty($_POST['pass'])){ //Field is not empty
+		$current_p = mysqli_real_escape_string($mysqli, $_POST['pass']);
+		
+		//Validate password against db password
+		$pass_q = "SELECT id FROM users WHERE pass='".get_password_hash($current_p)."' AND id={$_SESSION['user_id']}";
+		$pass_r = mysqli_query($mysqli, $pass_q);
+		if (mysqli_num_rows($pass_r) == 1){ // Correct Password
+			
+			//No entries were filled
+			if (empty($_POST['first_name']) && empty($_POST['last_name']) && empty($_POST['email'])){
+				$update_message['user_info'] = "No changes were made.";
+				}
+				
+			//No entry errors found
+			elseif (empty($user_info_errors)){
+				
+				//Set Update query variables and build query dynamically
+				$update_q = "UPDATE users SET";
+				if (isset($fn)) $fnq = " first_name = '$fn'";
+				if (isset($ln)) $lnq = " last_name = '$ln'";
+				if (isset($e)) $eq = " email = '$e'";
+				
+				while ($field_count > 1){ //Need to add commas between fields if there's more than one.
+					if (isset($fnq)){
+						$update_q .= $fnq;
+						unset($fnq);
+						}
+					elseif (isset($lnq)){
+						$update_q .= $lnq;
+						unset($lnq);
+						}
+					elseif (isset($eq)){
+						$update_q .= $eq;
+						unset($eq);
+						}
+					$update_q .= ',';
+					$field_count--;
+					}
+					
+				//Final field in update query, no need for comma.
+				if (isset($fnq)) $update_q .= $fnq; 	
+				elseif (isset($lnq)) $update_q .= $lnq;
+				elseif (isset($eq)) $update_q .= $eq; 
+				$update_q .= " WHERE id={$_SESSION['user_id']};";
+				if ($update_r = mysqli_query($mysqli, $update_q)){ //If successful, confirm with user.
+					$update_message['user_info'] = "You have successfully updated your information.";
+					}
+				}
 			}
+		else { //Incorrect Password
+			$user_info_errors['pass'] = "The password you have entered is incorrect.";
+			}
+		}
+	else { // Password field is empty
+		$user_info_errors['pass'] = "Please enter your password.";
 		}
 	}
 ?>
@@ -66,8 +130,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 							}
 						?>
 					</ul>
-					<ul class="change-info">
-						<form action="change_user_info.php" method="post" accept-charset="utf-8">
+					<form action="change_user_info.php" method="post" accept-charset="utf-8">
+						<ul class="change-info">
 							<li><h4>Please enter your password in order to edit your information.</h4></li>
 							<li>
 								<label for="first-name"><strong>First Name</strong></label><br />
@@ -86,10 +150,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 								<?php create_form_input('pass', 'password', $user_info_errors); ?>
 							</li>
 							<li>
-								<input type="submit" name="submit_button" value="Change &rarr;" id="submit_button" class="formbutton" />
+								<input type="submit" name="submit_button" value="Update" id="submit_button" 
+								 class="formbutton" />
 							</li>
-						</form>
-					</ul>
+							<li>
+								<a href="client.php">Cancel</a>
+							</li>
+							<?php 
+							if (isset($update_message['user_info'])){
+								echo "
+									<li><div class='notice'>".$update_message['user_info']."</div></li>
+									";
+								}
+							?>
+						</ul>
+					</form>
 				</div>
 			</div>
 		</div>
