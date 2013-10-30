@@ -14,10 +14,10 @@ echo"<table border=1><tr><th>Id</th><th>Product Name</th><th>Category</th><th>Co
 		
 while ($row=$result->fetch_assoc())
 {
-			$product=$row['Product Name'];
-			$cost=$row['Cost'];
-			$cat=$row['Category'];
-			$img=$row['Image'];
+			$product=$row['product'];
+			$cost=$row['cost'];
+			$cat=$row['category'];
+			$img=$row['image'];
 			$id=$row['id'];
 			
 			

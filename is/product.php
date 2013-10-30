@@ -17,10 +17,12 @@
 						
 		while ($row=$result->fetch_assoc())
 		{
-			$product=$row['Product Name'];
-			$cost=$row['Cost'];
-			$img=$row['Image'];				
-			$desc=$row['Description'];				
+			$product=$row['product'];
+			$cost=$row['cost'];
+			$img=$row['image'];				
+			$desc=$row['description'];	
+			$desc = str_replace(chr(146), "&#39;", $desc); 		
+			$rating=$row['rating'];	
 					
 
 
@@ -35,13 +37,49 @@
 							<div id="sidebar2">
 								<div>$'.$cost.'</div>
 								<div class="rate">
-									<ul>
+									<ul style="display:none;">
 										<li><i class="icon-star"></i></li>
 										<li><i class="icon-star"></i></li>
 										<li><i class="icon-star"></i></li>
 										<li><i class="icon-star"></i></li>
 										<li><i class="icon-star"></i></li>
-									</ul>
+									</ul>';
+									switch (true) {
+							case $rating > 0 && $rating <=10:
+						echo "<div class='one-star'></div>";
+								break;
+
+								case $rating > 10 && $rating <=20:
+						echo "<div class='two-star'></div>";
+								break;
+							
+						case $rating > 20 && $rating <=30:
+						echo "<div class='three-star'></div>";
+								break;
+							
+						case $rating > 30 && $rating <=40:
+						echo "<div class='four-star'></div>";
+								break;
+
+						case $rating > 40 && $rating <=50:
+						echo "<div class='five-star'></div>";
+								break;
+
+						case $rating > 50:
+						echo "<div class='five-star'></div>";
+								break;
+
+						case $rating < 0:
+						echo "<div class='one-star'></div>";
+								break;
+
+							default:
+						echo "<div class='one-star'></div>";
+								break;
+						}
+						echo '<button class="thumbdown" onClick="voteDown(\'' . $id . '\')"></button>
+						<button class="thumbup" onClick="voteUp(\'' . $id . '\')"></button>
+
 								</div>
 								<a href="is/add2.php?id='.$id.'&amp;name='.$product.'" class="btn">Add to Cart</a>
 							</div>
@@ -57,8 +95,4 @@
 						';
 		}
 						
-	?>					
-
-					
-	
-			
+	?>

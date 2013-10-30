@@ -18,22 +18,58 @@ $query="SELECT * FROM products ORDER BY rand() LIMIT 1 ";
 	
 while ($row=$result->fetch_assoc())
 {
-			$product=$row['Product Name'];
-			$cost=$row['Cost'];
-			$img=$row['Image'];
+			$product=$row['product'];
+			$cost=$row['cost'];
+			$img=$row['image'];
 			$id=$row['id'];
-		
+			$rating=$row['rating'];
+
 			echo "
 			<div class='text'>
 				<h2><a href='shop.php?id={$id}'>$product</a></h2>
 				<div class='rate'>
-						<ul>
+						<ul style='display:none;'>
 							<li><i class='icon-star'></i></li>
 							<li><i class='icon-star'></i></li>
 							<li><i class='icon-star'></i></li>
 							<li><i class='icon-star'></i></li>
 							<li><i class='icon-star'></i></li>
-						</ul>
+						</ul>";
+						switch (true) {
+							case $rating > 0 && $rating <=10:
+						echo "<div class='one-star'></div>";
+								break;
+
+								case $rating > 10 && $rating <=20:
+						echo "<div class='two-star'></div>";
+								break;
+							
+						case $rating > 20 && $rating <=30:
+						echo "<div class='three-star'></div>";
+								break;
+							
+						case $rating > 30 && $rating <=40:
+						echo "<div class='four-star'></div>";
+								break;
+
+						case $rating > 40 && $rating <=50:
+						echo "<div class='five-star'></div>";
+								break;
+
+						case $rating > 50:
+						echo "<div class='five-star'></div>";
+								break;
+
+						case $rating < 0:
+						echo "<div class='one-star'></div>";
+								break;
+
+							default:
+						echo "<div class='one-star'></div>";
+								break;
+						}
+					echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
+						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
 					</div>
 				<p>$$cost</p>
 				<a href='shop.php?id={$id}' class='btn'>Shop</a>
