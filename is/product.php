@@ -17,10 +17,10 @@
 						
 		while ($row=$result->fetch_assoc())
 		{
-			$product=$row['Product Name'];
-			$cost=$row['Cost'];
-			$img=$row['Image'];				
-			$desc=$row['Description'];	
+			$product=$row['product'];
+			$cost=$row['cost'];
+			$img=$row['image'];				
+			$desc=$row['description'];	
 			$desc = str_replace(chr(146), "&#39;", $desc); 		
 			$rating=$row['rating'];	
 					

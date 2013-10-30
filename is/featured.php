@@ -18,9 +18,9 @@ $query="SELECT * FROM products ORDER BY rand() LIMIT 1 ";
 	
 while ($row=$result->fetch_assoc())
 {
-			$product=$row['Product Name'];
-			$cost=$row['Cost'];
-			$img=$row['Image'];
+			$product=$row['product'];
+			$cost=$row['cost'];
+			$img=$row['image'];
 			$id=$row['id'];
 			$rating=$row['rating'];
 

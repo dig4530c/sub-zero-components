@@ -1,0 +1,389 @@
+id (leave this blank),product,description ,category,stock,cost (no $),image (leave blank for now. save a copy of images in a folder titled after the catagory of your products!),rating
+,ORICO NCA-1513,Aluminum Laptop Cooling Pad with Dual 80MM Configurable Fans for 15.6 inch laptop,Laptop Cooling,10,17.99,img/products/laptopcooling/ORICO-NCA-1513.jpg,
+,Gear Head CF3100SLV,Dual-cool notebook cooling pad,Laptop Cooling,20,6.99,img/products/laptopcooling/Gear-Head-CF3100SLV.jpg,
+,Gear Head CF3000U-CP12,Duel-cool notebook cooling fan,Laptop Cooling,40,8.99,img/products/laptopcooling/Gear-Head-CF3000U-CP12.jpg,
+,Gear Head CFS4200BLK-CP4,6 dual-cool notebook cooling stand. adjustable height design usb powered with included 3' cable whisper quiet fan technology fits up to 15. 6 notebooks ,Laptop Cooling,31,8.99,img/products/laptopcooling/Gear-Head-CFS4200BLK-CP4.jpg,
+,Gear Head Tri-Cool,Notebook cooling fan Model CF3600U,Laptop Cooling,20,16.99,img/products/laptopcooling/Gear-Head-Tri-Cool.jpg,
+,SYBA CL-NBK68019,"Big Laptop Cooler Pad with Two Large 5"" Fans Keep Notebook Computer Cool at All Time Model ",Laptop Cooling,10,16.99,img/products/laptopcooling/SYBA-CL-NBK68019.png,
+,Gear Head CF3300BLK,Dual-cool notebook cooling pad. Whisper quiet fan technology holds up to 17 notebooks built-in cord management system lightweight portable design,Laptop Cooling,11,29.99,img/products/laptopcooling/Gear-Head-CF3300BLK.jpg,
+,USB Folding 2 Fan ,Laptop Notebook Cooling Pad Cooler,Laptop Cooling,4,5.99,img/products/laptopcooling/USB-Folding-2-Fan.jpg,
+,Cooler Master Notepal D-Lite,"Notebook Cooler, support up to 15"" notebook with 140mm fan ",Laptop Cooling,7,17.99,img/products/laptopcooling/Cooler-Master-Notepal-D-Lite.jpg,
+,2Cool Black Walle,"Chill Stand for Laptop. Sturdy aluminum frame keeps laptop cool. Unique, lightweight & compact wallet-like design",Laptop Cooling,14,18.99,img/products/laptopcooling/2Cool-Black-Walle.jpg,
+,Cooler Master NotePal CMC3,"Cooler Pad Support up to 15"", with 200mm fan.  Silent 200mm fan to keep your laptop cool.
+Ergonomic design for best viewing / typing angle.
+Lightweight material for easy stow away.
+USB extension port included.
+Front anti-slip holder ",Laptop Cooling,10,19.99,img/products/laptopcooling/CoolerMaster-NotePal-CMC3.jpg,
+,Cooler Master NotePal I100 ,"Laptop Cooling Pad  Ultra slim-only 23mm thick
+Silent 140mm fan to keep your laptop cool
+Ergonomic design for excellent viewing/typing angles
+Easy cable management ",Laptop Cooling,4,20.99,img/products/laptopcooling/Cooler-Master-NotePal-I100.jpg,
+,Masscool Case Cooling Fan,Masscool Cooling fan model number #FD12025B1L3/4. Runs at 1500rpm and has mesh wire coating.,Laptop Cooling,6,6.99,,
+,Evercool Fan Cooler EGC-9,Using the new ever lubricate technology this fan runs as 1200RPM and provides ultimate cooling to any enclosure.,Laptop Cooling,10,7.49,,
+,Antec Case Cooling Fan,This fan runs at over 2200RPM delivering unbelievable speeds and noice level of just 28 dbm.,Laptop Cooling,3,8.99,,
+,AeroCool X-Blaster,An 80mm case cooling fan developed by AeroCool. This fan runs over 1500RPM and utilizes 2-ball technology.,Laptop Cooling,6,8.99,,
+,ENERMAX Case Fan,"Fans are the main component of cooling every PC system and it's the first line of defense against system overheat. With lower noise and long life, the ENERMAX Marathon fan offers a great choice for those wanting performance and quality at an unbeatable price. It features exclusive ENLOBAL bearing with magnetic-barometric design to run friction-free and noiseless. The nano-technology composite enables lowest abrasion and extreme durability. The detachable fan blade makes cleaning work a snap, so you can always keep your fan running at peak performance.",Case Fan,10,10.99,img/products/case-fan/enermax.jpg,
+,bgears b-Blaster 120 Case Fan,"bgears? b-Blaster 120 120mm case fan is a cost-efficient, high performance cooling solution for today's desktop computers. The dual ball-bearing design extends the life span of the fan and keeps it spinning at around 2,000 RPM. It easily fits in a wide variety of desktop cases and yet is capable of delivering maximum 103 CFM of airflow.",Case Fan,11,12.99,img/products/case-fan/bgears.jpg,
+,MASSCOOL Case Cooling Fan,"Protect your PC against the searing heat of everyday use. For cost-conscious shoppers and PC enthusiasts who want maximum bang for the buck, you?ll definitely want to make the MASSCOOL FD08025S1M4 Cooling Fan part of your cooling solution. The sleeve-bearing fan, operating with durable 80mm blades, safely ushers harmful thermal energy away from your PC?s sensitive components, at a rate of over 31 CFM (cubic feet per minute) during peak performance! This affordable model is a cinch to install, and the 28 dB generated at 2500 RPMs ? 10% means you?ll hardly notice it?s even in use! Besides keeping your system temps way down, this MASSCOOL case-compatible fan helps prevent dust and other particulate matter from building up inside your PC, which is vital to your system?s longevity. Whether you?re arming one desktop or several workstations, ensure you equip them with this first-rate cooling fan for solid protection and superior value.",Case Fan,8,4.99,img/products/case-fan/masscool.jpg,
+,Corsair Air Series AF140 Quiet Edition High Airflow Case Fan,"The Air Series AF140 fans let you have it all. Eleven ultra-thin, custom-molded blades push ample air volume. Rubber corners dramatically reduce vibration. The advanced hydraulic bearing system is quiet and reliable, and you can customize the look with the three included colored rings. AF models performs  best in unrestricted spaces with at least 3cm of clearance, and they're ideal for mounting at the rear or top of your PC case as exhaust fans for your PC's motherboard and CPU, graphics accelerators, and other components that fill the case with heat. They work equally well as unrestricted intake fans for areas like side panels or bottom intakes. ",Case Fan,15,25.99,img/products/case-fan/corsair.jpg,
+,XIGMATEK eXTREME SILENT Series Case Fan with FCB (Fluid Circulative Bearing),"Optimal blade design enabling static pressure and torque and higher air flow, XSF series fan provides the reduction of noise and power consumption. With fluid circulative bearing, it can provide longer MTBF and outstanding performance. This package includes four XSF-F1252 case fans.",Case Fan,12,18.99,img/products/case-fan/xigmatek.jpg,
+,Rosewill Blue LEDs LED Case cooler,"If you need to move more air than you can with an average 120mm fan, the Rosewill RFA-120-BL is your solution. Featuring a top speed of 2000RPM this fan pushes up to 74.48CFM. The sleeve bearing motor is designed for long life and the exterior mounted speed control makes it easy to adjust. The blue LEDs add a bit of atmosphere to your late night sessions.",Case Fan,12,8.99,img/products/case-fan/rosewill.jpg,
+,COOLER MASTER Blue LED Case cooler,"R4 series fans offer a unity of maximum rotational speed and optimum airflow. Using a unique long-life sleeve bearing fan, the R4 series offers long life rating of 50,000 hours. R4 series fans perform at a maximum of 69CFM at 2000RPM.",Case Fan,10,11.99,img/products/case-fan/cooler-master.jpg,
+,XIGMATEK FCB (Fluid Circulative Bearing) Cooling System Crystal Series,"The new Xigmatek CLF Crystal Series of 120mm system fans continues the company's innovative design focus to provide advanced features and performance while maintaining excellent value to the end user. CLF Series is created with attention and detail, and not only does it look prestige from every angle it is manufactured with impeccable performance.",Case Fan,9,13.99,img/products/case-fan/xigmatek-fcb.jpg,
+,Fractal Design Silent Series,"All new Silent Series R2 fans are equipped with high performance hydraulic bearings, increasing both fan performance and reliability. Each fan 60mm and larger is packaged with both 4 metal screws and 4 rubber screws to ensure maximum fan-mounting options. Using the rubber screws allows mechanical decoupling from the case itself, reducing vibrations and decreasing the noise level (40 and 50mm feature metal mounting screws only).",Case Fan,7,15.99,img/products/case-fan/fractal.jpg,
+,Noctua NF-F12 PWM 120mm Case Fan,"Teaming up eleven stator guide vanes with a specially conceived seven blade impeller, the NF-F12's Focused Flow system creates outstanding static pressure and focuses the airflow for superior performance on heatsinks and radiators. At the same time, a wide range of advanced aerodynamic design measures, second generation SSO-Bearings and Noctua's new, custom designed PWM IC for fully automatic control guarantee astounding quietness of operation. The NF-F12 comes with modular cabling, integrated anti-vibration pads and two speed settings for full flexibility. Its commanding performance, exhaustive set of features and Noctua's trusted premium quality make it an elite choice for use on air coolers, radiators and other pressure demanding applications.",Case Fan,6,30.99,img/products/case-fan/noctua.jpg,
+,SilenX EFX-08-12 80mm Effizio Quiet Case Fan,"The ultimate in airflow to noise ratio, Effizio Quiet Fans are the only fans in the industry to be designed with silence and optimal airflow in mind. Smaller, domed motor hub, larger, more dramatic fan blade sweep area, no other fans on the market come even close in performance! There might be fans that offer more airflow or lower noise levels, but when it comes to a balance between the two, these fans can't be beat, now with Japanese fluid dynamic bearings for ultra long life and reduced vibration.",Case Fan,8,10.99,img/products/case-fan/silenx.jpg,
+,COOLER MASTER Hyper TX3 RR-910-HTX3-G1 CPU Cooler,"Cooler Master’s Hyper TX series has evolved with requirements of 
+mainstream CPUs. The introduction of Hyper TX3 marks another milestone 
+with Cooler Master's first-ever full compatibility - Intel LGA 1156 
+socket. The Hyper TX3 also brings back the ""original"" direct contact 
+heat-pipe design from Cooler Master.<br /><br />
+
+<strong>Superior Heat Dissipation The Cooler</strong><br />
+Master Hyper TX3 features ""heatpipe direct contact"" technology for 
+efficient heat conduction, plus high-density aluminum fins for maximum 
+heat dissipation. The 92mm fan runs efficiently to deliver unparalleled 
+cooling performance.<br /><br />
+                                    
+<strong>Expandable for a Second Fan</strong><br />
+Add a 2nd cooling fan (optional) to the Cooler Master Hyper TX3 to achieve the best possible cooling performance!<br /><br />
+                                    
+<strong>PWM Function</strong><br />
+The PWM function automatically adjusts fan speeds according to the CPU temperature for efficient cooling and minimized fan noise.<br /><br />
+                                    
+<strong>Universal Socket Compatibility</strong><br />
+The Cooler Master Hyper TX3 features broad compatibility with AMD socket 
+754, 939, 940, and AM2 platforms, as well as Intel LGA 775 and 1156 
+platforms.<br /><br />
+",Heatsink,15,19.99,img/products/heatsink/coolermaster_htx3.jpg,
+,Thermaltake Frio Universal CPU Cooler CLP0564,"Thermaltake continues to bring innovative 
+solutions to CPU cooling challenges. The CLP0564 overclocking-ready and 
+six-core ready CPU cooler combines multiple features for optimal cooling
+ of high-powered CPUs. The copper base rests directly against the chip 
+to draw away damaging heat. Five seamlessly embedded heatpipes penetrate
+ the cooling fin array above for optimal heat transfer and dissipation. 
+Dual fans, one on each side, move large amount of cooling air over the 
+convection fins at quiet noise level, and a fan control knob allows you 
+to adjust the fan speed to reach a perfect balance between performance 
+and noise.<br /><br />
+Compatible with Intel CPUs using LGA 1156 / 1366 /
+ 775 socket and AMD CPUs in Socket AM2+ / AM2 / AM3 packaging, this 
+versatile Thermaltake model was designed to work with just about every 
+modern desktop CPU. For ultra-cool protection and forward-thinking 
+style, the Thermaltake Frio blows away the competition.<br /><br />
+
+<strong>Superior Heat Dissipation</strong><br />
+The copper base and five 8mm copper heatpipes conduct heat fast; 
+high-density convection fins maximize heat dissipation area, plus dual 
+120mm fans to deliver optimal cooling performance.<br /><br />
+                            
+<strong>Adjustable Fan Speed</strong><br />
+The Thermaltake CLP0564 features a VR fan controller so you can fine 
+tune the fan speeds for the optimum balance between cooling performance 
+and noise level.<br /><br />
+                            
+<strong>Excellent Compatibility</strong><br />
+The Thermaltake CLP0564 features broad compatibility with AMD Socket 
+AM2+ / AM2 / AM3 and Intel LGA 1156 / 1366 / 775 platforms, providing an
+ all-in-one cooling solution for your PC system.<br /><br />",Heatsink,9,54.99,img/products/heatsink/thermaltake-clp0564.jpg,
+,COOLER MASTER Hyper 212 EVO RR-212E-20PK-R2 CPU Cooler,"Unmatched performance for the value, these are the tenants that 
+guided Cooler Master engineers when designing the Hyper 212 EVO. 
+Patented Continuous Direct Contact (CDC) technology ensures that the 
+heat pipes are free of barriers while drawing heat away from the 
+processor. A PWM fan ensures that fan speed can be intelligently 
+controlled to ensure that it only speeds up when more cooling is 
+necessary.<br /><br />
+
+<strong>HIGHLY EFFECTIVE COOLING</strong><br />
+4 x Direct Contact heat pipes with patented CDC (Continuous Direct Contact) technology draw heat away from the CPU quickly.<br /><br />
+
+<strong>USER & SYSTEM CONTROL OF FAN(S)</strong><br />
+A wide range PWM fan can be controlled by changing its settings 
+through supported systems or software to suit your noise and performance
+needs.<br /><br />
+    
+<strong>UNIVERSAL MOUNTING SOLUTION</strong><br />
+Supports the latest sockets from Intel and AMD.<br /><br />
+    
+<strong>QUICK SNAP FAN MOUNTING</strong><br />
+Utilize the included brackets to quickly add or remove fans for upgrades, replacement, or maintenance.<br /><br />",Heatsink,11,39.99,img/products/heatsink/coolermaster-h212e.jpg,
+,Enermax ETS-T40-TB CPU Cooler,"Enter the world of efficient cooling with the Enermax ETS-T40 CPU 
+cooler! Enermax ETS-T40 delivers world leading thermal resistance 
+performance of 0.09°C/W thanks to the combination of three smart 
+innovations: Stack Effect Flow, Vortex Generator Flow and Vacuum Effect 
+Flow. Its four 6mm high-performance heat pipes with HDT (Heatpipe Direct
+ Touch) ensure rapid thermal conduction and eliminate CPU hotspot. Plus,
+ the ETS-T40 features a unique T.B.Silence 12cm Twister Bearing PWM fan 
+to provide persistent cooling efficiency and silence.<br /><br />                        
+                                
+<strong>Thermal Resistance Performance of 0.09°C/W</strong><br />
+The world leading thermal resistance performance of 0.09°C/W is 
+achieved by three smart innovations: Stack Effect Flow to enhance heat 
+transfer, Vortex Generator Flow to greatly increase air convection and 
+unique air path creating high VEF (Vacuum Effect) to optimize the 
+airflow.<br /><br />
+                                    
+<strong>Heat Pipe Direct Touch</strong><br />
+Enermax ETS-T40 features the side flow type with four Ø6mm high performance heat pipes 
+using HDT so the heat from CPU will be transferred directly to the heat 
+pipes without additional resistance.<br /><br />
+                                    
+<strong>Unique T.B.Silence PWM Fan</strong><br />
+Enermax ETS-T40 comes with a unique T.B.Silence PWM fan which automatically 
+adjusts the speed efficiently and keep the silence. Twister bearing 
+technology ensures long lifetime up to 100,000 hours and low noise. The 
+detachable fan blades design makes cleaning easy and quick.<br /><br />
+                                 
+<strong>Universal Compatibility</strong><br />
+Enermax ETS-T40 includes a universal bracket for Intel LGA775/1155/1156/1366/2011 and AMD AM2/AM2+/AM3/AM3+/FM1.<br /><br />
+                                    
+<strong>Anti-vibration Rubbers & High Thermal Conductivity Grease</strong><br />
+Anti-vibration rubbers prevent fan vibration and absorb noise. High 
+thermal conductivity grease ensures the best thermal conduction between 
+CPU and the heat sink.<br /><br />",Heatsink,10,34.99,img/products/heatsink/enermax-ets-t40-tb.jpg,
+,XIGMATEK Apache EP-CD903 CPU Cooler,"Large dissipating area provides outstanding cooling performance.<br />
+
+PWM function to make cooler more efficient.<br />
+
+Transparent color fan blade.<br />",Heatsink,11,12.99,img/products/heatsink/xigmatek-apacheii-ep-cd903.jpg,
+,"ARCTIC Freezer 7 Pro Rev. 2, CPU Cooler","Freezer 7 Pro Rev. 2 is a high performance CPU 
+cooler for Intel and AMD. The heatsink features 6 heatpipes and 42 fins 
+for efficient heat dissipation. Thanks to the vibration absorption the 
+fan is whisper-quiet even at full load.<br /><br />
+                    
+<strong>Efficient Cooling</strong><br />
+ Featuring a 92 mm PWM fan and 6 heatpipes, the Freezer 7 Pro Rev.2 
+offers performance far beyond stock coolers and achieves 130 Watts 
+cooling capacity. The unique heatsink design consists of 42 fins, which 
+significantly enhances the heat dissipation performance.<br /><br />
+                            
+<strong>Minimum of Noise</strong><br />
+Due to the low noise impeller and the fan holder, the 92 mm fan of the 
+Freezer 7 Pro Rev. 2 generates only 0.8 Sone at 2,500 rpm, which is 
+extremely quiet for such performance. Controlled by PWM signal, the fan 
+runs just the necessary speed at lowest noise level for maximum cooling 
+capacity.<br /><br />
+                            
+<strong>Easy Installation</strong><br />
+ The unique mounting system via push pins offers excellent stability and
+ is applicable within a few seconds. The pre-applied ARCTIC MX-2 thermal
+ compound makes the installation a quick and clean process.<br /><br />
+                            
+<strong>Wide Compatibility</strong><br />
+ With the flexible mounting design, the Freezer 7 Pro Rev. 2 is 
+compatible with Intel Socket 1366, 1156, 1155 and 775 as well as AMD 
+Socket AM3, AM2+, AM2, 939 and 754.<br />
+                        ",Heatsink,16,24.99,img/products/heatsink/arctic-freezer-7-pro-rev-2.png,
+,XIGMATEK Gaia SD1283 CPU Cooler,"Gaia, adopted from Gaia the mother of earth, a goddess in Greek religion, the creator of all. This innovative and powerful cooler maintains your CPU at a stable low temperature.<br /><br />
+
+<strong>-Stable cool climate delivered to your CPU by the goddess herself.</strong><br />
+We envisioned the Gaia to be just like mother earth, with the vision 
+of creating a silent yet effective cooling environment for the CPU that 
+reflects a peaceful rainforest ambience. Our engineers here at Xigmatek 
+needed to acquire a way to deliver the same remarkable effectiveness but
+ with the aim of generating minimal sound pollution to simulate calm 
+tranquilized surrounding.<br /><br />
+
+<strong>-We didn’t want to bring you just a cooler, We
+wanted to bring you an extraordinary cooler.</strong><br />
+Our team of highly experienced thermal engineers came up with an idea
+ of inventing a more effective process to displace heat. We call this 
+Heat-pipe Direct Touch Technology. To achieve this innovation we needed 
+to reinvent the entire traditional cooper / aluminum heat-sink base. HDT
+ works by integrating the cooper heat-pipes straight to your CPU giving a
+ direct touch. After excessive experiments through trial and error, we are proud to announce our HDT 
+technology produces over 10 percent more heat conductivity compared to 
+the traditional cooper heat-sinks and a colossal 170 percent improvement
+ over the aluminum heat-sink most commonly
+found in retail coolers. This innovation will deliver up to an 
+astronomical 45 percent in heat displacement.<br /><br />
+
+<strong>-Being first in the world to accomplish this is one of our greatest achievements</strong><br />
+The Gaia is designed with a remarkable fin
+shape resembling an X which creates maximum aerodynamic airflow. The material
+is made from the finest aluminum, crafted with care and precision and
+engineered to the finest detail maximizing thermal heat displacement. Unlike
+other fan connectors - we innovate beyond
+imagination. To insure a stable connection for our highly competent fan,
+our engineers needed to reinvent the connector. Instead of using a stainless
+steel clip, we decided that by using a rubber fabrication it would eliminate unnecessary
+vibrations, ultimately delivering close to nonexistent sound.<br /><br />
+
+Cooling a CPU has two major aspects, firstly
+the thermal displacement from the heat-sink / fins and secondly the fan. Obviously
+the higher the RPM of the fan rotation, the more effective the heat can be
+driven away. Our intention was not only to design a powerful fan - we wanted to
+construct a fan which had an exceedingly long life expectancy. We are proud to
+say we accomplished this with our newly redesigned innovative F.C.B
+Fluid Circulative Bearing pumping out an extraordinary
+40,000 hours.",Heatsink,12,24.99,img/products/heatsink/xigmatek-gaia-sd1283.jpg,
+,MASSCOOL 8W553B1M3 CPU Cooler ,"Step up from your stock cooling fan and heatsink 
+to the MassCool 8W553B1M3. Designed for use with value-driven Intel 
+processors including Core 2 Extreme, Core 2 Quad, Core 2 Duo, Pentium D 
+as well as Celeron D. The aluminum base and heatsink provide the cooling
+ performance you need to keep your desktop running at its peak.<br /><br />
+                   
+ A long-life, ball bearing 90mm fan quickly draws 
+heat away from the cooler's fins at a lively 2,400rpm. The standard 
+3-pin connector delivers broad compatibility to your motherboard. Keep 
+your CPU frosty in the hottest action with the Masscool 8W553B1M3!<br /><br />
+                    
+<strong>Excellent Cooling Performance</strong><br />
+ The extruded aluminum fins optimize heat dissipation and the 90mm, 
+2400RPM ball bearing fan delivers an air flow of up to 41.15 CFM for 
+supreme cooling performance.<br /><br />
+                            
+<strong>LGA 775 Compatible</strong><br />
+Compatible with the LGA 775 platform, the Masscool 8W553B1M3 supports a
+ wide range of Celeron, Pentium 4, Pentium D and the latest Core 2 Duo 
+CPUs.<br /><br />
+                            
+                        ",Heatsink,7,10.99,img/products/heatsink/masscool-8w553b1m3.jpg,
+,ZALMAN CNPS9500A-LED CPU Cooler ,"For the PC-enthusiast who wants a desktop that 
+looks sizzling hot, yet stays remarkably cool, check out the Zalman 
+CNP9500 LED CPU Cooler featuring a fan and heatsink!   This hi-tech 
+cooling device gives your PC mesmerizing appeal with its gleaming copper
+ finish and an eye-catching indigo blue LED light.<br /><br />
+
+The copper heatsink saves space with an 
+architecturally sound 3-pipe system that effortlessly whisks heat away 
+with the help of the adjustable fan’s 92mm blades and 2 ball bearings. A
+ FAN MATE 2 controller and cable are included with your durable Zalman 
+CPU Cooler, allowing you to switch between an 18 dB/1350 RPM ‘Silent’ 
+mode and a 27 dB/2600 RPM ‘Low Noise’ mode. For ultra-cool protection 
+and aggressive styling, this device is the way to go.<br /><br />
+                    
+<strong>Unique Heatpipe Design</strong><br />
+ Three innovative and curved heatpipes provide a heat transfer capacity 
+matching that of six heatpipe designs for maximum performance.<br /><br />
+                            
+<strong>Aerodynamically Optimized Heatsink Layout and Ultra-Slim Fins</strong><br />
+ A 100% copper heatsink with an aerodynamically optimized ""tunnel"" 
+design and 0.2mm ultra-slim fins maximize heatsink efficiency with 
+minimal weight and smoother airflow for optimum cooling.<br /><br />
+                            
+<strong>Adjustable Fan Speed Controller</strong><br />
+ The bundled adjustable fan speed controller (FAN MATE 2) enables manual
+ fan speed adjustment ranging from 1,350rpm to 2600rpm and provides a 
+silent mode and low-noise mode for an optimum balance between silence 
+and performance.<br /><br />
+
+<strong>Blue LED Lighting </strong><br />
+The ultra-quiet 92mm fan features blue LEDs for eye-catching fun.<br /><br />
+                            
+<strong>Universal Socket Compatibility</strong><br />
+ As an all-in-one solution for PC systems, the Zalman CNPS9500 LED 
+features broad compatibility with all AMD socket 
+AM3/AM2+/AM2/754/939/940 and Intel 775, 1155, and 1156 platforms.<br /><br />
+",Heatsink,18,41.99,img/products/heatsink/zalman-cnps9500a-led.jpg,
+,XIGMATEK Dark Knight II SD1283 Night Hawk Edition CPU Cooler,"The Xigmatek Stealth series
+coolers make
+use of advanced ceramic materials originally pioneered in the high-tech
+aerospace and automotive industries. The ceramic coating features high
+strength
+and light weight and is specially formulated for
+maximum thermal
+conductivity making
+it well suited for use in extreme temperature environments.<br /><br />
+
+<strong>Xigmatek Dark Knight SD1283
+Nighthawk
+Edition</strong><br />
+
+The Xigmatek Dark Knight SD1283
+is the
+world's first enthusiast cooler to utilize a modern ceramic coating and
+was the
+result of Xigmatek thermal engineers thinking outside the box.  Xigmatek's
+innovative
+use of this space age material is not just for good looks - the ceramic
+coating
+along with Xigmatek's patented HDT
+technology greatly
+increases the efficiency of thermal transfer away from your CPU.<br /><br />
+
+-High Thermal Conductivity<br />
+The
+increased thermal conductivity of the ceramic coating rapidly absorbs
+and
+removes heat from the CPU via the heatpipes.<br /><br />
+
+-Increased Cooling Area<br />
+Traditional aluminum fins are not as effective conducting heat at the
+outer
+edges. The ceramic coating allows heat to rapidly spread over the
+entire
+surface of the cooling fins, reducing thermal hotspots and increasing
+the
+cooling area.<br /><br />
+
+-HDT<br />
+Xigmatek's use of superior grade copper for the patented Heatpipe
+Direct Touch technology places the performance enhanced heatpipe
+directly against the hot CPU, increasing the effectiveness of removing
+heat
+from the source.<br /><br />
+
+
+<strong>Features</strong><br /><br />
+
+-Advanced
+ceramic
+material coating for dramatic thermal dissipation performance<br /><br />
+
+-Matte
+black design
+creates a uniquely stealthy look and feel<br /><br />
+
+-Utilizes
+Xigmatek's patented HDT (Heatpipe
+Direct Touch) Technology and superior grade copper material heatpipes<br /><br />
+
+-160mm
+side cooling
+tower configuration<br /><br />
+
+-Ultra-slim
+profile
+capable of mounting single (push) or dual (push-pull)120mm fan
+configurations; works with the majority of current motherboard designs<br /><br />
+
+-Includes
+Xigmatek's Universal Mounting Kit
+compatible
+with Intel LGA Socket 755, 1155, 1156, 2011 and AMD Socket K8 / AM2 /
+AM3<br /><br />
+
+<strong>Performance As Good
+As It Looks</strong><br />
+
+The Dark Knight SD1283 features
+a high-tech
+and stealthy matte black ceramic finish and is mated with a matching
+smoke black
+fan, giving it a unique presence. The effectiveness of the ceramic
+coating
+allows for reduced width fins resulting in an ultra-slim profile
+ making the Dark Knight
+SD1283 well suited for either single or dual fan (push - pull)
+configurations
+that easily fits within the physical constraints of modern motherboard
+designs.<br /><br />
+
+Performance testing between the
+similar Dark
+Knight SD1283 (ceramic) and GAIA SD1283 (non-ceramic) coolers indicates
+a
+performance increase of of up to 10% under
+stock and
+overclocked CPU speeds. ",Heatsink,16,49.99,img/products/heatsink/xigmatek-dark-knight-ii-sd1283-night-hawk-edition.jpg,
+,CORSAIR Hydro series H50 High Performance Liquid CPU Cooler,"Your PC will run cooler and quieter when you replace your CPU’s standard heatsink with a Hydro Series H50. Installation is straightforward. If you can get to the back of your PC’s motherboard, you can install H50. All you’ll need is a screwdriver and you'll be up and running in minutes. Maintenance is minimal thanks to closed-loop architecture and pre-filled coolant, which also deliver unmatched durability and reliability for worry-free use for years to come.",Water / Liquid Cooling,10,59.99,img/products/liquid/h50.jpg,
+,CORSAIR Hydro Series H60 (CW-9060007-WW) Water Cooler,"Say goodbye to a stock air cooler, and upgrade from your bulky air cooler to the efficiency and simplicity of liquid CPU cooling. Enjoy better cooling performance and lower noise, and protect your investment in your CPU with the CORSAIR Hydro Series H60 water cooler. Installation is straightforward. If you can get to the back of your PC’s motherboard, you can install H60. All you’ll need is a screwdriver and you'll be up and running in minutes. Maintenance is minimal thanks to closed-loop architecture and pre-filled coolant, which also deliver unmatched durability and reliability for worry-free use for years to come.",Water / Liquid Cooling,5,69.99,img/products/liquid/h60.jpg,
+,Thermaltake Water 3.0 Pro (CLW0223) Water Cooler,"For a liquid cooler, enthusiasts not only looking for an easy and clean setup to efficiently calm the roaring CPU, more likely they also crave for the best low-maintenance solution. The new Thermaltake All-In-One LCS Water 3.0 Series is formed to support these desires of enthusiasts. Upgrade the simplicity of liquid CPU cooling to enjoy better cooling performance and protect the investment in the CPU as well.",Water / Liquid Cooling,12,89.99,img/products/liquid/thermaltake.jpg,
+,Antec Kuhler H2O 620 Liquid Cooling System,"The Antec KÜHLER H2O 620 delivers high-performance liquid cooling for your CPU in a quick, easy-to-install package. Unlike traditional liquid cooling systems, this self-contained unit comes pre-filled and requires no maintenance. The voltage-controlled 120mm fan and 3rd generation copper coldplate ensure efficient cooling, while the estimated 50,000 hour pump lifetime means this cooler is even likely to outlast the system it cools. Lastly, easy-bend flexible tubing allows the KÜHLER H2O 620 to be installed in nearly any orientation. Take your PC's Quiet Computing to the next level with liquid cooling performance at a price that rivals aftermarket air coolers.",Water / Liquid Cooling,16,57.99,img/products/liquid/620.jpg,
+,CORSAIR Hydro Series H100i Water Cooler,"Say goodbye to a stock air cooler, and upgrade from your bulky air cooler to the efficiency and simplicity of liquid CPU cooling. Enjoy better cooling performance and lower noise, and protect your investment in your CPU with the CORSAIR Hydro Series H100i water cooler, which combines efficient cooling, simple installation, and intuitive management into an all-in-one solution. 240mm top-mounted radiator features twice the surface area of the H80i for even better performance, while 2x 120mm fans delivers efficient cooling at whisper quietness. Corsair Link allows you to monitor temperature and control lighting and fan speed on your screen. Quick and easy magnetic installation brackets make it easier than ever to upgrade to water cooling. Maintenance is minimal thanks to closed-loop architecture and pre-filled coolant, which also deliver unmatched durability and reliability for worry-free use for years to come.",Water / Liquid Cooling,57,109.99,img/products/liquid/h100.jpg,
+,Antec KUHLER H2O 920 Liquid Cooling System,"The Antec KÜHLER H2O 920 provides maximum-performance liquid cooling for your CPU in a quick, easy-to-install package. Unlike traditional liquid cooling systems, this self-contained unit comes prefilled and requires zero maintenance. The dual 120 mm Pulse Width Modulation (PWM) fans and 3rd generation copper coldplate ensure quiet, efficient cooling, while the 49 mm thick radiator is equipped to handle the highest performing CPUs on the market. Lastly, the included software helps you monitor and control the KÜHLER H2O 920's performance and allows you to customize its stylish RGB LED. Designed to unlock the maximum potential of your CPU, the Antec KÜHLER H2O 920 delivers exceptional cooling when you need it the most.",Water / Liquid Cooling,56,116.99,img/products/liquid/920.jpg,
+,Enzotech HF-G1/4-38 Water Cooling Accessory,High Flow Fitting ,Water / Liquid Cooling,102,4.49,img/products/liquid/hf.jpg,
+,"Enzotech BRCPS-G1/4-12-90 ID 1/2"" Thread G1/4"" Matt Black","Enzotech premium 90 degree rotary fitting is compatible with 1/2"" ID tubing and G1/4"" thread type.",Water / Liquid Cooling,36,8.99,img/products/liquid/brcps.jpg,
+,"Enzotech BHF-G1/4-38 ID 3/8"" Thread G1/4"", Matt Black","Thread Type: G1/4""",Water / Liquid Cooling,54,4.99,img/products/liquid/bhf.jpg,
+,NZXT Kraken X60 RL-KRX60-01 280mm Ultra Performance Liquid CPU Cooler,"NZXT Kraken series is the first premium all-in-one water coolers to provide both ease of use and functionality for PC enthusiasts. Kraken series X60 delivers unrivaled cooling performance with the included two NZXT FX-140 PWM fans and can offer upgraded cooling with the capacity to install an additional 2 more fans in a push-pull configuration. At the core of the cooler is a state-of-the-art pump attached to an all copper base. Bridging the 280mm radiator and pump is an extra-long 16” tubing and premium sleeved cables, easily installed into even in the largest chassis. It is the best closed loop water coolers on the market, you should not settle for anything less.",Water / Liquid Cooling,36,109.99,img/products/liquid/kraken.jpg,

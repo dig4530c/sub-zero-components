@@ -19,7 +19,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'exists'){
 include ('dash.php');
 
 
-$query="SELECT * FROM products ORDER BY Cost ";
+$query="SELECT * FROM products ORDER BY cost ";
 	
 	$result=$mysqli->query($query)
 		or die ($mysqli->error);
@@ -30,9 +30,9 @@ $query="SELECT * FROM products ORDER BY Cost ";
 	
 while ($row=$result->fetch_assoc())
 {
-			$product=$row['Product Name'];
-			$cost=$row['Cost'];
-			$img=$row['Image'];
+			$product=$row['product'];
+			$cost=$row['cost'];
+			$img=$row['image'];
 			$id=$row['id'];
 			$rating=$row['rating'];
 		
