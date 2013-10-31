@@ -139,7 +139,7 @@ function copy_ship_info(f) {
 							if(isset($_SESSION['username'])){
 								echo "
 									<li>Hello,</li>
-									<li><span id='name'><a href='client.php'>".$_SESSION['username']."</a></span></li>
+									<li><span id='name'>".$_SESSION['username']."</span></li>
 									<li>|</li>
 									";
 								if(isset($_SESSION['user_admin'])){
@@ -158,7 +158,7 @@ function copy_ship_info(f) {
 									}
 								else {
 									echo "
-										<li><a href='client.php'>CPanel</a></li>
+										<li><a href='client.php'>My Account</a></li>
 										<li>|</li> 
 										<li><a href='logout.php'>Sign Out</a></li>
 										";
