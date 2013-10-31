@@ -1,6 +1,7 @@
 <?php 
 $page_title = "Sub Zero Components - Admin";
 include ('is/header.php'); 
+include ('is/dash.php'); 
 ?>
 
 		<!-- stuff -->
@@ -13,10 +14,9 @@ include ('is/header.php');
 							<div><h3><a href="#" class='super' id='apanel'>Administrator Panel</a></h3></div>
 							<div>
 								<ul>
+									<li><a href="#" class='see' id='make'>Add Products</a></li>
 									<li><a href="#" class='see'  id='pro' >Manage Products</a></li>
-									<li><a href="#" class="morder" >Manage Orders</a></li>
 									<li><a href="#"class='see' id='users'>Manage Users</a></li>
-									<li><a href="#" class="mpay" >Update Payment Methods</a></li>
 								</ul>
 							</div>
 						</div>
@@ -26,16 +26,20 @@ include ('is/header.php');
 							<h1>Welcome, Administrator InsertUserName!</h1>
 								<div id='superuser'>
 									<ul>
+										<li><a href="#"lala class='see' id='make'>Add Products</a></li>
 										<li><a href='#' class='see'  id='pro'>Manage Products</a></li>
 										<li><a class='see' id='users' href='#'>Show Users</a></li>
 									</ul>
 								</div>
 						</div>
+						<div id="mmake" class='show'>
+							<h1>Add Products</h1>
+							<?php //include ('is/addp.php'); ?>
+						</div>
 						<div id="mpro" class='show'>
 							<h1>Manage Products</h1>
 							<?php include ('is/managep.php'); ?>
 						</div>
-						
 						<div id="musers" class='show'>
 							<h1>All Users</h1>
 							<?php include ('is/manageu.php'); ?>

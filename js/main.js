@@ -38,18 +38,21 @@ $(document).ready(function() {
 		
 	//admin dashboard
 			
-			$('#mpro').hide(); 
-            $('#musers').hide();
-			
-			$('.see').click(function(){
+			$('#mpro').hide();
+			$('#musers').hide();
+			$('#mmake').hide(); //Add products form 
+
+			$('.see').click(function () {
+				console.log('fired');
 				$('#superuser').hide();
 				$('.show').hide();
-				$('#m'+$(this).attr('id')).show();
+				$('#m' + $(this).attr('id')).show();
 			});
-			
-			$('.super').click(function(){
-				$('#mpro').hide(); 
+
+			$('.super').click(function () {
+				$('#mpro').hide();
 				$('#musers').hide();
+				$('#mmake').hide();
 				$('#superuser').show();
 			});
 			

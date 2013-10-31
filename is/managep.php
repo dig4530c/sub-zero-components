@@ -2,7 +2,7 @@
 ini_set('display_errors','On');
  error_reporting(E_ALL);
 
-include ('dash.php');
+//include ('dash.php');
 
 
 $query="SELECT * FROM products";
