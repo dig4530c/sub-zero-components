@@ -17,11 +17,11 @@ include ('is/header.php');
 						<!--<a href="#"><img src="img/archer.png" alt="archer" /></a>-->
 						<div id="slides">
 							<ul class='rslides '>
-								<li><a href='#'><img src="http://lorempixel.com/600/200/technics" alt='placeholder' /></a></li>
-								<li><a href='#'><img src="http://lorempixel.com/g/600/200/technics/2" alt='placeholder' /></a></li>
-								<li><a href='#'><img src="http://lorempixel.com/600/200/technics/3" alt='placeholder' /></a></li>
-								<li><a href='#'><img src="http://nicenicejpg.com/600/200" alt='placeholder' /></a></li>
-								<li><a href='#'><img src="http://lorempixel.com/600/200/technics/4" alt='placeholder' /></a></li>
+								<li><a href='#'><img src="img/slider/welcome.jpg" alt='placeholder' /></a></li>
+                                				<li><a href='#'><img src="img/slider/weeklydeal.jpg" alt='placeholder' /></a></li>
+                                				<li><a href='#'><img src="img/slider/kracken.jpg" alt='placeholder' /></a></li>
+                                				<li><a href='#'><img src="img/slider/xigmatek.jpg" alt='placeholder' /></a></li>
+                                				<li><a href='#'><img src="img/slider/coolermaster.jpg" alt='placeholder' /></a></li>
 							</ul>
 					  </div>
 					</div>
