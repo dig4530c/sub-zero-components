@@ -4,6 +4,15 @@ require('./is/config.inc.php');
 $_SESSION = array();
 session_destroy();
 setcookie(session_name(), '', time()-300);
+$_POST['logout'] = "You are now logged out.";
+require(MYSQL);
+header("Location: ./home.php");
+exit();
+
+
+
+
+
 $page_title = 'Sub Zero Components - Logout';
 include ('./is/header.php');
 ?>
@@ -21,6 +30,5 @@ include ('./is/header.php');
 </div>
 
 <?php
-require(MYSQL); //hmm, needs definition
 include('./is/footer.php');
 ?>

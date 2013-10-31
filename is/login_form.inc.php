@@ -4,21 +4,32 @@ if (!isset($login_errors)){
 	}
 require_once('./is/form_functions.inc.php');
 ?>
-<div class="title">
-	<h3>Login</h3>
-</div>
-<form action="login.php" method="post" accept-charset="utf-8">
-	<p>
-	<?php 
-	if (array_key_exists('login', $login_errors)){
-		echo '<span class="error">'.$login_errors['login'].'</span><br />';
-		}
-	?>
-	<label for="username"><strong>Username</strong></label><br /> <!--Style labels instead of using <br /> -->
-	<?php create_form_input('username', 'text', $login_errors); ?><br />
-	<label for="pass"><strong>Password</strong></label><br />
-	<?php create_form_input('pass', 'password', $login_errors); ?>
-	<a href="forgot_password.php">Forgot?</a><br />
-	<input type="submit" value="Login"></p>
+<?php
+if ($page_type == 'admin'){ // Form action depends on $page_type
+	echo "<form action='admin.php' method='post' accept-charset='utf-8'>";
+	}
+elseif ($page_type == 'super'){
+	echo "<form action='super.php' method='post' accept-charset='utf-8'>";
+	}
+else {
+	echo "<form action='login.php' method='post' accept-charset='utf-8'>";
+	}
+?>
+	<ul>
+		<?php 
+		if (array_key_exists('login', $login_errors)){
+			echo '<li class="error">'.$login_errors['login'].'</li>';
+			}
+		?>
+		<li>
+			<label for="username"><strong>Username</strong></label>
+			<?php create_form_input('username', 'text', $login_errors); ?>
+		</li>
+		<li>
+			<label for="pass"><strong>Password</strong></label>
+			<?php create_form_input('pass', 'password', $login_errors); ?>
+		</li>
+		<li><input type="submit" value="Login"></li>
+		<li><a href='forgot_password.php'>Forgot Password?</a></li>
+	</ul>		
 </form>
-	

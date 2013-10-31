@@ -14,14 +14,13 @@ include ('is/header.php');
 		
 				<div class="twelvecol last">
 					<div id="recom">
-						<!--<a href="#"><img src="img/archer.png" alt="archer" /></a>-->
 						<div id="slides">
 							<ul class='rslides '>
 								<li><a href='#'><img src="img/slider/welcome.jpg" alt='placeholder' /></a></li>
-                                				<li><a href='#'><img src="img/slider/weeklydeal.jpg" alt='placeholder' /></a></li>
-                                				<li><a href='#'><img src="img/slider/kracken.jpg" alt='placeholder' /></a></li>
-                                				<li><a href='#'><img src="img/slider/xigmatek.jpg" alt='placeholder' /></a></li>
-                                				<li><a href='#'><img src="img/slider/coolermaster.jpg" alt='placeholder' /></a></li>
+								<li><a href='#'><img src="img/slider/weeklydeal.jpg" alt='placeholder' /></a></li>
+								<li><a href='#'><img src="img/slider/kracken.jpg" alt='placeholder' /></a></li>
+								<li><a href='#'><img src="img/slider/xigmatek.jpg" alt='placeholder' /></a></li>
+								<li><a href='#'><img src="img/slider/coolermaster.jpg" alt='placeholder' /></a></li>
 							</ul>
 					  </div>
 					</div>
@@ -35,8 +34,7 @@ include ('is/header.php');
 					<br />
 					</div>
 					<div id="featured">
-						
-						<?php include ('is/featured.php'); ?>
+						<?php include ('./is/featured.php'); ?>
 					</div>
 				</div>
 			

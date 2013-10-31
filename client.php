@@ -17,16 +17,18 @@ include ('is/header.php');
 							<h1>Your Account</h1>
 							<h2>Account Info</h2>
 							<div>
-								<p><span>Username: </span><?php echo $_SESSION['username']?></p>
-								<p><span>Account Number: </span><?php echo $_SESSION['user_id'] ?></p>
-								<p><span>Account Level: </span>
-								<?php 
-								if (array_key_exists('user_admin', $_SESSION)) echo 'Administrator';
-								elseif (array_key_exists('user_super', $_SESSION)) echo 'Super';
-								else echo 'Regular';
-								?>
-								</p>
-								<p><span>Total Number of Orders: </span>250</p><!--Make orders dynamic?-->
+								<ul>
+									<li><span>Username: </span><?php echo $_SESSION['username']?></li>
+									<li><span>Account Number: </span><?php echo $_SESSION['user_id'] ?></li>
+									<li>
+										<span>Account Level: </span>
+										<?php 
+										if (array_key_exists('user_admin', $_SESSION)) echo 'Administrator';
+										elseif (array_key_exists('user_super', $_SESSION)) echo 'Super';
+										else echo 'Regular';
+										?>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>

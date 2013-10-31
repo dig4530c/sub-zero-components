@@ -1,6 +1,6 @@
 <?php 
 $page_title = "Sub Zero Components - Admin";
-$page_type = "admin";
+$page_type = "super";
 include ('is/header.php'); 
 include ('is/dash.php'); 
 ?>
@@ -15,7 +15,7 @@ include ('is/dash.php');
 						<div class='space'></div>
 						<div class='space'></div>
 						<div class="title">
-							<h2>Administrator Login</h2>
+							<h2>Super User Login</h2>
 						</div>
 						<div id='alogin'>
 							<?php

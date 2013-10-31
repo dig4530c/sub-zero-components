@@ -32,7 +32,7 @@
 	<!--<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />-->
 	<style type="text/css">@import url("css/styles.css");</style>
 	
-		<?php
+	<?php //Theme changer
 	if(isset($_COOKIE["Light"])){
 		$light = $_COOKIE["Light"];
 	}else{ 
@@ -61,22 +61,20 @@
 			});
 			});
 			});
-	</script>
-	
+	</script>	
 	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-		<title>
-			<?php 
-				if(isset($page_title)){
-					echo $page_title;
-					}
-				else {
-					echo 'Sub Zero Components';
-					}
-			?>
-		</title>
-        
-</script>
+	
+	<title>
+		<?php //Dynamic Titles: set a $page_title variable on each page, before include ('header.php')
+			if(isset($page_title)){
+				echo $page_title;
+				}
+			else {
+				echo 'Sub Zero Components';
+				}
+		?>
+	</title>
 
 <!-- KD Adding js -->
 <script type="text/javascript">
@@ -129,17 +127,42 @@ function copy_ship_info(f) {
 		<div class="row">
 			<div class="twelevecol last">
 				<div id="topnav">
+					<?php 
+					if (isset($_POST['logout'])){
+							echo "
+								<div class='notice'>".$_POST['logout']."</div>
+								";
+						}
+					?>
 					<ul>
 						<?php 
 							if(isset($_SESSION['username'])){
 								echo "
 									<li>Hello,</li>
 									<li><span id='name'><a href='client.php'>".$_SESSION['username']."</a></span></li>
-									<li>|</li> 
-									<li><a href='client.php'>My Account</a></li>
-									<li>|</li> 
-									<li><a href='logout.php'>Sign Out</a></li>
+									<li>|</li>
 									";
+								if(isset($_SESSION['user_admin'])){
+									echo "
+										<li><a href='cpanel.php'>CPanel</a></li>
+										<li>|</li> 
+										<li><a href='logout.php'>Sign Out</a></li>
+										";
+									}
+								elseif(isset($_SESSION['user_super'])){
+									echo "
+										<li><a href='cpanel.php'>CPanel</a></li>
+										<li>|</li> 
+										<li><a href='logout.php'>Sign Out</a></li>
+										";
+									}
+								else {
+									echo "
+										<li><a href='client.php'>CPanel</a></li>
+										<li>|</li> 
+										<li><a href='logout.php'>Sign Out</a></li>
+										";
+									}
 								}
 							else {
 								echo "

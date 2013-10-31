@@ -1,5 +1,6 @@
 <?php
 $page_title = "Sub Zero Components - Login";
+$page_type = "normal";
 include ('is/header.php'); 
 include ('is/dash.php');
 ?>
