@@ -1,5 +1,5 @@
 <?php
-$page_title = "Sub Zero Components - Catalog";
+$page_title = "Sub Zero Components - Catalog - Case Fans";
 include ('is/header.php');
 ?>
 
@@ -23,7 +23,7 @@ include ('is/header.php');
 					</div>
 					<div class="ninecol last"> <!--products col-->
 						<div>
-							<?php include ('is/listing.php'); ?>
+							<?php include ('is/case_fans_listing.php'); ?>
 						</div>
 					</div>
 				</div><!--end row-->

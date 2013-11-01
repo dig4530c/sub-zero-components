@@ -6,7 +6,7 @@
 	 
 	 $id = $_GET['id'];
 	 
-	include ('dash.php');
+	include_once ('dash.php');
 	
 	//echo $id;
 	
