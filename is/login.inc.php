@@ -37,7 +37,7 @@ if (empty($login_errors)){
 			header("Location: ./cpanel.php");
 			exit();
 			} 
-		elseif ($row[2] == "" && $page_type == "normal") { // If it's a normal user in login.php
+		elseif ($row[2] == "normal" && $page_type == "normal") { // If it's a normal user in login.php
 			$_SESSION['user_id'] = $row[0];
 			$_SESSION['username'] = $row[1];
 			header("Location: ./home.php");

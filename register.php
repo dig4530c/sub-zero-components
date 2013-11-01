@@ -63,8 +63,8 @@ require ('is/dash.php');
 							$r = mysqli_query($mysqli, $q);
 							$rows = mysqli_num_rows($r);
 							if ($rows == 0) { //No problems!
-								$q = "INSERT INTO users (username, email, pass, first_name, last_name) VALUES('$u',
-								 '$e', '".get_password_hash($p)."', '$fn', '$ln')";
+								$q = "INSERT INTO users (username, email, pass, first_name, last_name, user_type) VALUES('$u',
+								 '$e', '".get_password_hash($p)."', '$fn', '$ln', 'normal')";
 								$r = mysqli_query($mysqli, $q); 
 								}
 							else {
