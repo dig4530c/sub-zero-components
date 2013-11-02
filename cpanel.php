@@ -34,7 +34,7 @@ include ('is/dash.php');
 						</div>
 						<div id="mmake" class='show'>
 							<h1>Add Products</h1>
-							<?php //include ('is/addp.php'); ?>
+							<?php include ('is/addp.php'); ?>
 						</div>
 						<div id="mpro" class='show'>
 							<h1>Manage Products</h1>
