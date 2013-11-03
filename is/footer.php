@@ -12,6 +12,7 @@
 </div><!-- end footer container -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/rating.js"></script>
 	<script type="text/javascript" src="js/test.js"></script>
 	
 </body>
