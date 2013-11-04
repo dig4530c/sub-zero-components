@@ -3,6 +3,38 @@ $page_title = "Sub Zero Components - Shop";
 include ('is/header.php'); 
 
 $id = $_GET['id'];
+
+include_once ('is/dash.php');
+
+
+$query='SELECT * FROM products WHERE id='.$id;
+	
+	$result=$mysqli->query($query)
+		or die ($mysqli->error);
+	
+while ($row=$result->fetch_assoc())
+{
+			$category=$row['category'];
+
+}
+
+if($category == "Case Fan")
+{
+	$link = "case_fans.php";
+}
+else if($category == "Heatsink")
+{
+	$link = "heatsinks.php";
+}
+else if($category == "Water / Liquid Cooling")
+{
+	$link = "liquid_cooling.php";
+}
+else if($category == "Laptop Cooling")
+{
+	$link = "laptop_cooling.php";
+}
+
 if(isset($_GET['action']) && $_GET['action'] == 'add'){
     echo "<div>" . $_GET['name'] . " was added to your cart.</div>";
 }
@@ -21,9 +53,9 @@ if(isset($_GET['action']) && $_GET['action'] == 'exists'){
 						<ul>
 							<li><a href='home.php'>Home</a></li>
 							<li>/</li>
-							<li><a href='#'>Cooling Supplies</a></li>
+							<li><a href='catalog.php'>Cooling Supplies</a></li>
 							<li>/</li>
-							<li><a href='catalog.php'>Liquid Cooling</a></li>
+							<?php echo"<li><a href='$link'>$category</a></li>"; ?>
 						</ul>
 					</div>
 				</div>

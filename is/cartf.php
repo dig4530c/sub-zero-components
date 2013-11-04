@@ -51,7 +51,7 @@ ini_set('display_errors','On');
 							
 								//$subtotal += $cost;
 								
-								echo "
+								/*echo "
 								<div class='catalog'>
 									<div class='list'>
 										<h2>$product</h2>
@@ -60,6 +60,22 @@ ini_set('display_errors','On');
 									<img src='$img' alt='$product' />
 								</div>
 								
+								
+								
+								";*/
+								
+								//MY ATTEMPT
+								// <td class='unit'><img src='$img' alt='$product' /></td>
+								//Unit is the heading for the table Image - Cost -
+								echo "
+								<table class='table'>
+								  <tr class='hold'>
+									<td class='unit' width='400'>$product</td>
+									<td class='unit' width='50'>$cost</td>
+									<td class='unit' width='30'>qty</td>
+									<td class='unit'><a href='is/remove.php?id={$id}&name={$product}' class='btn'>Remove</a></td>
+								  </tr>
+								</table>
 								";
 								}
 							}

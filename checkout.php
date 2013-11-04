@@ -186,7 +186,7 @@ include ('is/header.php');
                                     </div> <!-- close divider -->
                                     
                                     <!-- INSERT DIVIDER HERE KD-->
-                                    <div class="seperate">
+                                    <!-- <div class="seperate">
 									<fieldset>
 										<div class="field name">
 												<label for="card">Credit Card Number</label>
@@ -240,20 +240,22 @@ include ('is/header.php');
 										  </div>
                                     </fieldset>
                                     <fieldset>
-										  <div class="field"> <!-- does it here-->
+										  <div class="field"> // does it here
 												<label for="cvv2">CVV2</label>
 												<input type="text" id="cvv2" />
-												<!--open window to display what cvv2 is-->
+												//open window to display what cvv2 is
 												<a href="#" onClick="javascript:window.open('img/cvv2.gif','new','menubars=no, resizable=no, statusbar=no, titlebar=no, width=300, height=500');">
 												What's this?</a>
 										  </div>
 									</fieldset>
-                                    </div> <!-- close divider -->
+                                    </div>// close divider -->
 								</form>
 								</div> <!-- sfbox close -->
-							</div> <!--above bill close --> 
+							</div> <!--above bill close -->
+
+
 				</div> <!-- div class row -->
-						<div id="pbtn"><span><a href="confirm.php">Checkout</a></span></div>
+						<div id="pbtn"><span><a href="payment.php">Payment ></a></span></div>
 			</div> <!-- row space clear close -->
 			
 					<div class="threecol last">
