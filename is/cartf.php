@@ -42,6 +42,15 @@ ini_set('display_errors','On');
 
 
 					if ($num>0){
+						echo"
+						<table class='table'>
+						<tr class='hold'>
+							<th class='heading' width='400'>Product Name</th>
+							<th class='heading' width='50'>Price</th>
+							<th class='heading' width='40'>Qty</th>
+							<th class='heading'>Remove </th>
+						</tr>";
+						
 						while ($row=$result->fetch_assoc()){
 						
 								$product=$row['product'];
@@ -72,7 +81,7 @@ ini_set('display_errors','On');
 								  <tr class='hold'>
 									<td class='unit' width='400'>$product</td>
 									<td class='unit' width='50'>$cost</td>
-									<td class='unit' width='30'>qty</td>
+									<td class='unit' width='40'>qty</td>
 									<td class='unit'><a href='is/remove.php?id={$id}&name={$product}' class='btn'>Remove</a></td>
 								  </tr>
 								</table>
@@ -81,7 +90,7 @@ ini_set('display_errors','On');
 							}
 							
 							
-							echo "<a href='is/empty.php'>Empty Cart</a>";
+							echo "<a href='is/empty.php' class='btn'>Empty Cart</a>";
 				}
 			
 		}
