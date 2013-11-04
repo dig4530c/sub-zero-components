@@ -14,7 +14,7 @@ include ('is/dash.php');
 				if($_SERVER['REQUEST_METHOD'] == 'POST'){
 					include ('is/login.inc.php');
 					}
-				include ('is/login_form.inc.php');
+				include ('is/login_form.inc.php'); //also calls form_functions.inc.php
 				?>
 			</div>
 		</div>
