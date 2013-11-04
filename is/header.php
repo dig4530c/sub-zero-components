@@ -127,23 +127,14 @@ function copy_ship_info(f) {
 		<div class="row">
 			<div class="twelevecol last">
 				<div id="topnav">
-					<?php 
-					if (isset($_POST['logout'])){
-							echo "
-								<div class='notice'>".$_POST['logout']."</div>
-								";
-						}
-					?>
 					<ul>
 						<?php 
 							if(isset($_SESSION['username'])){
-								echo "
-									<li>Hello,</li>
-									<li><span id='name'>".$_SESSION['username']."</span></li>
-									<li>|</li>
-									";
+								echo "<li>Hello,</li>";
 								if(isset($_SESSION['user_admin'])){
 									echo "
+										<li><span id='name'><a href='admin.php'>".$_SESSION['username']."</a></span></li>
+										<li>|</li>
 										<li><a href='cpanel.php'>CPanel</a></li>
 										<li>|</li> 
 										<li><a href='logout.php'>Sign Out</a></li>
@@ -151,6 +142,8 @@ function copy_ship_info(f) {
 									}
 								elseif(isset($_SESSION['user_super'])){
 									echo "
+										<li><span id='name'><a href='super.php'>".$_SESSION['username']."</a></span></li>
+										<li>|</li>
 										<li><a href='cpanel.php'>CPanel</a></li>
 										<li>|</li> 
 										<li><a href='logout.php'>Sign Out</a></li>
@@ -158,6 +151,8 @@ function copy_ship_info(f) {
 									}
 								else {
 									echo "
+										<li><span id='name'><a href='client.php'>".$_SESSION['username']."</a></span></li>
+										<li>|</li>
 										<li><a href='client.php'>My Account</a></li>
 										<li>|</li> 
 										<li><a href='logout.php'>Sign Out</a></li>

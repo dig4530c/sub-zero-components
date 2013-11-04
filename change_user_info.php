@@ -97,7 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 				}
 			}
 		else { //Incorrect Password
-			$user_info_errors['pass'] = "The password you have entered is incorrect.";
+			$user_info_errors['pass'] = "Password is incorrect.";
 			}
 		}
 	else { // Password field is empty
