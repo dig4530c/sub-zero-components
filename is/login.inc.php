@@ -6,7 +6,7 @@ if (!empty($_POST['username'])){
 	$u = mysqli_real_escape_string($mysqli, $_POST['username']);
 	}
 else {
-	$login_errors['username'] = 'Please enter your username!';
+	$login_errors['username'] = 'Please enter your username.';
 	}
 	
 //Validate Password
@@ -14,7 +14,7 @@ if (!empty($_POST['pass'])){
 	$p = mysqli_real_escape_string($mysqli, $_POST['pass']);
 	}
 else {
-	$login_errors['pass'] = 'Please enter your password!';
+	$login_errors['pass'] = 'Please enter your password.';
 	}
 	
 //If no errors exists, query the database

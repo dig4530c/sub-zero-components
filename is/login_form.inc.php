@@ -16,11 +16,6 @@ else {
 	}
 ?>
 	<ul>
-		<?php 
-		if (array_key_exists('login', $login_errors)){
-			echo '<li class="error">'.$login_errors['login'].'</li>';
-			}
-		?>
 		<li>
 			<label for="username"><strong>Username</strong></label>
 			<?php create_form_input('username', 'text', $login_errors); ?>
@@ -31,5 +26,10 @@ else {
 		</li>
 		<li><input type="submit" value="Login"></li>
 		<li><a href='forgot_password.php'>Forgot Password?</a></li>
-	</ul>		
+	</ul>
+	<?php 
+	if (array_key_exists('login', $login_errors)){
+		echo '<div class="error">'.$login_errors['login'].'</div>';
+		}
+	?>
 </form>

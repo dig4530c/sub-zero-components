@@ -4,11 +4,16 @@ include ('is/header.php');
 require ('is/dash.php');
 ?>
 
-		<!-- stuff -->
-		<div class="container  "><!--  container-->
-			<div class="row space">
-				<div class="row">
-					<div class="twelvecol user registration"> <!--registration col-->
+<!-- stuff -->
+<div class="container  "><!--  container-->
+	<div class="row space">
+		<div class="row">
+			<div class="fourcol">
+			</div>
+			<div class="fourcol">
+				<div class='space'></div>
+				<div class='space'></div>
+				<div id="register">
 					<?php 
 					$reg_errors = array();
 					if ($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -17,7 +22,7 @@ require ('is/dash.php');
 							$fn = mysqli_real_escape_string($mysqli, $_POST['first_name']);
 							}
 						else {
-							$reg_errors['first_name'] = 'Please enter your first name!';
+							$reg_errors['first_name'] = 'Please enter your first name.';
 							}
 						
 						//Check last name
@@ -25,7 +30,7 @@ require ('is/dash.php');
 							$ln = mysqli_real_escape_string($mysqli, $_POST['last_name']);
 							}
 						else {
-							$reg_errors['last_name'] = 'Please enter your last name!';
+							$reg_errors['last_name'] = 'Please enter your last name.';
 							}
 							
 						//Check username
@@ -33,7 +38,7 @@ require ('is/dash.php');
 							$u = mysqli_real_escape_string($mysqli, $_POST['username']);
 							}
 						else {
-							$reg_errors['username'] = 'Please enter a desired name!';
+							$reg_errors['username'] = 'Please enter a desired name.';
 							}
 							
 						//Check Email
@@ -41,7 +46,7 @@ require ('is/dash.php');
 							$e = mysqli_real_escape_string($mysqli, $_POST['email']);
 							}
 						else {
-							$reg_errors['email'] = 'Please enter a valid email address!';
+							$reg_errors['email'] = 'Please enter a valid email address.';
 							}
 							
 						//Check Password
@@ -50,11 +55,11 @@ require ('is/dash.php');
 								$p = mysqli_real_escape_string($mysqli, $_POST['pass1']);
 								}
 							else {
-								$reg_errors['pass2'] = 'Your password did not match the confirmed password!';
+								$reg_errors['pass2'] = 'Your password did not match the confirmed password.';
 								}
 							}
 						else {
-							$reg_errors['pass1'] = 'Please enter a valid password!';
+							$reg_errors['pass1'] = 'Please enter a valid password.';
 							}
 						
 						//Check email availability
@@ -98,47 +103,62 @@ require ('is/dash.php');
 							exit();
 							}
 						else {
-							trigger_error('You could not be registered due to a system error. We apologize for any inconvenience.');
+							$reg_errors['register'] = "Please review your details below.";
 							}
 						 } // End of the main form submission conditional.
 					
 					//Required for creating forms
 					require ('./is/form_functions.inc.php'); 
 					?>
-						<div>
-							<h3>Register</h3>
-						</div>
-						<div>
-							<!--Registration Form-->
-							<form action="register.php" method="post" accept-charset="utf-8">
-								<p><label for="first_name"><strong>First Name</strong></label>
-								 <br /><?php create_form_input('first_name', 'text', $reg_errors); ?></p>
-								 
-								<p><label for="last_name"><strong>Last Name</strong></label>
-								 <br /><?php create_form_input('last_name', 'text', $reg_errors); ?></p>
-								 
-								<p><label for="username"><strong>Desired Username</strong></label>
-								 <br /><?php create_form_input('username', 'text', $reg_errors); ?>
-								 <small>Only letters and numbers are allowed.</small></p>
-								 
-								<p><label for="email"><strong>Email Address</strong></label>
-								 <br /><?php create_form_input('email', 'text', $reg_errors); ?></p>
-								 
-								<p><label for="pass1"><strong>Password</strong></label>
-								 <br /><?php create_form_input('pass1', 'password', $reg_errors); ?>
-								 <small>Must be between 6 and 20 characters long.</small></p>
-								 
-								<p><label for="pass2"><strong>Confirm Password</strong></label>
-								 <br /><?php create_form_input('pass2', 'password', $reg_errors); ?></p>
-								 
-								<input type="submit" name="submit_button" value="Submit" id="submit_button"
-								 class="form-button" />
-							</form>
-						</div>
+					<div>
+						<h2>User Registration</h2>
 					</div>
-				</div><!--end row-->	
-			</div>
+					<?php 
+					if (array_key_exists('register', $reg_errors)){
+						echo '<div class="notice">'.$reg_errors['register'].'</div>';
+						}
+					?>
+					<div>
+					<!--Registration Form-->
+						<form action="register.php" method="post" accept-charset="utf-8">
+							<ul>
+								<li>
+									<label for="first_name"><strong>First Name</strong></label>
+									<?php create_form_input('first_name', 'text', $reg_errors); ?>
+								</li>
+								<li>
+									<label for="last_name"><strong>Last Name</strong></label>
+									<?php create_form_input('last_name', 'text', $reg_errors); ?>
+								</li>							 
+								<li>
+									<label for="username"><strong>Desired Username</strong></label>
+									<?php create_form_input('username', 'text', $reg_errors); ?>
+								</li>							 
+								<li>
+									<label for="email"><strong>Email Address</strong></label>							
+									<?php create_form_input('email', 'text', $reg_errors); ?>
+								</li>
+								<li>
+									<label for="pass1"><strong>Password</strong></label>
+									<small>Must be between 6 and 20 characters long.</small>
+									<?php create_form_input('pass1', 'password', $reg_errors); ?>
+								</li>						 
+								<li>
+									<label for="pass2"><strong>Confirm Password</strong></label>
+									<?php create_form_input('pass2', 'password', $reg_errors); ?>
+								</li>
+								<li>
+									<input type="submit" name="submit_button" value="Register" id="submit_button"
+									 class="form-button" />
+								</li>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div><!--end row-->	
 		</div>
+	</div>
+</div>
 <?php 
 include ('is/footer.php');
 exit();
