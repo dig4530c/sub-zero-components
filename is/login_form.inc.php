@@ -24,8 +24,14 @@ else {
 			<label for="pass"><strong>Password</strong></label>
 			<?php create_form_input('pass', 'password', $login_errors); ?>
 		</li>
-		<li><input type="submit" value="Login"></li>
-		<li><a href='forgot_password.php'>Forgot Password?</a></li>
+	</ul>
+	<ul class="btn-list">
+		<li>
+			<input class="generic-btn" type="submit" value="Login" >
+		</li>
+		<li>
+			<button class="generic-btn" formaction="forgot_password.php">Forgot Password?</button>
+		</li>
 	</ul>
 	<?php 
 	if (array_key_exists('login', $login_errors)){

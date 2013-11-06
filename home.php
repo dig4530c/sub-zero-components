@@ -28,7 +28,6 @@ include ('is/header.php');
 				
 			</div><!--end slider row-->
 			<div class="row space">
-				
 				<div class="twelvecol last">
 					<div class="os"><h1>Featured Deal</h1>
 					<br />

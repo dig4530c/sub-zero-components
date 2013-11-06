@@ -5,17 +5,14 @@ include ('is/dash.php');
 ?>
 
 		<!-- stuff -->
-		<div class="container  "><!--  container-->
+		<div class="container cart-container"><!--  container-->
 			<div class="row space">
 				<div class="row">
-			
-					<div class="ninecol "> <!--cart col-->
-						<div>
-							<h1>Your Cart</h1>
-								<div id='cart'>
-									 <?php include ('is/cartf.php'); ?>
-								</div>
-						</div>
+					<div class="ninecol"> <!--cart col-->
+						<h2>Your Cart</h2>
+						<div id='cart'>
+							 <?php include ('is/cartf.php'); ?>
+						</div>					
 					</div>
 					<div class="threecol last">
 						<div id="checkout">

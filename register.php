@@ -149,7 +149,7 @@ require ('is/dash.php');
 								</li>
 								<li>
 									<input type="submit" name="submit_button" value="Register" id="submit_button"
-									 class="form-button" />
+									 class="generic-btn" />
 								</li>
 							</ul>
 						</form>

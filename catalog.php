@@ -4,7 +4,7 @@ include ('is/header.php');
 ?>
 
 		<!-- stuff -->
-		<div class="container  "><!--  container-->
+		<div class="container catalog-container"><!--  container-->
 			<div class="row space">
 				<div class="row">
 			

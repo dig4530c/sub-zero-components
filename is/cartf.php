@@ -8,7 +8,7 @@ ini_set('display_errors','On');
 //included in cart.php instead to prevent it from being called twice by cartf.php and total.php
 
 	if(isset($_GET['action']) && $_GET['action'] == 'removed'){
-			echo "<div>" . $_GET['name'] . " was removed from cart.</div>";
+			echo "<div class='message'>" . $_GET['name'] . " was removed from cart.</div>";
 		}
 		
 		if(isset($_SESSION['cart'])){
@@ -43,13 +43,13 @@ ini_set('display_errors','On');
 
 					if ($num>0){
 						echo"
-						<table class='table'>
-						<tr class='hold'>
-							<th class='heading' width='400'>Product Name</th>
-							<th class='heading' width='50'>Price</th>
-							<th class='heading' width='40'>Qty</th>
-							<th class='heading'>Remove </th>
-						</tr>";
+						<table class='cart-table'>
+							<tr>
+								<th class='heading' width='400'>Product Name</th>
+								<th class='heading' width='50'>Price</th>
+								<th class='heading' width='40'>Qty</th>
+								<th class='heading'>Remove </th>
+							</tr>";
 						
 						while ($row=$result->fetch_assoc()){
 						
@@ -77,16 +77,15 @@ ini_set('display_errors','On');
 								// <td class='unit'><img src='$img' alt='$product' /></td>
 								//Unit is the heading for the table Image - Cost -
 								echo "
-								<table class='table'>
-								  <tr class='hold'>
+								<tr>
 									<td class='unit' width='400'>$product</td>
 									<td class='unit' width='50'>$cost</td>
 									<td class='unit' width='40'>qty</td>
 									<td class='unit'><a href='is/remove.php?id={$id}&name={$product}' class='btn'>Remove</a></td>
-								  </tr>
-								</table>
+								 </tr>
 								";
 								}
+								echo "</table>";
 							}
 							
 							
@@ -94,7 +93,7 @@ ini_set('display_errors','On');
 				}
 			
 		}
-		else{	echo "<div>Your cart is empty. Start shopping!</div>";}							
+		else{	echo "<div class='message'>Your cart is empty. Start shopping!</div>";}							
 										
 ?>
 										

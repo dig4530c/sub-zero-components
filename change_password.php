@@ -64,24 +64,31 @@ require ('./is/form_functions.inc.php');
 			</div>
 			<div class="ninecol last"> <!--change password col-->
 				<div id="user-account">
-					<h3>Change Your Password</h3>
-					<p>Use the form below to change your password.</p>
+					<h2>Change Your Password</h2>
 					<form action="change_password.php" method="post" accept-charset="utf-8">
-						<p>
-							<label for="current"><strong>Current Password</strong></label><br />
-							<?php create_form_input('current', 'password', $pass_errors); ?>
-						</p>
-						<p>
-							<label for="pass1"><strong>New Password</strong></label><br />
-							<?php create_form_input('pass1', 'password', $pass_errors); ?>
-							<small>Must be between 6 and 20 characters long.</small>
-						</p>
-						<p>
-							<label for="pass2"><strong>Confirm New Password</strong></label><br />
-							<?php create_form_input('pass2', 'password', $pass_errors); ?>
-						</p>
-						<input type="submit" name="submit_button" value="Change Password" id="submit_button" class="formbutton" />
-						<a href="client.php">Cancel</a>
+						<ul class="change-pass">
+							<li>
+								<label for="current"><strong>Current Password</strong></label>
+								<?php create_form_input('current', 'password', $pass_errors); ?>
+							</li>
+							<li>
+								<label for="pass1"><strong>New Password</strong></label>
+								<?php create_form_input('pass1', 'password', $pass_errors); ?>
+								<small>Must be between 6 and 20 characters long.</small>
+							</li>
+							<li>
+								<label for="pass2"><strong>Confirm New Password</strong></label>
+								<?php create_form_input('pass2', 'password', $pass_errors); ?>
+							</li>
+						</ul>
+						<ul class="btn-list">
+							<li>
+								<input class="generic-btn" type="submit" name="submit_button" value="Change Password" id="submit_button" />
+							</li>
+							<li>
+								<button class="generic-btn" formaction="client.php">Cancel</button>
+							</li>
+						</ul>
 						<?php 
 						if (isset($update_message['pass'])){
 							echo "

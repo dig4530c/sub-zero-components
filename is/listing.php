@@ -87,7 +87,6 @@ while ($row=$result->fetch_assoc())
 					<p>$$cost</p><a href='is/add.php?id={$id}&amp;name={$product}' class='btn'>Add to Cart</a>
 				</div>
 				<img src='$img' alt='$product' />
-				<div class='clear'></div>
 			</div>
 			
 			";

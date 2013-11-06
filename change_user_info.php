@@ -114,56 +114,57 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 			</div>
 			<div class="ninecol last"> <!--user info col-->
 				<div id="user-account">
-					<h3>Change User Info</h3>
-					<ul class="current-info">
-						<li><h4>Current Info</h4></li>
+					<h2>Change User Info</h2>
+					<h3>Current Info</h3>
+					<ul class="current-info">						
 						<?php
 						$info_q = "SELECT first_name, last_name, email FROM users WHERE id={$_SESSION['user_id']};";
 						$info_r = mysqli_query($mysqli, $info_q);
 						if (mysqli_num_rows($info_r) == 1){
 							$row = mysqli_fetch_array($info_r, MYSQLI_NUM);
 							echo "
-								<li>First Name: ".$row[0]."</li>
-								<li>Last Name: ".$row[1]."</li>
-								<li>Email: ".$row[2]."</li>
+								<li><strong>First Name: </strong>".$row[0]."</li>
+								<li><strong>Last Name: </strong>".$row[1]."</li>
+								<li><strong>Email: </strong>".$row[2]."</li>
 								";
 							}
 						?>
 					</ul>
 					<form action="change_user_info.php" method="post" accept-charset="utf-8">
 						<ul class="change-info">
-							<li><h4>Please enter your password in order to edit your information.</h4></li>
 							<li>
-								<label for="first-name"><strong>First Name</strong></label><br />
+								<label for="first-name"><strong>First Name</strong></label>
 								<?php create_form_input('first_name', 'text', $user_info_errors); ?>
 							</li>
 							<li>
-								<label for="last-name"><strong>Last Name</strong></label><br />
+								<label for="last-name"><strong>Last Name</strong></label>
 								<?php create_form_input('last_name', 'text', $user_info_errors); ?>
 							</li>
 							<li>
-								<label for="email"><strong>Email</strong></label><br />
+								<label for="email"><strong>Email</strong></label>
 								<?php create_form_input('email', 'text', $user_info_errors); ?>
 							</li>
 							<li>
-								<label for="pass"><strong>Current Password</strong></label><br />
+								<small>Enter your password to edit your information.</small>
 								<?php create_form_input('pass', 'password', $user_info_errors); ?>
 							</li>
+						</ul>
+						<ul class="btn-list">
 							<li>
 								<input type="submit" name="submit_button" value="Update" id="submit_button" 
-								 class="formbutton" />
+								 class="generic-btn" />
 							</li>
 							<li>
-								<a href="client.php">Cancel</a>
-							</li>
-							<?php 
-							if (isset($update_message['user_info'])){
-								echo "
-									<li><div class='notice'>".$update_message['user_info']."</div></li>
-									";
-								}
-							?>
+								<button class="generic-btn" formaction="client.php">Cancel</button>
+							</li>							
 						</ul>
+						<?php 
+						if (isset($update_message['user_info'])){
+							echo "
+								<div class='notice'>".$update_message['user_info']."</div>
+								";
+							}
+						?>
 					</form>
 				</div>
 			</div>
