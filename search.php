@@ -33,7 +33,7 @@ while ($row=$result->fetch_assoc())
 {			
 			$id=$row['id'];
 			$product=$row['prodname'];
-			$description=$row['Description'];
+			$description=$row['description'];
 			$stock=$row['stock'];
 			$img=$row['image'];
 			echo "<div class='search-result'>";
@@ -42,8 +42,8 @@ while ($row=$result->fetch_assoc())
 			echo "<small>Stock count: " . $stock . "</small>";
 			echo "</div>"; //close search-title
 
-			echo "<div class='product-desc'>" . excerpt($description,60,$id) . "</div>";
-			echo "<div class='add2cart'><a href='shop.php?id=".$id."' class='btn'>SEE DETAILS</a><br /><a href='#' class='btn'>ADD TO CART</a></div>";
+			echo "<div class='product-desc'>" . excerpt($description,60,$id) . "</div><br /><br />";
+			echo "<div class='add2cart'><a href='shop.php?id=".$id."' class='btn'>SEE DETAILS</a><br /><br /><a href='#' class='btn'>ADD TO CART</a></div><br /><br />";
 
 			echo "<div class='clear'> </div>";
 			echo "</div>"; //close search-result
