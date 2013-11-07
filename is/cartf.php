@@ -93,7 +93,18 @@ ini_set('display_errors','On');
 							}
 							
 							
-							echo "<a href='is/empty.php' class='btn'>Empty Cart</a>";
+							echo "
+								<ul class='btn-list'>
+									<li>
+										<a href='is/empty.php' class='btn'>Empty Cart</a>
+									</li>
+									<li>
+										<a href='#' class='btn'>Update</a>
+									</li>
+								</ul>
+								
+							
+								";
 				}
 			
 		}

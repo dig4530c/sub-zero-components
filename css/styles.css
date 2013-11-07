@@ -57,6 +57,9 @@ font-family: Open Sans;
 .vpadding {
 	padding: 1em 0;
 	}
+.vmargin {
+	margin: 1em 0;
+	}
 .header{
 background-color: #204060;/*282B32;*/ 
 padding: 5px;
@@ -372,7 +375,8 @@ font-size: 1.1em;
 /* User CP */
 #user-account h2,
 .login h2,
-#register h2 {
+#register h2,
+.forgotp h2 {
 	padding-bottom: 1em;
 	border-bottom: 1px solid #ddd;
 	}
@@ -422,6 +426,16 @@ font-size: 1.1em;
 	}
 #sidebar.user {
 	margin-top: 0.5em;
+	}
+.forgotp ul{
+	margin: 1em 0;
+	}
+.forgotp li{
+	list-style: none;
+	margin-bottom: 1em;
+	}
+.forgotp input[type="text"] {
+	width: 100%;
 	}
 
 /* End User CP */
@@ -709,6 +723,9 @@ div.notice {
 	color: #349ace;
 	}
 	
+.btn-list {
+	height: 2em; /*graphical hack*/
+	}
 .btn-list li{
 	display: inline-block;
 	margin-right: 0.5em;

@@ -7,17 +7,22 @@ require (MYSQL);
 //Error array
 $pass_errors = array();
 
+//Notice array
+$forgot_notice = array();
+
 //Validate email address
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-	if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+	if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){ // If it's a valid email address
 		$q = 'SELECT id FROM users WHERE email="'.mysqli_real_escape_string($mysqli, $_POST['email']).'"';
 		$r = mysqli_query($mysqli, $q);
 		if (mysqli_num_rows($r) == 1){ //Retrieve the user ID
-			list($uid) = mysqli_fetch_array($r, MYSQLI_NUM); //MYSQLI_NUM needs definition?
+			list($uid) = mysqli_fetch_array($r, MYSQLI_NUM);
 			}
 		else { // No database match made.
-			$pass_errors['email'] = 'The submitted email address does not match those on file!';
+			$pass_errors['email'] = '';
+			$forgot_notice['email'] = 'The submitted email address does not match those on file.';
 			}
+		}
 	else { // No valid address submitted.
 		$pass_errors['email'] = 'Please enter a valid email address!';
 		} // End of $_POST['email'] IF.
@@ -34,11 +39,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 				log in using that password and this email address. Then you may change you password to something more familiar.
 				";
 			mail($_POST['email'], 'Your temporary password.', $body, 'From: admin@subzerocomponents.com');
-			echo '
-				<h3>Your password has been changed.</h3>
-				<p>You will receive the new, temporary password via email. Once you have logged in with this new password,
- 				 you may change it by clicking on the "Change Password" link.</p>
-				';
+			echo "
+				<h2>Your password has been changed.</h2>
+				<p class='vmargin'>You will receive the new, temporary password via email. Once you have logged in with this new password,
+ 				 you may change it by clicking on the 'Change Password' link.</p>
+				";
 			include('./is/footer.php');
 			exit();
 			}
@@ -51,13 +56,40 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 // Create the form:
 require('./is/form_functions.inc.php');
 ?>
-<h3>Reset Your Password</h3>
-<p>Enter your email address below to reset your password.</p>
-<form action="forgot_password.php" method="post" accept-charset="utf-8">
-	<p><label for="email"><strong>Email Address</strong></label><br /> <!--Replace <br> with proper styles.-->
-	<?php create_form_input('email', 'text', $pass_errors); ?></p>
-	<input type="submit" name="submit_button" value="Reset &rarr;" id="submit_button" class="formbutton" />
-</form>
+<div class="container  "><!--  container-->
+	<div class="row space">
+		<div class="row">
+			<div class="fourcol">
+			</div>
+			<div class="threecol">
+				<div class='space'></div>
+				<div class='space'></div>
+				<div class="title forgotp">
+					<h2>Reset Your Password</h2>
+					<form action="forgot_password.php" method="post" accept-charset="utf-8">
+						<ul>
+							<li>Enter your email address below to reset your password.</li>
+							<li>							
+								<label for="email"><strong>Email Address</strong></label>
+								<?php create_form_input('email', 'text', $pass_errors); ?>
+							</li>
+							<li>
+								<input type="submit" name="submit_button" value="Reset" id="submit_button" class="generic-btn" />
+							</li>
+						</ul>
+						<?php 
+						if (isset($forgot_notice['email'])){
+							echo "
+								<div class='notice'>".$forgot_notice['email']."</div>
+								";
+							}
+						?>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <?php
 include ('./is/footer.php');
 ?>
