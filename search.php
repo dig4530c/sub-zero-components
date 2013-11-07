@@ -19,7 +19,7 @@ include ('is/header.php');
 		// error_reporting(0);
 		$keyword = $_GET['keyword'];
 		if(isset($keyword) && !empty($keyword) && $keyword!=" "){
-		$query="SELECT id,`Product Name` AS prodname,Description,CONVERT(stock USING utf8) AS stock,CONVERT(image USING utf8) AS image FROM products WHERE `Product Name` LIKE '%$keyword%'";
+		$query="SELECT id,`product` AS prodname,description,CONVERT(stock USING utf8) AS stock,CONVERT(image USING utf8) AS image FROM products WHERE `product` LIKE '%$keyword%'";
 		}
 
 		echo "<h3 id='resultfor'>Results for \"". $keyword . "\"</h3>";
