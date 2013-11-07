@@ -1,6 +1,7 @@
 <?php
 $page_title = "Sub Zero Components - Registration Complete";
 include ('is/header.php'); 
+require ('is/dash.php');
 //CONFIRMATION EMAIL
 /////$body = "Thank you for registering at Subzerocomponents.com.\n\n";
 //Implement email confirmation later.
