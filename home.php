@@ -17,10 +17,10 @@ include ('is/header.php');
 						<div id="slides">
 							<ul class='rslides '>
 								<li><a href='#'><img src="img/slider/welcome.jpg" alt='placeholder' /></a></li>
-								<li><a href='#'><img src="img/slider/weeklydeal.jpg" alt='placeholder' /></a></li>
-								<li><a href='#'><img src="img/slider/kracken.jpg" alt='placeholder' /></a></li>
-								<li><a href='#'><img src="img/slider/xigmatek.jpg" alt='placeholder' /></a></li>
-								<li><a href='#'><img src="img/slider/coolermaster.jpg" alt='placeholder' /></a></li>
+								<li><a href='deals.php'><img src="img/slider/weeklydeal.jpg" alt='placeholder' /></a></li>
+								<li><a href='shop.php?id=43'><img src="img/slider/kracken.jpg" alt='placeholder' /></a></li>
+								<li><a href='shop.php?id=28'><img src="img/slider/xigmatek.jpg" alt='placeholder' /></a></li>
+								<li><a href='shop.php?id=11'><img src="img/slider/coolermaster.jpg" alt='placeholder' /></a></li>
 							</ul>
 					  </div>
 					</div>

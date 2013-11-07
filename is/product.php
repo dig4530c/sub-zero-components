@@ -22,8 +22,13 @@
 			$img=$row['image'];				
 			$desc=$row['description'];	
 			$desc = str_replace(chr(146), "&#39;", $desc); 		
-			$rating=$row['rating'];	
-					
+			$rating=$row['rating'];
+
+
+			if($id == 19)
+			{
+				$cost = 5.99;
+			}
 
 
 						echo '   

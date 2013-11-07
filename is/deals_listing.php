@@ -19,7 +19,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'exists'){
 include ('dash.php');
 
 
-$query="SELECT * FROM products ORDER BY product ";
+$query="SELECT * FROM products WHERE product LIKE 'COOLER MASTER%' AND category ='Case Fan' ";
 	
 	$result=$mysqli->query($query)
 		or die ($mysqli->error);
@@ -35,7 +35,7 @@ while ($row=$result->fetch_assoc())
 			$img=$row['image'];
 			$id=$row['id'];
 			$rating=$row['rating'];
-		
+
 			echo "
 			<div class='catalog'>
 				<div class='list'>
@@ -84,9 +84,13 @@ while ($row=$result->fetch_assoc())
 					echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
 						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
 					</div>
-					<p>$$cost</p><a href='is/add.php?id={$id}&amp;name={$product}' class='btn'>Add to Cart</a>
+					<p class='old_cost'>$$cost</p>
+					<p class='new_cost'>$5.99</p>
+					<p class='discount'>50% off</p>
+					<a href='is/add.php?id={$id}&amp;name={$product}' class='btn'>Add to Cart</a>
 				</div>
 				<img src='$img' alt='$product' />
+				<div class='clear'></div>
 			</div>
 			
 			";

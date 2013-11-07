@@ -37,7 +37,7 @@ ini_set('display_errors','On');
 					$num=$result->num_rows;
 
 					
-					$subtotal = 0;
+					$subtotal = 0.00;
 
 					if ($num>0){
 						while ($row=$result->fetch_assoc()){
@@ -48,7 +48,7 @@ ini_set('display_errors','On');
 								$id=$row['id'];
 							
 								$subtotal = $cost + $subtotal ;
-								
+								$_SESSION['cart_total'] = $subtotal;
 								
 								}
 							}

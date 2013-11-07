@@ -11,22 +11,9 @@ include ('is/header.php');
       
           <div class="ninecol "> <!--cart col-->
             <div>
-              <div id="paypal">
-                <span id="paypal_login"></span>
-                <script src="https://www.paypalobjects.com/js/external/api.js"></script>
-                <script>
-                  paypal.use( ["login"], function(login) {
-                      login.render ({
-                      "appid": "SubzeroComponents",
-                      "authend": "sandbox",
-                      "scopes": "profile email address phone https://uri.paypal.com/services/paypalattributes",
-                      "containerid": "paypal_login",
-                      "locale": "en-us",
-                      "returnurl": "http://sulley.cah.ucf.edu/~ja762331/dig4530c/test/sub-zero-components-master/confirm.php"
-                      });
-                  });
-                </script>
-              </div><!--paypal close-->  
+              <div class="seperate">
+                <p>Thanks for your purchase! We look forward to seeing you again!</p>
+              </div>
             </div>
           </div>
           <div class="threecol last">

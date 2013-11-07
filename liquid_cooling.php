@@ -10,7 +10,7 @@ include ('is/header.php');
 			
 					<div class="threecol "><!--sidebar col-->
 						<div id="sidebar">
-							<div><h3>Cooling Supplies</h3></div>
+							<div><h3><a href='catalog.php'>Cooling Supplies</a></h3></div>
 							<div>
 								<ul>
 									<a href='case_fans.php'><li>Case Fans</li></a>
