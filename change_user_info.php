@@ -131,6 +131,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 						?>
 					</ul>
 					<form action="change_user_info.php" method="post" accept-charset="utf-8">
+						<?php 
+						if (isset($update_message['user_info'])){
+							echo "
+								<div class='message'>".$update_message['user_info']."</div>
+								";
+							}
+						?>
 						<ul class="change-info">
 							<li>
 								<label for="first-name"><strong>First Name</strong></label>
@@ -158,13 +165,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 								<button class="generic-btn" formaction="client.php">Cancel</button>
 							</li>							
 						</ul>
-						<?php 
-						if (isset($update_message['user_info'])){
-							echo "
-								<div class='message'>".$update_message['user_info']."</div>
-								";
-							}
-						?>
 					</form>
 				</div>
 			</div>
