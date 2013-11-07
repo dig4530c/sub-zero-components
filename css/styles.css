@@ -673,6 +673,18 @@ font-size: 1.1em;
  
  /* For Cart/cartf page END*/
  
+  /* For Background */
+.bold {
+	font-weight: bold;	 
+ }
+.space {
+	padding-bottom: 10px;	
+}
+.member {
+	padding-top: 6px;
+}
+ /* For Background END */
+ 
 /*
 =====================================================
 */
