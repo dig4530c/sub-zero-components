@@ -97,7 +97,11 @@ font-size: 1.5em;
 .sbar {
     padding:6px 0px;
     margin:3px;
-}
+	color: #555;
+	}
+.sbar:focus {
+	color: #222;
+	}
 #sbar{height:18px;}
 
 .sbtn {
@@ -146,7 +150,7 @@ margin-left: auto;
 margin-right: auto;
 }
 
-.split{border-bottom:#204060 dashed 2px; margin-bottom: 1em;}
+.split{border-bottom:#204060 dashed 2px; margin-bottom: 1em; margin-top: 1em;}
 
 /*
 =====================================================
@@ -673,8 +677,7 @@ div.notice {
 	font-weight: bold;
 	margin-bottom: 1em;
 	}
-span.message,
-div.message {
+.message {
 	color: #349ace;
 	font-size: 1.1em;
 	font-weight: bold;

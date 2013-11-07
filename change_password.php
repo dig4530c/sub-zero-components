@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$current = mysqli_real_escape_string($mysqli, $_POST['current']);
 		}
 	else {
-		$pass_errors['current'] = 'Please enter your current password!';
+		$pass_errors['current'] = 'Please enter your current password.';
 		}
 		
 	//Validate new password
@@ -23,11 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 			$p = mysqli_real_escape_string($mysqli, $_POST['pass1']);
 			}
 		else {
-			$pass_errors['pass2'] = 'Your password did not match the confirmed password!';
+			$pass_errors['pass2'] = 'Your password did not match the confirmed password.';
 			}
 		}
 	else {
-		$pass_errors['pass1'] = 'Please enter a valid password!';
+		$pass_errors['pass1'] = 'Please enter a valid password.';
 		}
 		
 	if (empty($pass_errors)){ // If everything went well.
@@ -92,7 +92,7 @@ require ('./is/form_functions.inc.php');
 						<?php 
 						if (isset($update_message['pass'])){
 							echo "
-								<div class='notice'>".$update_message['pass']."</div>
+								<div class='message'>".$update_message['pass']."</div>
 								";
 							}
 						?>
