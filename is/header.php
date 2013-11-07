@@ -192,7 +192,7 @@ function copy_ship_info(f) {
 					<div id="scontain">
 						<form id="search" method="get" action="search.php">
 							<div class="test"><!--id='sbar' class="sbar" class="sbtn"-->
-								<input type="text" name="keyword" size="45" maxlength="120" value="Search" class="sbar" />
+								<input type="text" name="keyword" size="45" maxlength="120" placeholder="Search" class="sbar" />
 								<input type="submit" value="Search"  />
 							</div>
 						</form>

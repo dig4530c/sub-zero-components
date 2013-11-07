@@ -161,7 +161,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 						<?php 
 						if (isset($update_message['user_info'])){
 							echo "
-								<div class='notice'>".$update_message['user_info']."</div>
+								<div class='message'>".$update_message['user_info']."</div>
 								";
 							}
 						?>

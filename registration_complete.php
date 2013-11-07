@@ -15,16 +15,19 @@ include ('is/header.php');
 /////mail($_POST['email'], 'Registration Confirmation', $body, 'From: admin@subzerocomponents.com');
 ?>
 
-<!-- stuff -->
 <div class="container  "><!--  container-->
 	<div class="row space">
 		<div class="row">
-			<div class="twelvecol user registration">
-				<div>
-					<h3>Thanks!</h3>
+			<div class="fourcol">
+			</div>
+			<div class="threecol">
+				<div class='space'></div>
+				<div class='space'></div>
+				<div class="title register">
+					<h2>Thank you for registering!</h2>
 				</div>
 				<div>
-					<p>Thank you for registering! You will receive an email shortly confirming your registration.</p>
+					<p class="vmargin">You will receive an email shortly confirming your registration.</p>
 				</div>
 			</div>
 		</div>

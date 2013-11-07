@@ -43,13 +43,15 @@ ini_set('display_errors','On');
 
 					if ($num>0){
 						echo"
-						<table class='cart-table'>
-							<tr>
-								<th class='heading' width='400'>Product Name</th>
-								<th class='heading' width='50'>Price</th>
-								<th class='heading' width='40'>Qty</th>
-								<th class='heading'>Remove </th>
-							</tr>";
+						<ul class='cart-list'>
+							<li>
+								<ul>
+									<li class='heading' width='400'>Product Name</li>
+									<li class='heading' width='50'>Price</li>
+									<li class='heading' width='40'>Qty</li>
+									<li class='heading'>Remove </li>
+								</ul>								
+							</li>";
 						
 						while ($row=$result->fetch_assoc()){
 						
@@ -74,22 +76,35 @@ ini_set('display_errors','On');
 								";*/
 								
 								//MY ATTEMPT
-								// <td class='unit'><img src='$img' alt='$product' /></td>
+								// <li class='unit'><img src='$img' alt='$product' /></li>
 								//Unit is the heading for the table Image - Cost -
 								echo "
-								<tr>
-									<td class='unit' width='400'>$product</td>
-									<td class='unit' width='50'>$cost</td>
-									<td class='unit' width='40'>qty</td>
-									<td class='unit'><a href='is/remove.php?id={$id}&name={$product}' class='btn'>Remove</a></td>
-								 </tr>
+								<li>
+									<ul>
+										<li class='unit' width='400'>$product</li>
+										<li class='unit' width='50'>$cost</li>
+										<li class='unit' width='40'>qty</li>
+										<li class='unit'><a href='is/remove.php?id={$id}&name={$product}' class='btn'>Remove</a></li>
+									 </ul>
+								</li>
 								";
 								}
-								echo "</table>";
+								echo "</ul>";
 							}
 							
 							
-							echo "<a href='is/empty.php' class='btn'>Empty Cart</a>";
+							echo "
+								<ul class='btn-list'>
+									<li>
+										<a href='is/empty.php' class='btn'>Empty Cart</a>
+									</li>
+									<li>
+										<a href='#' class='btn'>Update</a>
+									</li>
+								</ul>
+								
+							
+								";
 				}
 			
 		}

@@ -81,7 +81,7 @@
 						<button class="thumbup" onClick="voteUp(\'' . $id . '\')"></button>
 
 								</div>
-								<a href="is/add2.php?id='.$id.'&amp;name='.$product.'" class="btn">Add to Cart</a>
+								<a href="is/add2.php?id='.$id.'&amp;name='.$product.'" class="generic-btn">Add to Cart</a>
 							</div>
 						</div>
 						</div><!--end row-->
