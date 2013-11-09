@@ -85,7 +85,7 @@ require ('./is/form_functions.inc.php');
 								<input class="generic-btn" type="submit" name="submit_button" value="Change Password" id="submit_button" />
 							</li>
 							<li>
-								<button class="generic-btn" formaction="client.php">Cancel</button>
+								<a class="generic-btn" href="client.php">Cancel</a>
 							</li>
 						</ul>
 						<?php 

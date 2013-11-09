@@ -162,7 +162,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 								 class="generic-btn" />
 							</li>
 							<li>
-								<button class="generic-btn" formaction="client.php">Cancel</button>
+								<a class="generic-btn" href="client.php">Cancel</a>
 							</li>							
 						</ul>
 					</form>
