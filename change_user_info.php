@@ -1,8 +1,8 @@
 <?php
-$page_title = "Change User Info";
+$page_title = "Sub Zero Components - Change User Info";
 include ('./is/header.php');
-require (MYSQL);
 require ('./is/form_functions.inc.php');
+require ('./is/dash.php');
 
 //Errors array
 $user_info_errors = array();

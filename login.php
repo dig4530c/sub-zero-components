@@ -1,8 +1,10 @@
 <?php
 $page_title = "Sub Zero Components - Login";
 $page_type = "normal";
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+	include ('is/login.inc.php');
+}
 include ('is/header.php'); 
-include ('is/dash.php');
 ?>
 
 <!-- stuff -->
@@ -19,9 +21,6 @@ include ('is/dash.php');
 				</div>
 				<div id='login'>
 					<?php
-					if($_SERVER['REQUEST_METHOD'] == 'POST'){
-						include ('is/login.inc.php');
-						}
 					include ('is/login_form.inc.php');
 					?>
 				</div>

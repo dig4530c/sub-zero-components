@@ -1,9 +1,8 @@
 <?php
-require ('./is/config.inc.php');
+require('./is/config.inc.php');
 //redirect_invalid_user();
 $page_title = 'Sub Zero Components - Change Your Password';
 include('./is/header.php');
-require (MYSQL);
 
 // Errors array
 $pass_errors = array();
