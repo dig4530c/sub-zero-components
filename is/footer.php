@@ -4,9 +4,9 @@
 	<div class="row">
 		<div class="fourcol">
         	<div id="flogo">
-            	<a href="home.php">SubZero Components</a>
+            	<a href="home.php"><img src='img/logo.png' /><!--SubZero Components--></a>
             </div>
-            <div>
+            <div id='about'>
             	<p><a href="background.php">Company Background</a></p> 
             	<p><a href="policy.php">Policies</a></p>
             </div>

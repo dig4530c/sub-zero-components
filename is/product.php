@@ -105,12 +105,11 @@
 	<div id="reviewForm">
 	<input type="text" id="author-name" placeholder="YOUR NAME" />
 	<input type="hidden" id="pid" value="<?php echo $id; ?>" />
-	<textarea id="review" placeholder="YOU REVIEW"></textarea>
+	<textarea id="review" placeholder="YOUR REVIEW"></textarea>
 	<button id="submitReview">Submit</button> <span id="loader"> </span>
 	<div id="data-response"> </div>
 	</div>
 
-	<hr />
 
 	<?php
 

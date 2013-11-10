@@ -36,7 +36,7 @@ html, body {
 }
 .footer, .wrap:after {
   /* .push must be the same height as footer */
-  height: 140px; 
+  height: 100px; 
 }	
 	
 .space{
@@ -47,7 +47,7 @@ padding: 5px 0px;
 	clear: both;
 }
 .sclear{margin:15px 0;}
-.mclear{margin:20px 0;}
+.mclear{margin:20px 0 0 0;}
 .s{
 font-family: Source Sans;
 }
@@ -71,7 +71,8 @@ padding: 5px;
 #topnav a:hover {color:#349ACE;}
 #topnav ul li{display:inline; list-style-type:none;}
 
-#logo{/*margin-top:15px;*/color:#349ACE;font-size: 1.5em;}
+#logo{margin-top:-20px;}
+#logo img{width:70%;}
 #logo a{text-decoration:none;color:#ddd;font-weight:bold;}
 #logo a:hover{text-decoration:none;color:#349ACE;}
 
@@ -136,15 +137,18 @@ margin: 0;cursor: pointer;
 
 .footer{
 padding: 30px;
-height:140px;
+height:100px;
 background-color: #282B32; /*#349ACE; /*#5E5E5E; */
 color:#fff;
 }
 .footer p a{text-decoration:none;color:#fff;font-weight:bold;}
 .footer p a:hover{color:#349ACE;}
 
+#flogo img{width:70%;}
 #flogo a{text-decoration:none;color:#fff;font-size: 1.5em;font-weight:bold;}
 #flogo a:hover{color:#349ACE;}
+
+#about p{margin-left:25px;}
 
 
 img.head{ /*for them special headings */
@@ -194,12 +198,12 @@ font-size: 3em;
 font-family: Open Sans, sans-serif;
 color:#5a5a5a;
 padding-left:20px;
-padding-bottom:10px;
+padding-bottom:50px;
 }
 .fcon img {
 display:block;
 padding-bottom: 10px;
-
+max-width: 55%;
 }
 .fcon p{
 font-size: 1.1em;
@@ -849,6 +853,7 @@ div.notice {
       display: none;
 }
 /*review*/
+#reviewForm{margin-bottom: 60px;}
 #reviewForm input{
   height: 24px;
   padding: 0 4px;

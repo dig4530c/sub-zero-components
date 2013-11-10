@@ -61,7 +61,7 @@
 				echo $page_title;
 				}
 			else {
-				echo 'Sub Zero Components';
+				echo 'SubZero Components';
 				}
 		?>
 	</title>
@@ -169,14 +169,14 @@ function copy_ship_info(f) {
 	<div class="container header"> <!-- header container-->
 		<div class="row  ">
 			<div class="fourcol mclear">
-				<div id="logo"><a href="home.php">SubZero Components</a></div>
+				<div id="logo"><a href="home.php"><img src='img/logo.png' /><!--SubZero Components--></a></div>
 			</div>
 			<div class="eightcol mclear last">
 				<div id="hnav">
 					<ul>
 						<li><a href="catalog.php">Parts</a></li>
-						<li><a href="#">Brands</a></li>
-						<li><a href="#">Deals</a></li>
+						<li><a href="brand.php">Brands</a></li>
+						<li><a href="deals.php">Deals</a></li>
 						<li><a href="#">Trade</a></li>
 					</ul>
 					<div id="scontain">
