@@ -1,8 +1,19 @@
 <?php
-$page_title = "Change User Info";
+require('./is/config.inc.php');
+if (!headers_sent()){
+		redirect_invalid_user();
+		}
+else {
+	include_once('./is/header.php');
+	trigger_error('You do not have permission to access this page. Please log in and try
+		again.');
+	include_once('./is/footer.php');
+	} //Redirects invalid users
+	
+$page_title = "Sub Zero Components - Change User Info";
 include ('./is/header.php');
-require (MYSQL);
 require ('./is/form_functions.inc.php');
+require ('./is/dash.php');
 
 //Errors array
 $user_info_errors = array();
@@ -162,7 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 								 class="generic-btn" />
 							</li>
 							<li>
-								<button class="generic-btn" formaction="client.php">Cancel</button>
+								<a class="generic-btn" href="client.php">Cancel</a>
 							</li>							
 						</ul>
 					</form>

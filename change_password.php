@@ -1,9 +1,16 @@
 <?php
-require ('./is/config.inc.php');
-//redirect_invalid_user();
+require('./is/config.inc.php');
+if (!headers_sent()){
+		redirect_invalid_user();
+		}
+else {
+	include_once('./is/header.php');
+	trigger_error('You do not have permission to access this page. Please log in and try
+		again.');
+	include_once('./is/footer.php');
+	} //Redirects invalid users
 $page_title = 'Sub Zero Components - Change Your Password';
 include('./is/header.php');
-require (MYSQL);
 
 // Errors array
 $pass_errors = array();
@@ -86,7 +93,7 @@ require ('./is/form_functions.inc.php');
 								<input class="generic-btn" type="submit" name="submit_button" value="Change Password" id="submit_button" />
 							</li>
 							<li>
-								<button class="generic-btn" formaction="client.php">Cancel</button>
+								<a class="generic-btn" href="client.php">Cancel</a>
 							</li>
 						</ul>
 						<?php 

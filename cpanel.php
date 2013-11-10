@@ -1,4 +1,14 @@
-<?php 
+<?php
+require('./is/config.inc.php');
+if (!headers_sent()){
+		redirect_non_super();
+		}
+else {
+	include_once('./is/header.php');
+	trigger_error('You do not have permission to access this page. Please log in and try
+		again.');
+	include_once('./is/footer.php');
+	} //Redirects invalid users
 $page_title = "Sub Zero Components - Admin";
 include ('is/header.php'); 
 include ('is/dash.php'); 

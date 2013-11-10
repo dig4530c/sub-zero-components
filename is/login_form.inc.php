@@ -30,7 +30,7 @@ else {
 			<input class="generic-btn" type="submit" value="Login" >
 		</li>
 		<li>
-			<button class="generic-btn" formmethod="get" formaction="forgot_password.php">Forgot Password?</button>
+			<a class="generic-btn" href="forgot_password.php">Forgot Password?</a>
 		</li>
 	</ul>
 	<?php 

@@ -1,5 +1,9 @@
-<?php //ONLY ACTIVATES IF ($_SERVER['REQUEST_METHOD'] == 'POST')
+<?php
+require_once ('./is/dash.php');
+require_once ('./is/config.inc.php');
 $login_errors = array();
+$host = $_SERVER['HTTP-HOST'];
+$uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 
 //Validate Username
 if (!empty($_POST['username'])){
@@ -40,7 +44,7 @@ if (empty($login_errors)){
 		elseif ($row[2] == "normal" && $page_type == "normal") { // If it's a normal user in login.php
 			$_SESSION['user_id'] = $row[0];
 			$_SESSION['username'] = $row[1];
-			header("Location: ./home.php");
+			header("Location: $host$uri/home.php");
 			exit();
 			}
 		else { // Error message for users not in their respective login pages

@@ -668,6 +668,23 @@ font-size: 1.1em;
  
  /* For Cart/cartf page END*/
  
+ /* deals listing */
+ .red  { 
+ color: #ff0000;
+ }
+ 
+ .newprice {
+	font-size: 36px;
+	font-weight: bold;
+	margin: 0px;
+ }
+ 
+ .strike {
+	text-decoration: line-through;
+	margin: 0px; 
+ }
+ /* deals listing END */
+ 
 /*
 =====================================================
 */
