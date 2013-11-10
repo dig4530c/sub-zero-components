@@ -831,3 +831,79 @@ div.notice {
       font-size: 24px;
       display: none;
 }
+/*review*/
+#reviewForm input{
+  height: 24px;
+  padding: 0 4px;
+  display: block;
+  border:1px solid rgba(160,158,158,0.5);
+  -webkit-box-shadow:  0px 0px 6px 2px rgba(160,158,158,0.5);
+  -moz-box-shadow:    0px 0px 6px 2px rgba(160,158,158,0.5);
+  box-shadow:         0px 0px 6px 2px rgba(160,158,158,0.5);
+  margin-bottom: 20px;
+}
+#reviewForm textarea{
+  display: block;
+  width: 500px;
+  height: 200px;
+  border:1px solid rgba(160,158,158,0.5);
+  -webkit-box-shadow:  0px 0px 6px 2px rgba(160,158,158,0.5);
+  -moz-box-shadow:    0px 0px 6px 2px rgba(160,158,158,0.5);
+  box-shadow:         0px 0px 6px 2px rgba(160,158,158,0.5);
+  margin-bottom: 20px;
+  padding: 5px;
+}
+#reviewForm button{
+  /*display: block;*/
+  color: rgb(230, 230, 230);
+font-size: 18px;
+font-weight: bold;
+padding:4px 8px;
+/*text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+-webkit-border-radius: 11px;
+-moz-border-radius: 11px;
+border-radius: 11px;
+background: rgb(28, 109, 190);
+background: -moz-linear-gradient(90deg, rgb(28, 109, 190) 30%, rgb(9, 104, 230) 70%);
+background: -webkit-linear-gradient(90deg, rgb(28, 109, 190) 30%, rgb(9, 104, 230) 70%);
+background: -o-linear-gradient(90deg, rgb(28, 109, 190) 30%, rgb(9, 104, 230) 70%);
+background: -ms-linear-gradient(90deg, rgb(28, 109, 190) 30%, rgb(9, 104, 230) 70%);
+background: linear-gradient(0deg, rgb(28, 109, 190) 30%, rgb(9, 104, 230) 70%);
+-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);*/
+background: #263849;
+border: 0;
+cursor: pointer;
+
+
+}
+
+#reviewLeft{
+      text-align: center;
+      line-height: 50px;
+      width:350px;
+      height:50px;
+      /*padding: 40px;*/
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      margin-left: -150px;
+      margin-top: -25px;
+      border:1px solid rgba(160,158,158,0.5);
+      -webkit-box-shadow:  0px 0px 12px 5px rgba(160,158,158,0.5);
+      -moz-box-shadow:    0px 0px 12px 5px rgba(160,158,158,0.5);
+      box-shadow:         0px 0px 12px 5px rgba(160,158,158,0.5);
+      /*background: rgba(160,158,158,0.5);*/
+      background: rgba(160,158,158,1);
+      font-size: 24px;
+      display: none;
+}
+
+.reviewBox p span{
+  font-weight: bold;
+}
+/*.reviewBox p:nth-child(2){
+  font-style: italic;
+}*/
+

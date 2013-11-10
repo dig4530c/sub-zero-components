@@ -101,3 +101,31 @@
 		}
 						
 	?>
+	
+	<div id="reviewForm">
+	<input type="text" id="author-name" placeholder="YOUR NAME" />
+	<input type="hidden" id="pid" value="<?php echo $id; ?>" />
+	<textarea id="review" placeholder="YOU REVIEW"></textarea>
+	<button id="submitReview">Submit</button> <span id="loader"> </span>
+	<div id="data-response"> </div>
+	</div>
+
+	<hr />
+
+	<?php
+
+	$query1='SELECT * FROM review WHERE pid='.$id;
+					
+					$result1=$mysqli->query($query1)
+						or die ($mysqli->error);
+	while ($row=$result1->fetch_assoc())
+		{
+			$name=$row['name'];
+			$review=$row['review'];
+
+			echo "<div class='reviewBox'>";
+			echo "<p><span>NAME: </span>" . $name . "</p>";
+			echo "<p><span>REVIEW: </span>" . $review . "</p>";
+			echo "</div><hr />";
+		}
+	?>

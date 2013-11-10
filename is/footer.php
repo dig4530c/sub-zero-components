@@ -20,10 +20,11 @@
 		</div>
 	</div>
 </div><!-- end footer container -->
+<div id="voted">Thanks for the vote!</div>
+<div id="reviewLeft">Thank you for your review!</div>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/rating.js"></script>
 	<script type="text/javascript" src="js/test.js"></script>
-	
 </body>
 </html>
