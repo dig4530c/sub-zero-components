@@ -84,9 +84,9 @@ while ($row=$result->fetch_assoc())
 					echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
 						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
 					</div>
-					<p class='old_cost'>$$cost</p>
-					<p class='new_cost'>$5.99</p>
-					<p class='discount'>50% off</p>
+					<p class='old_cost strike'>$$cost</p>
+					<p class='new_cost newprice'>$5.99</p>
+					<p class='discount red'>50% off</p>
 					<a href='is/add.php?id={$id}&amp;name={$product}' class='btn'>Add to Cart</a>
 				</div>
 				<img src='$img' alt='$product' />
