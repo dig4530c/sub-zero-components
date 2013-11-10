@@ -1,7 +1,7 @@
 <?php
 
 $live = false;
-$contact_email = 'szc.admin@subzerocomponents.com';
+$contact_email = 'admin@subzerocomponents.com';
 
 DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ar400093/dig4530c/dig4530c_group03/A/'); //Arissa's Sulley
 //DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ar400093/dig4530c/group3/'); //Arissa's Sulley
