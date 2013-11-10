@@ -37,7 +37,7 @@ $(document).ready(function() {
 		
 		
 	//admin dashboard
-	var myurl = 'http://sulley.cah.ucf.edu/~ar400093/dig4530c/group3/cpanel.php?action=processp';
+	/*var myurl = 'http://sulley.cah.ucf.edu/~ar400093/dig4530c/group3/cpanel.php?action=processp';
 			var currenturl = window.location;
 			if(myurl == currenturl) {
 				console.log('fired');
@@ -63,6 +63,7 @@ $(document).ready(function() {
 				$('#mmake').hide();
 				$('#superuser').show();
 			});
+			*/
 			
 			/*var myurl = 'http://sulley.cah.ucf.edu/~ar400093/dig4530c/group3/cpanel.php?action=processp';
 			var currenturl = window.location;

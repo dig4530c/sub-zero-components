@@ -1,0 +1,24 @@
+After validation update.
+
+Changed files are:
+brand.php
+catalog.php
+case_fans.php
+cpanel.php
+daily.php
+deals.php
+featured.php
+heatsinks.php
+laptop_cooling.php
+liquid_cooling.php
+
+is/
+case_fans_listing.php
+deals_listing.php
+header.php
+heatsinks_listing.php
+laptop_cooling_listing.php
+liquid_cooling_listing.php
+listing.php
+login_form.inc.php
+product.php
