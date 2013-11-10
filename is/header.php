@@ -3,16 +3,6 @@
 
 <?php 
 	include_once ('is/config.inc.php'); //Starts session and adds helper functions
-	
-	/* if (!headers_sent()){
-		redirect_invalid_user();
-		}
-	else {
-		include_once('./is/header.php');
-		trigger_error('You do not have permission to access this page. Please log in and try
-			again.');
-		include_once('./is/footer.php');
-		} //Redirects invalid users */
 ?>
 		
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -185,8 +175,9 @@ function copy_ship_info(f) {
 				<div id="hnav">
 					<ul>
 						<li><a href="catalog.php">Parts</a></li>
-						<li><a href="brand.php">Brands</a></li>
-						<li><a href="deals.php">Deals</a></li>
+						<li><a href="#">Brands</a></li>
+						<li><a href="#">Deals</a></li>
+						<li><a href="#">Trade</a></li>
 					</ul>
 					<div id="scontain">
 						<form id="search" method="get" action="search.php">

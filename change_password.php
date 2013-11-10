@@ -1,6 +1,14 @@
 <?php
 require('./is/config.inc.php');
-//redirect_invalid_user();
+if (!headers_sent()){
+		redirect_invalid_user();
+		}
+else {
+	include_once('./is/header.php');
+	trigger_error('You do not have permission to access this page. Please log in and try
+		again.');
+	include_once('./is/footer.php');
+	} //Redirects invalid users
 $page_title = 'Sub Zero Components - Change Your Password';
 include('./is/header.php');
 
