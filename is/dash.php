@@ -1,5 +1,4 @@
 <?php
-
 //Sulley Environment 
 //$mysqli = new mysqli("sulley.cah.ucf.edu", "Username ", " PW", "tablename");
 
