@@ -140,6 +140,7 @@ padding: 30px;
 height:100px;
 background-color: #282B32; /*#349ACE; /*#5E5E5E; */
 color:#fff;
+margin-top:40px;
 }
 .footer p a{text-decoration:none;color:#fff;font-weight:bold;}
 .footer p a:hover{color:#349ACE;}
@@ -854,6 +855,7 @@ div.notice {
 }
 /*review*/
 #reviewForm{margin-bottom: 60px;}
+#reviewList{margin-bottom: 60px;}
 #reviewForm input{
   height: 24px;
   padding: 0 4px;

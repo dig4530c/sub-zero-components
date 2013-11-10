@@ -117,6 +117,9 @@
 					
 					$result1=$mysqli->query($query1)
 						or die ($mysqli->error);
+			echo "<div id='reviewList'>
+						<h3>Reviews for {$product} </h3>
+			";				
 	while ($row=$result1->fetch_assoc())
 		{
 			$name=$row['name'];
@@ -127,4 +130,5 @@
 			echo "<p><span>REVIEW: </span>" . $review . "</p>";
 			echo "</div><hr />";
 		}
+		echo "</div>"
 	?>
