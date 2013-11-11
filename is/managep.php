@@ -1,3 +1,7 @@
+<h3>Add Inventory</h3>
+<form action="manage.php" method="post" accept-charset="utf-8">
+<fieldset><legend>Update stock</legend>
+
 <?php
 ini_set('display_errors','On');
  error_reporting(E_ALL);
@@ -10,25 +14,29 @@ $query="SELECT * FROM products";
 	$result=$mysqli->query($query)
 		or die ($mysqli->error);
 
-echo"<table border=1><tr><th>Id</th><th>Product Name</th><th>Category</th><th>Cost</th><th>Image</th></tr>";		
+echo"<table border=1><tr><th>Id</th><th>Product Name</th><th>Category</th><th>Cost</th></tr>";		
 		
 while ($row=$result->fetch_assoc())
 {
 			$product=$row['product'];
 			$cost=$row['cost'];
+			$stock=$row['stock'];
 			$cat=$row['category'];
-			$img=$row['image'];
 			$id=$row['id'];
 			
+			//$id = $_GET['id'];
+
 			
-			
-echo "<tr><td>$id</td><td>$product</td><td>$cat</td><td>$cost</td><td>$img</td></tr>";
+echo "<tr><td>$id</td><td>$product</td><td>$cat</td><td>$cost</td><td><input type='text' name='add[".$stock."]' id='add[".$stock."]' size='5' class='small' /></td></tr>";
 
 }
 
 echo "</table> <br />";
 
 ?>
+<div class="field"><input type="submit" value="Update Inventory" class="button" /></div>
+</fieldset>
+</form>
 <?php
 /*
 ini_set('display_errors','On');
