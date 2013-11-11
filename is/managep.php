@@ -1,3 +1,7 @@
+<h3>Add Inventory</h3>
+<form action="manage.php" method="post" accept-charset="utf-8">
+<fieldset><legend>Update stock</legend>
+
 <?php
 ini_set('display_errors','On');
  error_reporting(E_ALL);
@@ -10,31 +14,35 @@ $query="SELECT * FROM products";
 	$result=$mysqli->query($query)
 		or die ($mysqli->error);
 
-echo"<table border=1><tr><th>Id</th><th>Product Name</th><th>Category</th><th>Cost</th><th>Image</th></tr>";		
+echo"<table border=1><tr><th>Id</th><th>Product Name</th><th>Category</th><th>Cost</th><th>Current Stock</th><th>Add</th></tr>";		
 		
 while ($row=$result->fetch_assoc())
 {
 			$product=$row['product'];
 			$cost=$row['cost'];
+			$stock=$row['stock'];
 			$cat=$row['category'];
-			$img=$row['image'];
 			$id=$row['id'];
 			
+			//$id = $_GET['id'];
+
 			
-			
-echo "<tr><td>$id</td><td>$product</td><td>$cat</td><td>$cost</td><td>$img</td></tr>";
+echo "<tr><td>$id</td><td>$product</td><td>$cat</td><td>$cost</td><td>$stock</td><td><input type='text' name='add[".$stock."]' id='add[".$stock."]' size='5' class='small' /></td></tr>";
 
 }
 
 echo "</table> <br />";
 
 ?>
+<div class="field"><input type="submit" value="Update Inventory" class="button" /></div>
+</fieldset>
+</form>
 <?php
-/*
+
 ini_set('display_errors','On');
  error_reporting(E_ALL);
 
-
+///*
 
 // Check for a form submission:
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {	
@@ -42,32 +50,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	// Check for a added inventory:
 	if (isset($_POST['add']) && is_array($_POST['add'])) {
 		
-		// Need the product functions:
-		//require ('../includes/product_functions.inc.php');
+		
 		
 		// Define the query:
-		$q1 = 'UPDATE products SET stock=stock+? WHERE id=?';
+		$query2 = 'UPDATE products SET stock=stock+? WHERE id=?';
 		
-
-		// Prepare the statement:
-		$stmt1 = mysqli_prepare($dbc, $q1);
-
-		
-		// Bind the variables:
-		mysqli_stmt_bind_param($stmt1, 'ii', $qty, $id);
-		
-		
-		// Count the number of affected rows:
-		$affected = 0;
+		$result=$mysqli->query($query)
+			or die ($mysqli->error);
 		
 		// Loop through each submitted value:
-		foreach ($_POST['add'] as $sku => $qty) {
+		foreach ($_POST['add'] as $sku => $stock) { //foreach update, do query
 			
 			// Validate the added quantity:
-			if (filter_var($qty, FILTER_VALIDATE_INT, array('min_range' => 1))) {
+			if (filter_var($stock, FILTER_VALIDATE_INT, array('min_range' => 1))) {
 
 				// Parse the SKU:
-				list($type, $id) = parse_sku($sku);
+				//list($type, $id) = parse_sku($sku);
 				
 				
 			} // End of IF.
@@ -75,12 +73,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		} // End of FOREACH.
 		
 		// Print a message:
-		echo "<h4>$affected Items(s) Were Updated!</h4>";
+		echo "<h4> Items(s) Were Updated!</h4>";
 
 	} // End of $_POST['add'] IF.
 
 } // End of the submission IF.
-*/
+//*/
 ?>
 
 
