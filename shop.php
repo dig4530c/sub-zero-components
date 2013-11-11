@@ -1,5 +1,5 @@
 <?php
-$page_title = "SubZero Components - Shop";
+$page_title = "Sub Zero Components - Shop";
 include ('is/header.php'); 
 
 $id = $_GET['id'];

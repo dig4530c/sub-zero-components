@@ -1,5 +1,5 @@
 <?php 
-$page_title = "SubZero Components - Admin";
+$page_title = "Sub Zero Components - Admin";
 $page_type = "admin";
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	include ('is/login.inc.php');
