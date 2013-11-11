@@ -5,7 +5,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	include ('is/login.inc.php');
 }
 include ('is/header.php'); 
-include ('is/dash.php'); 
 ?>
 
 <!-- stuff -->
@@ -14,7 +13,7 @@ include ('is/dash.php');
 		<div class="row">
 			<div class="fourcol">
 			</div>
-			<div class="threecol ">
+			<div class="threecol">
 				<div class='space'></div>
 				<div class='space'></div>
 				<div class="title login">
