@@ -4,7 +4,10 @@
 //$mysqli = new mysqli("sulley.cah.ucf.edu", "Username ", " PW", "tablename");
 
 //Edgardo's Local Environment
-$mysqli = new mysqli("localhost", "root", "", "subzero");
+//$mysqli = new mysqli("localhost", "root", "", "subzero");
+
+//KATHERINE
+$mysqli = new mysqli("localhost", "Lily", "lily", "ka088453");
 
 //Check connection 
 if ($mysqli->connect_errno) {
