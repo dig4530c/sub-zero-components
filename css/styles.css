@@ -60,6 +60,9 @@ font-family: Open Sans;
 .vmargin {
 	margin: 1em 0;
 	}
+.supervmargin {
+	margin: 3em 0;
+	}
 .header{
 background-color: #204060;/*282B32;*/ 
 padding: 5px;

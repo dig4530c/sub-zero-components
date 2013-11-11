@@ -29,9 +29,6 @@ else {
 		<li>
 			<input class="generic-btn" type="submit" value="Login" >
 		</li>
-		<li>
-			<a class="generic-btn" href="forgot_password.php">Forgot Password?</a>
-		</li>
 	</ul>
 	<?php 
 	if (array_key_exists('login', $login_errors)){

@@ -1,11 +1,13 @@
 <?php
 $page_title = "Sub Zero Components - Register";
 require ('is/dash.php');
+require ('is/config.inc.php');
 
 //Form Processing
+$reg_errors = array();
+$host = $_SERVER['HTTP-HOST'];
+$uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-	$reg_errors = array();
-	
 	//Check first name
 	if (preg_match('/^[A-Z\'.-]{2,20}$/i', $_POST['first_name'])){
 		$fn = mysqli_real_escape_string($mysqli, $_POST['first_name']);
@@ -86,9 +88,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 			} // End of $rows == 2 ELSE.
 		} // End of empty($reg_errors) IF.
 		
-	//If successful, thank new customer and send out email
+	//If successful, thank new customer
 	if (mysqli_affected_rows($mysqli) == 1){
-		header("Location: ./registration_complete.php");
+		$q = "SELECT id FROM users WHERE username='$u'";
+		$r = mysqli_query($mysqli, $q);
+		$row = mysqli_fetch_array($r, MYSQLI_NUM);	
+		$_SESSION['user_id'] = $row[0];
+		$_SESSION['username'] = $u;
+		header("Location: $host$uri/registration_complete.php");
 		exit();
 		}
 	else {
