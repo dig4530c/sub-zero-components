@@ -3,8 +3,9 @@ $page_title = "Sub Zero Components - Register";
 require ('is/dash.php');
 
 //Form Processing
-$reg_errors = array();
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+	$reg_errors = array();
+	
 	//Check first name
 	if (preg_match('/^[A-Z\'.-]{2,20}$/i', $_POST['first_name'])){
 		$fn = mysqli_real_escape_string($mysqli, $_POST['first_name']);

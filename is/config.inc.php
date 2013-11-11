@@ -3,8 +3,13 @@
 $live = false;
 $contact_email = 'admin@subzerocomponents.com';
 
+<<<<<<< HEAD
 //DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ar400093/dig4530c/dig4530c_group03/A/'); //Arissa's Sulley
 DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ar400093/dig4530c/group3/'); //Arissa's Sulley
+=======
+DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ar400093/dig4530c/dig4530c_group03/A/'); //Arissa's Final Sulley
+//DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ar400093/dig4530c/group3/'); //Arissa's Test Sulley
+>>>>>>> 1cff00068cb7d97bd1560c5d2952f5a4e41b3870
 //DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ed490983/dig4530c/subzero/'); //Ed's Sulley
 //DEFINE ('BASE_URI', 'localhost/subzero/'); // WAMP Testing
 DEFINE ('BASE_URL', BASE_URI);
