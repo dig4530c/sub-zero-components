@@ -44,8 +44,8 @@ $_SESSION['cart_total'] = 0.00;
 															<input type='hidden' name='currency_code' value='USD'>
 															<input type='hidden' name='item_name' value='Cooling Supplies'>
 															<input type='hidden' name='amount' value='$cart_total'>
-															<input type='hidden' name='return' value='http://sulley.cah.ucf.edu/~ar400093/dig4530c/dig4530c_group03/payment.php'>
-															<input type='hidden' name='cancel_return' value='http://sulley.cah.ucf.edu/~ar400093/dig4530c/dig4530c_group03/cart.php'>
+															<input type='hidden' name='return' value='http://sulley.cah.ucf.edu/~ar400093/dig4530c/dig4530c_group03/A/payment.php'>
+															<input type='hidden' name='cancel_return' value='http://sulley.cah.ucf.edu/~ar400093/dig4530c/dig4530c_group03/A/cart.php'>
 															<input type='hidden' name='handling' value='7.95'>
 															<input type='image' src='https://www.sandbox.paypal.com/en_US/i/btn/btn_paynowCC_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
 														</fieldset>
