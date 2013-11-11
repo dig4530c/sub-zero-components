@@ -1,4 +1,15 @@
 <?php
+require('./is/config.inc.php');
+if (!headers_sent()){
+		redirect_invalid_user();
+		}
+else {
+	include_once('./is/header.php');
+	trigger_error('You do not have permission to access this page. Please log in and try
+		again.');
+	include_once('./is/footer.php');
+	} //Redirects invalid users
+	
 $page_title = "Sub Zero Components - Change User Info";
 include ('./is/header.php');
 require ('./is/form_functions.inc.php');

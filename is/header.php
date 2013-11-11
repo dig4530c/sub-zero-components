@@ -3,16 +3,6 @@
 
 <?php 
 	include_once ('is/config.inc.php'); //Starts session and adds helper functions
-	
-	/* if (!headers_sent()){
-		redirect_invalid_user();
-		}
-	else {
-		include_once('./is/header.php');
-		trigger_error('You do not have permission to access this page. Please log in and try
-			again.');
-		include_once('./is/footer.php');
-		} //Redirects invalid users */
 ?>
 		
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -71,7 +61,7 @@
 				echo $page_title;
 				}
 			else {
-				echo 'Sub Zero Components';
+				echo 'SubZero Components';
 				}
 		?>
 	</title>
@@ -179,7 +169,7 @@ function copy_ship_info(f) {
 	<div class="container header"> <!-- header container-->
 		<div class="row  ">
 			<div class="fourcol mclear">
-				<div id="logo"><a href="home.php">SubZero Components</a></div>
+				<div id="logo"><a href="home.php"><img src='img/logo.png' /><!--SubZero Components--></a></div>
 			</div>
 			<div class="eightcol mclear last">
 				<div id="hnav">
@@ -187,6 +177,7 @@ function copy_ship_info(f) {
 						<li><a href="catalog.php">Parts</a></li>
 						<li><a href="brand.php">Brands</a></li>
 						<li><a href="deals.php">Deals</a></li>
+						<li><a href="#">Trade</a></li>
 					</ul>
 					<div id="scontain">
 						<form id="search" method="get" action="search.php">

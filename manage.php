@@ -9,7 +9,7 @@ else {
 		again.');
 	include_once('./is/footer.php');
 	} //Redirects invalid users
-$page_title = "Sub Zero Components - Admin";
+$page_title = "SubZero Components - Manage Products";
 include ('is/header.php'); 
 include ('is/dash.php'); 
 ?>
@@ -21,7 +21,7 @@ include ('is/dash.php');
 			
 					<div class="threecol "><!--sidebar col-->
 						<div id="sidebar">
-							<div><h3><a href="#" class='super' id='apanel'>Administrator Panel</a></h3></div>
+							<div><h3><a href="cpanel.php" class='super' id='apanel'>Administrator Panel</a></h3></div>
 							<div>
 								<ul>
 									<li><a href="add.php" class='see' id='make'>Add Products</a></li>
@@ -42,21 +42,13 @@ include ('is/dash.php');
 									</ul>
 								</div>
 						</div>
-						<!--<div id="mmake" class='show'>
-							<h1>Add Products</h1>
-							<?php //include ('is/addp.php'); ?>
-						</div>
 						<div id="mpro" class='show'>
 							<h1>Manage Products</h1>
-							<?php //include ('is/managep.php'); ?>
+							<?php include ('is/managep.php'); ?>
 						</div>
-						<div id="musers" class='show'>
-							<h1>All Users</h1>
-							<?php //include ('is/manageu.php'); ?>
-						</div>-->
-						
 					</div>
 				</div><!--end row-->
-			</div>
+				
+				</div>
 		</div>
 <?php include ('is/footer.php'); ?>

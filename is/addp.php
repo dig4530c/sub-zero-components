@@ -1,15 +1,7 @@
 <?php
 
 if(isset($_GET['action'])=='processp') {
-	echo "<script type='text/javascript'>
-		//$(document).ready(function() {
-			//$('#mmake').show();
-			//$('#superuser').hide();
-			
-			//});
-			</script>
-			
-			";
+
     processp();
 }else
 //show form

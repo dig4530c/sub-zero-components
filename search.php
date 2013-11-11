@@ -1,5 +1,5 @@
 <?php 
-$page_title = "Sub Zero Components - Search";
+$page_title = "SubZero Components - Search";
 include ('is/header.php'); 
 ?>
 
