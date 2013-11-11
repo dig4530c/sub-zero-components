@@ -31,14 +31,14 @@ if (empty($login_errors)){
 			$_SESSION['user_id'] = $row[0];
 			$_SESSION['username'] = $row[1];
 			$_SESSION['user_admin'] = true;
-			header("Location: ./cpanel.php");
+			header("Location: $host$uri/cpanel.php");
 			exit();
 			}
 		elseif ($row[2] == "super" && $page_type == "super") { // If it's a super user in super.php
 			$_SESSION['user_id'] = $row[0];
 			$_SESSION['username'] = $row[1];
 			$_SESSION['user_super'] = true;
-			header("Location: ./cpanel.php");
+			header("Location: $host$uri/cpanel.php");
 			exit();
 			} 
 		elseif ($row[2] == "normal" && $page_type == "normal") { // If it's a normal user in login.php
