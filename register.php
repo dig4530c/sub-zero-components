@@ -1,7 +1,18 @@
 <?php
 $page_title = "Sub Zero Components - Register";
+
+//Redirect logged in
+require_once('./is/config.inc.php');
+if (!headers_sent()){
+		redirect_logged_in();
+		}
+else {
+	include_once('./is/header.php');
+	trigger_error('You are already logged in!');
+	include_once('./is/footer.php');
+	} //Redirects users already logged in
+
 require ('is/dash.php');
-require ('is/config.inc.php');
 
 //Form Processing
 $reg_errors = array();

@@ -1,9 +1,23 @@
 <?php
 $page_title = "Sub Zero Components - Login";
 $page_type = "normal";
+
+//Redirect logged in
+require_once('./is/config.inc.php');
+if (!headers_sent()){
+		redirect_logged_in();
+		}
+else {
+	include_once('./is/header.php');
+	trigger_error('You are already logged in!');
+	include_once('./is/footer.php');
+	} //Redirects users already logged in
+
+//Validation
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	include ('is/login.inc.php');
-}
+}	
+
 include ('is/header.php'); 
 ?>
 
