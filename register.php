@@ -73,6 +73,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 			$q = "INSERT INTO users (username, email, pass, first_name, last_name, user_type) VALUES('$u',
 			 '$e', '".get_password_hash($p)."', '$fn', '$ln', 'normal')";
 			$r = mysqli_query($mysqli, $q); 
+			
+			//If successful, thank new customer
+			if (mysqli_affected_rows($mysqli) == 1){
+				$q = "SELECT id FROM users WHERE username='$u'";
+				$r = mysqli_query($mysqli, $q);
+				$row = mysqli_fetch_array($r, MYSQLI_NUM);	
+				$_SESSION['user_id'] = $row[0];
+				$_SESSION['username'] = $u;
+				header("Location: $host$uri/registration_complete.php");
+				exit();
+				}
+			else {
+				$reg_errors['register'] = "Please review your details below.";
+				}			
 			}
 		else {
 			if ($rows == 2){ //Both are taken.
@@ -98,20 +112,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 				} 
 			} // End of $rows == 2 ELSE.
 		} // End of empty($reg_errors) IF.
-		
-	//If successful, thank new customer
-	if (mysqli_affected_rows($mysqli) == 1){
-		$q = "SELECT id FROM users WHERE username='$u'";
-		$r = mysqli_query($mysqli, $q);
-		$row = mysqli_fetch_array($r, MYSQLI_NUM);	
-		$_SESSION['user_id'] = $row[0];
-		$_SESSION['username'] = $u;
-		header("Location: $host$uri/registration_complete.php");
-		exit();
-		}
-	else {
-		$reg_errors['register'] = "Please review your details below.";
-		}
 	 } // End of the main form submission conditional.
 
 //Required for creating forms
