@@ -1,22 +1,19 @@
-
 </div><!--end wrap class -->
 <div class="container footer"><!-- footer container-->
 	<div class="row">
-		<div class="fourcol">
+		<div class="twelvecol">
         	<div id="flogo">
-            	<a href="home.php"><img src='img/logo.png' /><!--SubZero Components--></a>
+            	<a href="home.php"><img src='img/logo.png' alt="logo" /></a>
             </div>
-            <div id='about'>
-            	<p><a href="background.php">Company Background</a></p> 
-            	<p><a href="policy.php">Policies</a></p>
-            </div>
+            <ul id='about'>
+            	<li><a href="background.php">Company Background</a></li>
+            	<li><a href="policy.php">Policies</a></li>
+            	<li><a href="test_cases.docx">Use Cases</a></li>
+            </ul>
         </div>
         
-		<div class="eightcol last">
-
-			<p>This site is not official and is an assignment for a UCF Digital Media course</p>
-			<p>Designed by Group 3</p>
-            
+		<div class="twelvecol disclaimer">
+			<p>DISCLAIMER: This site is not official and is an assignment for a UCF Digital Media course. Designed by Group 3.</p>
 		</div>
 	</div>
 </div><!-- end footer container -->
