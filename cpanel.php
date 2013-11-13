@@ -33,7 +33,7 @@ include ('is/dash.php');
 					</div>
 					<div class="ninecol last"> <!--user info col-->
 						<div id="admin">
-							<h1>Welcome, Administrator InsertUserName!</h1>
+							<h1>Welcome, <?php if(isset($_SESSION['username'])) echo $_SESSION['username'] ?>!</h1>
 								<div id='superuser'>
 									<ul>
 										<li><a href="add.php" class='see' id='make'>Add Products</a></li>

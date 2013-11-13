@@ -33,17 +33,10 @@ include ('is/dash.php');
 					</div>
 					<div class="ninecol last"> <!--user info col-->
 						<div id="admin">
-							<h1>Welcome, Administrator InsertUserName!</h1>
-								<div id='superuser'>
-									<ul>
-										<li><a href="add.php" class='see' id='make'>Add Products</a></li>
-										<li><a href='manage.php' class='see'  id='pro'>Manage Products</a></li>
-										<li><a class='see' id='users' href='users.php'>Show Users</a></li>
-									</ul>
-								</div>
+							<h1>Welcome, <?php if(isset($_SESSION['username'])) echo $_SESSION['username'] ?>!</h1>
 						</div>
 						<div id="mpro" class='show'>
-							<h1>Manage Products</h1>
+							<h2>Manage Products</h2>
 							<?php include ('is/managep.php'); ?>
 						</div>
 					</div>

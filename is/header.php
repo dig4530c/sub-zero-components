@@ -169,7 +169,7 @@ function copy_ship_info(f) {
 	<div class="container header"> <!-- header container-->
 		<div class="row  ">
 			<div class="fourcol mclear">
-				<div id="logo"><a href="home.php">SubZero Components</a></div>
+				<div id="logo"><a href="home.php"><img src="img/logo.png" alt="logo"/></a></div>
 			</div>
 			<div class="eightcol mclear last">
 				<div id="hnav">

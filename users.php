@@ -12,6 +12,37 @@ else {
 $page_title = "SubZero Components - Manage Users";
 include ('is/header.php'); 
 include ('is/dash.php'); 
+
+//Remove User Validation
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+	
+	//See which button they pressed
+	$userq = "
+		SELECT username FROM users;
+		";
+	if ($r = mysqli_query($mysqli, $userq)){
+		while ($row = mysqli_fetch_array($r)){
+			if (array_key_exists($row[0], $_POST)){
+				$u = $row[0];
+				}
+			}
+		mysqli_free_result($r);
+		
+		//Delete appropriate user
+		$deleteq = "
+			DELETE FROM users WHERE username = '".$u."';
+			";
+		$r = mysqli_query($mysqli, $deleteq);
+		$notice['remove'] = "User \"$u\" has been deleted from the database.";
+		/*
+		if (){
+			
+			} */
+		}
+	/* else {
+		$notice['remove'] = "User could not be deleted."
+		} */
+	}
 ?>
 
 		<!-- stuff -->
@@ -33,18 +64,18 @@ include ('is/dash.php');
 					</div>
 					<div class="ninecol last"> <!--user info col-->
 						<div id="admin">
-							<h1>Welcome, Administrator InsertUserName!</h1>
-								<div id='superuser'>
-									<ul>
-										<li><a href="add.php" class='see' id='make'>Add Products</a></li>
-										<li><a href='manage.php' class='see'  id='pro'>Manage Products</a></li>
-										<li><a class='see' id='users' href='users.php'>Show Users</a></li>
-									</ul>
-								</div>
+							<h1>Welcome, <?php if(isset($_SESSION['username'])) echo $_SESSION['username'] ?>!</h1>
 						</div>
 						<div id="musers" class='show'>
-							<h1>All Users</h1>
-							<?php include ('is/manageu.php'); ?>
+							<h2>All Users</h2>
+							<?php
+							if (isset($notice['remove'])){
+								echo "<div class='notice'>".$notice['remove']."</div>";
+								}
+							?>
+							<form action="users.php" method="POST">
+								<?php include ('is/manageu.php'); ?>
+							</form>
 						</div>
 					</div>
 				</div><!--end row-->

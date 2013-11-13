@@ -1,5 +1,6 @@
 <?php
 require('./is/config.inc.php');
+require('./is/dash.php');
 if (!headers_sent()){
 		redirect_invalid_user();
 		}
@@ -9,6 +10,7 @@ else {
 		again.');
 	include_once('./is/footer.php');
 	} //Redirects invalid users
+	
 $page_title = 'Sub Zero Components - Change Your Password';
 include('./is/header.php');
 
@@ -59,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		} // End of $p IF.
 	} // End of the submission form conditional.
 
-//Display form
+//Form functions
 require ('./is/form_functions.inc.php');
 ?>
 <!-- stuff -->

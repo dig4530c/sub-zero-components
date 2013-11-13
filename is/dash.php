@@ -20,8 +20,9 @@ mysqli_set_charset($mysqli, 'utf-8');
 //Escape function
 function escape_data($data){
 	global $mysqli;
-	if(get_magic_quotes_gpc()) 
+	if(get_magic_quotes_gpc()){
 		$data = stripslashes($data);
+		}
 	return mysqli_real_escape_string(trim($data), $mysqli);
 	} // End of the escape data function.
 

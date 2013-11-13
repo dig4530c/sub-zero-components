@@ -1,6 +1,4 @@
 <?php
-
-
 ini_set('display_errors','On');
  error_reporting(E_ALL);
 
@@ -19,16 +17,13 @@ $query="SELECT * FROM users";
 					$un=$row['username'];
 					$email=$row['email'];
 					$ut=$row['user_type'];
-					$id=$row['id'];
+					$id=$row['id'];					
 					
-					
-					
-		echo "<tr><td>$id</td><td>$un</td><td>$email</td><td>$ut</td></tr>";
+		echo "<tr><td>$id</td><td>$un</td><td>$email</td><td>$ut</td>
+			<td><input type='submit' name='$un' value='Remove' /></td>
+			</tr>";
 
 		}
 
 		echo "</table> <br />";
-
-
-
 ?>

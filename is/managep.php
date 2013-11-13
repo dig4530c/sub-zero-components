@@ -1,5 +1,5 @@
 <h3>Add Inventory</h3>
-<form action="./manage.php" method="post" accept-charset="utf-8">
+<form action="manage.php" method="post" accept-charset="utf-8">
 <fieldset><legend>Update stock</legend>
 
 <?php
@@ -27,13 +27,16 @@ while ($row=$result->fetch_assoc())
 			//$id = $_GET['id'];
 
 			
-echo "<tr><td>$id</td><td>$product</td><td>$cat</td><td>$cost</td><td>$stock</td><td><input type='text' name='add[".$id."]' id='add[".$id."]' size='5' class='small' /></td></tr>";
+echo "<tr><td>$id</td><td>$product</td><td>$cat</td><td>$cost</td><td>$stock</td><td><input type='text' name='add[".$stock."]' id='add[".$stock."]' size='5' class='small' /></td></tr>";
 
 }
 
 echo "</table> <br />";
 
 ?>
+<div class="field"><input type="submit" value="Update Inventory" class="button" /></div>
+</fieldset>
+</form>
 <?php
 
 ini_set('display_errors','On');
@@ -48,11 +51,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (isset($_POST['add']) && is_array($_POST['add'])) {
 		
 		
-		$count=0;
 		
+		// Define the query:
+		$query2 = 'UPDATE products SET stock=stock+? WHERE id=?';
+		
+		$result=$mysqli->query($query)
+			or die ($mysqli->error);
 		
 		// Loop through each submitted value:
-		foreach ($_POST['add'] as $id => $stock) { //foreach update, do query
+		foreach ($_POST['add'] as $sku => $stock) { //foreach update, do query
 			
 			// Validate the added quantity:
 			if (filter_var($stock, FILTER_VALIDATE_INT, array('min_range' => 1))) {
@@ -60,30 +67,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				// Parse the SKU:
 				//list($type, $id) = parse_sku($sku);
 				
-				// Define the query:
-				$query2 = 'UPDATE products SET stock=stock+? WHERE id=?';
-				
-				$result2=$mysqli->query($query2)
-					or die ($mysqli->error);
-				
-				$count += $mysqli->affected_rows;
 				
 			} // End of IF.
 
 		} // End of FOREACH.
 		
 		// Print a message:
-		echo "<h4>$count Items(s) Were Updated!</h4>";
+		echo "<h4> Items(s) Were Updated!</h4>";
 
 	} // End of $_POST['add'] IF.
 
 } // End of the submission IF.
 //*/
 ?>
-<div class="field"><input type="submit" value="Update Inventory" class="button" /></div>
-</fieldset>
-</form>
-
 
 
 

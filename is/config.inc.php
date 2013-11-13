@@ -4,8 +4,9 @@ $live = false;
 $contact_email = 'admin@subzerocomponents.com';
 
 //DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ar400093/dig4530c/dig4530c_group03/A/'); //Arissa's Final Sulley
-DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ar400093/dig4530c/group4/'); //Arissa's Test Sulley
-//DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ed490983/dig4530c/subzero/'); //Ed's Sulley
+//DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ar400093/dig4530c/group4/'); //Arissa's Test Sulley
+//DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ed490983/dig4530c/subzero/'); //Ed's Final Sulley
+DEFINE ('BASE_URI', 'sulley.cah.ucf.edu/~ed490983/dig4530c/subzero_test/'); //Ed's Test Sulley
 //DEFINE ('BASE_URI', 'localhost/subzero/'); // WAMP Testing
 DEFINE ('BASE_URL', BASE_URI);
 DEFINE ('MYSQL', BASE_URI.'is/dash.php');
