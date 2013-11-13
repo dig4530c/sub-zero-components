@@ -9,11 +9,7 @@ include ('is/dash.php');
 <div class="container  "><!--  container-->
 	<div class="row space">
 		<div class="row">
-			<div class="onecol">
-			</div>
-			<div class="tencol">
-				<div class='space'></div>
-				<div class='space'></div>
+			<div class="twelvecol">
 				<div class="infopage"> <!-- CHANGE -->
 					<h2>Company Background</h2>
 					<ul>
@@ -63,8 +59,6 @@ include ('is/dash.php');
 						<li>(407) 823-2000</li>
 					</ul>
 				</div>
-			</div>
-			<div class="onecol last">
 			</div>
 		</div><!--end row-->
 	</div>
