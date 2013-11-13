@@ -1,11 +1,24 @@
 <?php 
 $page_title = "Sub Zero Components - Super User Login";
 $page_type = "super";
+
+//Redirect logged in
+require_once('./is/config.inc.php');
+if (!headers_sent()){
+		redirect_logged_in();
+		}
+else {
+	include_once('./is/header.php');
+	trigger_error('You are already logged in!');
+	include_once('./is/footer.php');
+	} //Redirects users already logged in
+	
+//Validation
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	include ('is/login.inc.php');
 }
+
 include ('is/header.php'); 
-include ('is/dash.php'); 
 ?>
 
 <!-- stuff -->
@@ -14,7 +27,7 @@ include ('is/dash.php');
 		<div class="row">
 			<div class="fourcol">
 			</div>
-			<div class="threecol ">
+			<div class="threecol">
 				<div class='space'></div>
 				<div class='space'></div>
 				<div class="title login">
