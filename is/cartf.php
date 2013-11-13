@@ -59,6 +59,7 @@ ini_set('display_errors','On');
 								$cost=$row['cost'];
 								$img=$row['image'];
 								$id=$row['id'];
+								$stock = $row['stock'];	
 							
 								//$subtotal += $cost;
 								
@@ -99,16 +100,60 @@ ini_set('display_errors','On');
 										<a href='is/empty.php' class='btn'>Empty Cart</a>
 									</li>
 									<li>
-										<a href='#' class='btn'>Update</a>
+										<a href='#' class='btn'>Update</a> 
 									</li>
 								</ul>
 								
 							
 								";
-				}
+				} //?cart=updateDatabase
 			
 		}
-		else{	echo "<div class='message'>Your cart is empty. Start shopping!</div>";}							
-										
+		else{	echo "<div class='message'>Your cart is empty. Start shopping!</div>";}		
+		
+		//STARTING HERE WILL EFFECT DATABASE
+		//Out side of function changes occur when page is refreshed
+		//CAN BE WRITTEN AS FUNCTION
+		
+		//function updateDatabase() 
+		//{
+			// NEED FIGURE OUT VARIABLE FOR STOCK of ALL
+			if ($ids)
+			{
+				 
+				echo "$ids are the id of items added to cart";
+				echo "<br />$id is id of last item in cart";
+				echo "<br />$stock is stock of last item in cart (old)";	
+				
+				$query='UPDATE products SET stock=stock-1 WHERE id IN (' .$ids.')';
+				//INSTEAD of STOCK MINUS 1 IT CAN BE MINUS QUANTITIY NEED CREATE VARABLE n input box
+				
+				//NEEDED
+				$result=$mysqli->query($query)
+							or die ($mysqli->error);
+							
+				$stock2 = $stock - 1;
+				echo "<br />$stock2 is stock in database (changed)";	
+
+			}
+			
+			if ($stock2 == 0) {
+				
+				echo "<br />Stock of id $ids is empty/reached 0";
+				//INSERT STOP SO table in database stop reducing instead going to negative
+				//customer can not longer purchase
+				
+			}
+			
+			/*else {
+				echo "<br />OKAY either button no click or we have a problem SEE else statement";	
+			}*/
+			
+		//} //Close function
+		
+		/*if(!empty($_GET['true'])) {
+      		echo updateDatabase();
+   		}*/
+
 ?>
 										

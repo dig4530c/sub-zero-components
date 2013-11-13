@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
 <div id='addp'>
-	<form enctype="multipart/form-data" action="" method="post" accept-charset="utf-8">
+<form enctype="multipart/form-data" action="add.php" method="post" accept-charset="utf-8">
 
 		<input type="hidden" name="MAX_FILE_SIZE" value="524288" />
 		
