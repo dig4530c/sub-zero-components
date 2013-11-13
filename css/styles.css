@@ -708,7 +708,7 @@ h2.cpanel {
 	background-color: #f4f4f4;
 	}
 .cart-list > li:first-child {
-	background-color: #99c;
+	background-color: #204060;
 	}
 .cart-list .btn {
 	font-size: 0.8em;
@@ -716,7 +716,7 @@ h2.cpanel {
 	
 .heading {
  font-weight: bold;
- color: #336;
+ color: #eee;
  text-transform: uppercase;
  font-size: 0.95em;
  }
