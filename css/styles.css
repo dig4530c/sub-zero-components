@@ -142,6 +142,7 @@ margin: 0;cursor: pointer;
 background-color: #282B32; /*#349ACE; /*#5E5E5E; */
 color:#fff;
 padding: 1em 0;
+margin-top: 2em;
 }
 .footer li a{text-decoration:none;color:#fff;font-weight:bold; font-size: 1.5em;}
 .footer li a:hover{color:#349ACE;}
@@ -173,7 +174,6 @@ margin-right: auto;
 */
 
 /* Homepage  */
-
 .homec{ /*container for recommendation slider*/
 background-color:white; /*#E0E0E0*/
 box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.80);
