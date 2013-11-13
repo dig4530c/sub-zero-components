@@ -5,8 +5,13 @@
 //Edgardo's Local Environment
 //$mysqli = new mysqli("localhost", "root", "", "subzero");
 
+//<<<<<<< HEAD
+//KATHERINE
+$mysqli = new mysqli("localhost", "Lily", "lily", "ka088453");
+/*=======
 //Edgardo's Sulley
 $mysqli = new mysqli("sulley.cah.ucf.edu", "ed490983", "54nd0p4n", "ed490983");
+>>>>>>> fee49f8d52b04b7a686723d493196d1f6b75ef5e*/
 
 //Check connection 
 if ($mysqli->connect_errno) {
