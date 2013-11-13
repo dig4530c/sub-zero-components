@@ -1,5 +1,5 @@
 <?php 
-$page_title = "Sub Zero Components - Admin";
+$page_title = "SubZero Components - Admin";
 $page_type = "admin";
 
 //Redirect logged in
