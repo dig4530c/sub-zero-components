@@ -11,7 +11,7 @@ else {
 	include_once('./is/footer.php');
 	} //Redirects invalid users
 	
-$page_title = 'Sub Zero Components - Change Your Password';
+$page_title = 'SubZero Components - Change Your Password';
 include('./is/header.php');
 
 // Errors array

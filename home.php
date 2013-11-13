@@ -1,5 +1,5 @@
 <?php 
-$page_title = "Sub Zero Components - Home";
+$page_title = "SubZero Components - Home";
 include ('is/dash.php');
 /* if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	include ('./is/login.php');

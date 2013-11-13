@@ -1,5 +1,5 @@
 <?php
-$page_title = "Sub Zero Components - Company Background";
+$page_title = "SubZero Components - Company Background";
 $page_type = "normal";
 include ('is/header.php'); 
 include ('is/dash.php');

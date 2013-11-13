@@ -5,10 +5,12 @@
         	<div id="flogo">
             	<a href="home.php"><img src='img/logo.png' alt="logo" /></a>
             </div>
-            <ul id='about'>
+            <ul id='flinks'>
             	<li><a href="background.php">Company Background</a></li>
             	<li><a href="policy.php">Policies</a></li>
             	<li><a href="test_cases.docx">Use Cases</a></li>
+            	<li><a href="admin.php">Admin</a></li>
+            	<li><a href="super.php">Super</a></li>
             </ul>
         </div>
         

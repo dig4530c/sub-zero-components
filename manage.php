@@ -26,15 +26,16 @@ include ('is/dash.php');
 								<ul>
 									<li><a href="add.php" class='see' id='make'>Add Products</a></li>
 									<li><a href="manage.php" class='see'  id='pro' >Manage Products</a></li>
-									<li><a href="users.php"class='see' id='users'>Manage Users</a></li>
+									<?php
+									if (isset($_SESSION['user_admin'])){
+										echo "<li><a href='users.php' class='see' id='users'>Manage Users</a></li>";
+										}
+									?>		
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="ninecol last"> <!--user info col-->
-						<div id="admin">
-							<h1>Welcome, <?php if(isset($_SESSION['username'])) echo $_SESSION['username'] ?>!</h1>
-						</div>
 						<div id="mpro" class='show'>
 							<h2>Manage Products</h2>
 							<?php include ('is/managep.php'); ?>

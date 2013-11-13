@@ -12,7 +12,7 @@ else {
 $_SESSION = array();
 session_destroy();
 setcookie(session_name(), '', time()-300);
-$page_title = "Sub Zero Components - Logout";
+$page_title = "SubZero Components - Logout";
 include ('./is/header.php');
 ?>
 <!-- stuff -->

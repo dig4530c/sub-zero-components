@@ -1,5 +1,5 @@
 <?php 
-$page_title = "Sub Zero Components - Payment";
+$page_title = "SubZero Components - Payment";
 include ('is/header.php'); 
 
 ?>

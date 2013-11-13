@@ -1,5 +1,5 @@
 <?php
-$page_title = "Sub Zero Components - Register";
+$page_title = "SubZero Components - Register";
 
 //Redirect logged in
 require_once('./is/config.inc.php');

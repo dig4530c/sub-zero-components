@@ -9,7 +9,7 @@ else {
 		again.');
 	include_once('./is/footer.php');
 	} //Redirects invalid users
-$page_title = "Sub Zero Components - Your Account";
+$page_title = "SubZero Components - Your Account";
 include ('is/header.php');
 ?>
 <!-- stuff -->

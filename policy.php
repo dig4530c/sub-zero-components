@@ -1,5 +1,5 @@
 <?php
-$page_title = "Sub Zero Components - Policies";
+$page_title = "SubZero Components - Policies";
 $page_type = "normal";
 include ('is/header.php'); 
 include ('is/dash.php');

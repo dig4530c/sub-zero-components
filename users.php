@@ -1,7 +1,7 @@
 <?php
 require('./is/config.inc.php');
 if (!headers_sent()){
-		redirect_non_super();
+		redirect_non_admin();
 		}
 else {
 	include_once('./is/header.php');
@@ -63,9 +63,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 						</div>
 					</div>
 					<div class="ninecol last"> <!--user info col-->
-						<div id="admin">
-							<h1>Welcome, <?php if(isset($_SESSION['username'])) echo $_SESSION['username'] ?>!</h1>
-						</div>
 						<div id="musers" class='show'>
 							<h2>All Users</h2>
 							<?php

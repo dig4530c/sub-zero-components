@@ -10,7 +10,7 @@ else {
 	include_once('./is/footer.php');
 	} //Redirects invalid users
 	
-$page_title = "Sub Zero Components - Change User Info";
+$page_title = "SubZero Components - Change User Info";
 include ('./is/header.php');
 require ('./is/form_functions.inc.php');
 require ('./is/dash.php');
@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	}
 ?>
 <!-- stuff -->
-<div class="container  "><!--  container-->
+<div class="container"><!--  container-->
 	<div class="row space">
 		<div class="row">
 			<div class="threecol "><!--sidebar col-->

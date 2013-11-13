@@ -1,5 +1,5 @@
 <?php
-$page_title = "Sub Zero Components - Catalog - Heatsinks";
+$page_title = "SubZero Components - Catalog - Heatsinks";
 include ('is/header.php');
 ?>
 

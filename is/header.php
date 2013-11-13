@@ -127,6 +127,8 @@ function copy_ship_info(f) {
 										<li>|</li>
 										<li><a href='cpanel.php'>CPanel</a></li>
 										<li>|</li> 
+										<li><a href='client.php'>My Account</a></li>
+										<li>|</li> 									
 										<li><a href='logout.php'>Sign Out</a></li>
 										";
 									}
@@ -136,6 +138,8 @@ function copy_ship_info(f) {
 										<li>|</li>
 										<li><a href='cpanel.php'>CPanel</a></li>
 										<li>|</li> 
+										<li><a href='client.php'>My Account</a></li>
+										<li>|</li> 										
 										<li><a href='logout.php'>Sign Out</a></li>
 										";
 									}

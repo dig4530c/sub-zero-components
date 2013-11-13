@@ -3,7 +3,7 @@ error_reporting(E_ALL &~E_NOTICE &~E_WARNING &~E_DEPRECATED);
 ?>
 
 <?php 
-$page_title = "Sub Zero Components - Confirmation";
+$page_title = "SubZero Components - Confirmation";
 include ('is/header.php'); 
 ?>
 
