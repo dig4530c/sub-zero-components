@@ -36,7 +36,7 @@ include ('is/header.php');
 					</div>
 					<div class="ninecol last"> <!--user info col-->
 						<div id="mmake" class='show'>
-							<h2>Add Products</h2>
+							<h2 class="cpanel">Add Products</h2>
 							<?php include ('is/addp.php'); ?>
 						</div>
 					</div>

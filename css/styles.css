@@ -412,7 +412,8 @@ font-size: 1.1em;
 .logout h2,
 #register h2,
 .forgotp h2,
-.infopage h2 {
+.infopage h2,
+h2.cpanel {
 	padding: 1em 0;
 	border-bottom: 1px solid #ddd;
 	}
@@ -490,6 +491,19 @@ font-size: 1.1em;
 #morder{display:none;}
 #muser{display:none;}*/
 
+
+/*
+=====================================================
+*/
+
+/* cpanel page*/
+
+h2.cpanel {
+	margin-bottom: 1em;
+	}
+.bigtext {
+	font-size: 2em;
+	}
 
 /*
 =====================================================

@@ -37,7 +37,7 @@ include ('is/dash.php');
 					</div>
 					<div class="ninecol last"> <!--user info col-->
 						<div id="mpro" class='show'>
-							<h2>Manage Products</h2>
+							<h2 class="cpanel">Manage Products</h2>
 							<?php include ('is/managep.php'); ?>
 						</div>
 					</div>

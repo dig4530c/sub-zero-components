@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 					</div>
 					<div class="ninecol last"> <!--user info col-->
 						<div id="musers" class='show'>
-							<h2>All Users</h2>
+							<h2 class="cpanel">All Users</h2>
 							<?php
 							if (isset($notice['remove'])){
 								echo "<div class='notice'>".$notice['remove']."</div>";
