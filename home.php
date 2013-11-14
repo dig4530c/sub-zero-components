@@ -49,11 +49,11 @@ include ('is/header.php');
 					</div></div>
 					<div class="fourcol"><div class="fcon">
 						
-						<?php include ('is/daily.php'); ?>
+						<?php include ('is/daily2.php'); ?>
 					</div></div>
 					<div class="fourcol last"><div class="fcon">
 						
-						<?php include ('is/daily.php'); ?>
+						<?php include ('is/daily3.php'); ?>
 					</div></div>
 				
 			</div><!--end daily row--> 

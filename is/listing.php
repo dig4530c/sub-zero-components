@@ -35,6 +35,7 @@ while ($row=$result->fetch_assoc())
 			$img=$row['image'];
 			$id=$row['id'];
 			$rating=$row['rating'];
+			$discount=$row['discount'];
 		
 			echo "
 			<div class='catalog'>
@@ -81,15 +82,48 @@ while ($row=$result->fetch_assoc())
 						echo "<div class='one-star'></div>";
 								break;
 						}
-					echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
+					if($discount > 0.00 && $id==19)
+					{
+						echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
 						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
-					</div>
-					<p>$$cost</p><a href='is/add.php?id={$id}&amp;name={$product}' class='btn'>Add to Cart</a>
-				</div>
-				<img src='$img' alt='$product' />
-			</div>
+						</div>
+						<p class='old_cost strike'>$$cost</p>
+						<p class='new_cost newprice'>$$discount</p>
+						<p class='discount red'>50% off</p>
+						<a href='is/add.php?id={$id}&amp;name={$product}' class='btn'>Add to Cart</a>
+						</div>
+						<img src='$img' alt='$product' />
+						</div>
 			
-			";
+						";
+					}
+					else if($discount > 0.00)
+					{
+						echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
+						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
+						</div>
+						<p class='old_cost strike'>$$cost</p>
+						<p class='new_cost newprice'>$$discount</p>
+						<p class='discount red'>10% off</p>
+						<a href='is/add.php?id={$id}&amp;name={$product}' class='btn'>Add to Cart</a>
+						</div>
+						<img src='$img' alt='$product' />
+						</div>
+			
+						";
+					}
+					else
+					{
+						echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
+						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
+						</div>
+						<p>$$cost</p><a href='is/add.php?id={$id}&amp;name={$product}' class='btn'>Add to Cart</a>
+						</div>
+						<img src='$img' alt='$product' />
+						</div>
+			
+						";
+					}	
 			
 	}
 

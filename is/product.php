@@ -23,12 +23,77 @@
 			$desc=$row['description'];	
 			$desc = str_replace(chr(146), "&#39;", $desc); 		
 			$rating=$row['rating'];
+			$discount=$row['discount'];
 
 
-			if($id == 19)
-			{
-				$cost = 5.99;
-			}
+		if($discount > 0.00 && $id==19)
+			 {
+			 	echo '   
+						<div class="row">
+						<div class="ninecol "> <!--products col-->
+							<div><h2>'.$product.'</h2></div>
+							<div id="pic"><img src='.$img.' alt='.$product.' /></div>
+
+						</div>
+						<div class="threecol last "><!--sidebar col-->
+							<div id="sidebar2">
+								<div><p class="old_cost strike">$'.$cost.'</p>
+								<p class="new_cost newprice">$'.$discount.'</p>
+								<p class="discount red">50% off</p></div>
+								<div class="rate">
+									<ul style="display:none;">
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+									</ul>';
+			 }
+			 else if($discount > 0.00)
+			 {
+			 	echo '   
+						<div class="row">
+						<div class="ninecol "> <!--products col-->
+							<div><h2>'.$product.'</h2></div>
+							<div id="pic"><img src='.$img.' alt='.$product.' /></div>
+
+						</div>
+						<div class="threecol last "><!--sidebar col-->
+							<div id="sidebar2">
+								<div><p class="old_cost strike">$'.$cost.'</p>
+								<p class="new_cost newprice">$'.$discount.'</p>
+								<p class="discount red">10% off</p></div>
+								<div class="rate">
+									<ul style="display:none;">
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+									</ul>';
+			 }
+			 else
+			 {
+			 	echo '   
+						<div class="row">
+						<div class="ninecol "> <!--products col-->
+							<div><h2>'.$product.'</h2></div>
+							<div id="pic"><img src='.$img.' alt='.$product.' /></div>
+
+						</div>
+						<div class="threecol last "><!--sidebar col-->
+							<div id="sidebar2">
+								<div><p class="new_cost newprice">$'.$cost.'</p>
+								<div class="rate">
+									<ul style="display:none;">
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+									</ul>';
+			 }
+
 
 
 						echo '   

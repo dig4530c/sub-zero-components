@@ -59,7 +59,14 @@ ini_set('display_errors','On');
 								$cost=$row['cost'];
 								$img=$row['image'];
 								$id=$row['id'];
-								$stock = $row['stock'];	
+								$stock = $row['stock'];
+								$discount=$row['discount'];
+
+								if($discount > 0.00)
+								{
+									$cost = $discount;
+								}
+								
 							
 								//$subtotal += $cost;
 								

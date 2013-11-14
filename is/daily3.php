@@ -8,7 +8,7 @@ ini_set('display_errors','On');
 //include ('dash.php');
 //included in home.php instead to prevent it from being called twice by cartf.php and total.php
 
-$query="SELECT * FROM products WHERE id='4'";
+$query="SELECT * FROM products WHERE id='21'";
 	
 	$result=$mysqli->query($query)
 		or die ($mysqli->error);
@@ -67,10 +67,12 @@ while ($row=$result->fetch_assoc())
 						echo "<div class='one-star'></div>";
 								break;
 						}
-				echo "<button class='thumbdown' onclick='voteDown(\"" . $id . "\")'></button>
-						<button class='thumbup' onclick='voteUp(\"" . $id . "\")'></button>
+				echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
+						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
 					</div>
-				<p>$$cost</p>
+					<p class='old_cost strike'>$$cost</p>
+					<p class='new_cost newprice'>$$discount</p>
+					<p class='discount red'>10% off</p>
 				<a href='shop.php?id={$id}' class='btn'>Shop</a>
 			</div>
 			<img src='$img' alt='$product' />";

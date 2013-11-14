@@ -46,12 +46,21 @@ ini_set('display_errors','On');
 								$cost=$row['cost'];
 								$img=$row['image'];
 								$id=$row['id'];
+								$discount=$row['discount'];
 							
-								$subtotal = $cost + $subtotal ;
-								$_SESSION['cart_total'] = $subtotal;
-								
-								}
+							if($discount>0.00)
+							{
+								$subtotal = $discount + $subtotal ;	
 							}
+							else
+							{
+								$subtotal = $cost + $subtotal ;
+							}
+
+							$_SESSION['cart_total'] = $subtotal;
+								
+						}
+					}
 							echo "
 								<span>
 									$$subtotal
