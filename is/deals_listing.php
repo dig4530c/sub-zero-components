@@ -1,4 +1,3 @@
-
 <?php
 ini_set('display_errors','On');
  error_reporting(E_ALL);
@@ -84,7 +83,7 @@ while ($row=$result->fetch_assoc())
 						if($id==19)
 					{
 						echo "<button class='thumbdown' onclick='voteDown(\"" . $id . "\")'></button>
-						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
+						<button class='thumbup' onclick='voteUp(\"" . $id . "\")'></button>
 						</div>
 						<p class='old_cost strike'>$$cost</p>
 						<p class='new_cost newprice'>$$discount</p>
@@ -99,7 +98,7 @@ while ($row=$result->fetch_assoc())
 					else
 					{
 						echo "<button class='thumbdown' onclick='voteDown(\"" . $id . "\")'></button>
-						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
+						<button class='thumbup' onclick='voteUp(\"" . $id . "\")'></button>
 						</div>
 						<p class='old_cost strike'>$$cost</p>
 						<p class='new_cost newprice'>$$discount</p>
