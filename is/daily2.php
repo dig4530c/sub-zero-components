@@ -1,5 +1,4 @@
 
-
 <?php
 ini_set('display_errors','On');
  error_reporting(E_ALL);
@@ -67,8 +66,8 @@ while ($row=$result->fetch_assoc())
 						echo "<div class='one-star'></div>";
 								break;
 						}
-				echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
-						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
+				echo "<button class='thumbdown' onclick='voteDown(\"" . $id . "\")'></button>
+						<button class='thumbup' onclick='voteUp(\"" . $id . "\")'></button>
 					</div>
 					<p class='old_cost strike'>$$cost</p>
 					<p class='new_cost newprice'>$$discount</p>
