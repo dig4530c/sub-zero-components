@@ -98,6 +98,37 @@ function copy_ship_info(f) {
 
 }
 
+function function_name() {
+
+	var qty = document.getElementsByName('qty').value;
+	console.log('Was Clicked');
+	
+	if (qty == "") { //check if there is value inside
+	//New info = typed up info
+	//qty.value = qty.value;
+	console.log('There is nothing inside');
+	//return false;
+
+	}
+	
+	else {
+	console.log ('there is value inside') //Tripping
+	//return true;
+	}
+
+}
+
+/*
+var query=function_name();
+if(parseFloat(query) == NaN)
+{
+   console.log("query is a string");
+}
+else{
+   console.log("query is numeric");
+}
+*/
+
 
 </script>
 </head> 

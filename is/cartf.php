@@ -84,8 +84,9 @@ ini_set('display_errors','On');
 									<ul>
 										<li class='unit' width='400'>$product</li>
 										<li class='unit' width='50'>$cost</li>
-										<li class='unit' width='40'>qty</li>
-										<li class='unit'><a href='is/remove.php?id={$id}&name={$product}' class='btn'>Remove</a></li>
+										<li class='unit' width='40'>
+										<input type='text' name='qty' value='qty' size='5' maxlength='2' /></li>
+									<li class='unit'><a href='is/remove.php?id={$id}&name={$product}' class='btn'>Remove</a></li>
 									 </ul>
 								</li>
 								";
@@ -101,6 +102,7 @@ ini_set('display_errors','On');
 									</li>
 									<li>
 										<a href='#' class='btn'>Update</a> 
+										<a onclick='javaScript:function_name()' class='btn'>Update2</a>
 									</li>
 								</ul>
 								
@@ -110,7 +112,8 @@ ini_set('display_errors','On');
 			
 		}
 		else{	echo "<div class='message'>Your cart is empty. Start shopping!</div>";}		
-		
+
+/*		
 		//STARTING HERE WILL EFFECT DATABASE
 		//Out side of function changes occur when page is refreshed
 		//CAN BE WRITTEN AS FUNCTION
@@ -149,11 +152,13 @@ ini_set('display_errors','On');
 				echo "<br />OKAY either button no click or we have a problem SEE else statement";	
 			}*/
 			
-		//} //Close function
+		//} //Close function*/
 		
 		/*if(!empty($_GET['true'])) {
       		echo updateDatabase();
    		}*/
+		
+		
 
 ?>
 										
