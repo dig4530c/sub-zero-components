@@ -27,16 +27,16 @@ html, body {
 /*Constants across all pages*/
 .wrap{min-height: 100%;
   /* equal to footer height */
-	margin-bottom: -140px; 
+	margin-bottom: -180px; 
 	}
 	
 .wrap:after {
   content: "";
   display: block;
 }
-.wrap:after {
+.footer, .wrap:after {
   /* .push must be the same height as footer */
-  height: 100px; 
+  height: 140px; 
 }
 
 .clear{
@@ -711,7 +711,7 @@ h2.cpanel {
 	background-color: #f4f4f4;
 	}
 .cart-list > li:first-child {
-	background-color: #99c;
+	background-color: #204060;
 	}
 .cart-list .btn {
 	font-size: 0.8em;
@@ -719,7 +719,7 @@ h2.cpanel {
 	
 .heading {
  font-weight: bold;
- color: #336;
+ color: #eee;
  text-transform: uppercase;
  font-size: 0.95em;
  }

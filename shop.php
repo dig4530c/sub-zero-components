@@ -46,9 +46,9 @@ if(isset($_GET['action']) && $_GET['action'] == 'exists'){
  
 	?>
 		<!-- stuff -->
-		<div class="container  "><!--  container-->
+		<div class="container "><!--  container-->
 			<div class="row clear">
-				<div class="twelvecol "><!--nav track -->
+				<div class="twelvecol last"><!--nav track -->
 					<div id='track'>
 						<ul>
 							<li><a href='home.php'>Home</a></li>

@@ -58,11 +58,11 @@ ini_set('display_errors','On');
 								//$qty=$row['qty'];
 								//$qty = $_POST['qty'];
 
-								$subtotal = $cost + $subtotal ;
+								
 								//$subtotal = ($cost*$qty) + $subtotal ;
 								$_SESSION['cart_total'] = $subtotal;
 								
-								}
+								
 							}
 
 							$_SESSION['cart_total'] = $subtotal;
