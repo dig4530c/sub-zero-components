@@ -46,6 +46,7 @@ ini_set('display_errors','On');
 								$cost=$row['cost'];
 								$img=$row['image'];
 								$id=$row['id'];
+<<<<<<< HEAD
 								$discount=$row['discount'];
 							
 							if($discount>0.00)
@@ -55,6 +56,16 @@ ini_set('display_errors','On');
 							else
 							{
 								$subtotal = $cost + $subtotal ;
+=======
+								//$qty=$row['qty'];
+								//$qty = $_POST['qty'];
+
+								$subtotal = $cost + $subtotal ;
+								//$subtotal = ($cost*$qty) + $subtotal ;
+								$_SESSION['cart_total'] = $subtotal;
+								
+								}
+>>>>>>> 3411077b75ac10bd34b214872e8404bbb8373034
 							}
 
 							$_SESSION['cart_total'] = $subtotal;
