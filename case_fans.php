@@ -13,10 +13,10 @@ include ('is/header.php');
 							<div><h3><a href='catalog.php'>Cooling Supplies</a></h3></div>
 							<div>
 								<ul>
-									<a href='case_fans.php'><li>Case Fans</li></a>
-									<a href='heatsinks.php'><li>Heatsinks</li></a>
-									<a href='laptop_cooling.php'><li>Laptop Cooling</li></a>
-									<a href='liquid_cooling.php'><li>Liquid Cooling</li></a>
+									<li><a href='case_fans.php'>Case Fans</a></li>
+									<li><a href='heatsinks.php'>Heatsinks</a></li>
+									<li><a href='laptop_cooling.php'>Laptop Cooling</a></li>
+									<li><a href='liquid_cooling.php'>Liquid Cooling</a></li>
 								</ul>
 							</div>
 						</div>
@@ -31,3 +31,4 @@ include ('is/header.php');
 				</div>
 		</div>
 <?php include ('is/footer.php'); ?>
+

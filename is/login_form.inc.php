@@ -27,7 +27,7 @@ else {
 	</ul>
 	<ul class="btn-list">
 		<li>
-			<input class="generic-btn" type="submit" value="Login" >
+			<input class="generic-btn" type="submit" value="Login" />
 		</li>
 	</ul>
 	<?php 

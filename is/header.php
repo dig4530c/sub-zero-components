@@ -88,7 +88,7 @@ function copy_ship_info(f) {
   
   else {
 	console.log('You Un Checked');
-	document.billing.billing_firstname.value=""; <!--- billing/form name?.input name--->
+	document.billing.billing_firstname.value=""; <!-- billing/form name?.input name-->
 	document.billing.billing_lastname.value="";
 	document.billing.billing_address.value="";
 	document.billing.billing_city.value="";
@@ -185,7 +185,7 @@ function copy_ship_info(f) {
 					<div id="scontain">
 						<form id="search" method="get" action="search.php">
 							<div class="test"><!--id='sbar' class="sbar" class="sbtn"-->
-								<input type="text" name="keyword" size="45" maxlength="120" placeholder="Search" class="sbar" />
+								<input type="text" name="keyword" size="45" maxlength="120" class="sbar" />
 								<input type="submit" value="Search"  />
 							</div>
 						</form>

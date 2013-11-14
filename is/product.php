@@ -35,7 +35,7 @@
 						<div class="row">
 						<div class="ninecol "> <!--products col-->
 							<div><h2>'.$product.'</h2></div>
-							<div id="pic"><img src='.$img.' alt='.$product.' /></div>
+							<div id="pic"><img src="'.$img.'" alt="'.$product.'" /></div>
 
 						</div>
 						<div class="threecol last "><!--sidebar col-->
@@ -82,8 +82,8 @@
 						echo "<div class='one-star'></div>";
 								break;
 						}
-						echo '<button class="thumbdown" onClick="voteDown(\'' . $id . '\')"></button>
-						<button class="thumbup" onClick="voteUp(\'' . $id . '\')"></button>
+						echo '<button class="thumbdown" onclick="voteDown(\'' . $id . '\')"></button>
+						<button class="thumbup" onclick="voteUp(\'' . $id . '\')"></button>
 
 								</div>
 								<a href="is/add2.php?id='.$id.'&amp;name='.$product.'" class="generic-btn">Add to Cart</a>
@@ -103,9 +103,9 @@
 	?>
 	
 	<div id="reviewForm">
-	<input type="text" id="author-name" placeholder="YOUR NAME" />
+	<input type="text" id="author-name" onfocus="if(this.value == 'Your Name') { this.value = ''; }" value="Your Name" />
 	<input type="hidden" id="pid" value="<?php echo $id; ?>" />
-	<textarea id="review" placeholder="YOUR REVIEW"></textarea>
+	<textarea id="review" onfocus="if(this.value == 'Your Review') { this.value = ''; }" rows="4" cols="50">Your Review</textarea>
 	<button id="submitReview">Submit</button> <span id="loader"> </span>
 	<div id="data-response"> </div>
 	</div>
