@@ -70,7 +70,9 @@ while ($row=$result->fetch_assoc())
 				echo "<button class='thumbdown' onclick='voteDown(\"" . $id . "\")'></button>
 						<button class='thumbup' onclick='voteUp(\"" . $id . "\")'></button>
 					</div>
-				<p>$$cost</p>
+				<p class='old_cost strike'>$$cost</p>
+					<p class='new_cost newprice'>$$discount</p>
+					<p class='discount red'>10% off</p>
 				<a href='shop.php?id={$id}' class='btn'>Shop</a>
 			</div>
 			<img src='$img' alt='$product' />";
