@@ -1,5 +1,4 @@
 
-
 <?php
 ini_set('display_errors','On');
  error_reporting(E_ALL);
@@ -85,8 +84,8 @@ while ($row=$result->fetch_assoc())
 					
 					if($discount > 0.00 && $id==19)
 					{
-						echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
-						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
+						echo "<button class='thumbdown' onclick='voteDown(\"" . $id . "\")'></button>
+						<button class='thumbup' onclick='voteUp(\"" . $id . "\")'></button>
 						</div>
 						<p class='old_cost strike'>$$cost</p>
 						<p class='new_cost newprice'>$$discount</p>
@@ -100,8 +99,8 @@ while ($row=$result->fetch_assoc())
 					}
 					else if($discount > 0.00)
 					{
-						echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
-						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
+						echo "<button class='thumbdown' onclick='voteDown(\"" . $id . "\")'></button>
+						<button class='thumbup' onclick='voteUp(\"" . $id . "\")'></button>
 						</div>
 						<p class='old_cost strike'>$$cost</p>
 						<p class='new_cost newprice'>$$discount</p>
@@ -115,8 +114,8 @@ while ($row=$result->fetch_assoc())
 					}
 					else
 					{
-						echo "<button class='thumbdown' onClick='voteDown(\"" . $id . "\")'></button>
-						<button class='thumbup' onClick='voteUp(\"" . $id . "\")'></button>
+						echo "<button class='thumbdown' onclick='voteDown(\"" . $id . "\")'></button>
+						<button class='thumbup' onclick='voteUp(\"" . $id . "\")'></button>
 						</div>
 						<p>$$cost</p><a href='is/add.php?id={$id}&amp;name={$product}' class='btn'>Add to Cart</a>
 						</div>
