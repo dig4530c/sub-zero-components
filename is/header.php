@@ -98,6 +98,39 @@ function copy_ship_info(f) {
 
 }
 
+function function_name() {
+
+	var qty = document.getElementById('qty').value;
+	console.log('Was Clicked');
+	//document.getElementById('qty').value = ''; //Clears text field on button click
+	
+	if (qty == "") { //check if there is value inside
+	console.log('There is nothing inside');
+	//return false;
+	}	
+	
+	else {
+	console.log ('there is value inside')
+	//new infor = typed up info
+	 document.getElementById('qty2').value = document.getElementById('qty').value;
+	//return true;
+	}
+	
+
+}
+
+/* 	//var query=function_name();
+	if(parseFloat(qty) == NaN)
+	{
+	   console.log("query is a string");
+	}
+	else{
+	   console.log("query is numeric");
+	}
+	*/
+	
+
+
 
 </script>
 </head> 
