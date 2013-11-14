@@ -487,6 +487,9 @@ h2.cpanel {
 #superuser li{list-style: circle; }
 #superuser a {text-decoration: none;color:#204060;}
 #superuser a:hover {color: #349ACE;}
+.editpname {
+	color: #204060;
+	}
 /*#mpro{display:none;}
 #morder{display:none;}
 #muser{display:none;}*/
@@ -708,7 +711,7 @@ h2.cpanel {
 	background-color: #f4f4f4;
 	}
 .cart-list > li:first-child {
-	background-color: #204060;
+	background-color: #99c;
 	}
 .cart-list .btn {
 	font-size: 0.8em;
@@ -716,7 +719,7 @@ h2.cpanel {
 	
 .heading {
  font-weight: bold;
- color: #eee;
+ color: #336;
  text-transform: uppercase;
  font-size: 0.95em;
  }

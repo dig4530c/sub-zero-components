@@ -34,14 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 			";
 		$r = mysqli_query($mysqli, $deleteq);
 		$notice['remove'] = "User \"$u\" has been deleted from the database.";
-		/*
-		if (){
-			
-			} */
 		}
-	/* else {
-		$notice['remove'] = "User could not be deleted."
-		} */
 	}
 ?>
 
