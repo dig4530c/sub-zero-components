@@ -94,27 +94,7 @@
 									</ul>';
 			 }
 
-
-
-						echo '   
-						<div class="row">
-						<div class="ninecol "> <!--products col-->
-							<div><h2>'.$product.'</h2></div>
-							<div id="pic"><img src="'.$img.'" alt="'.$product.'" /></div>
-
-						</div>
-						<div class="threecol last "><!--sidebar col-->
-							<div id="sidebar2">
-								<div>$'.$cost.'</div>
-								<div class="rate">
-									<ul style="display:none;">
-										<li><i class="icon-star"></i></li>
-										<li><i class="icon-star"></i></li>
-										<li><i class="icon-star"></i></li>
-										<li><i class="icon-star"></i></li>
-										<li><i class="icon-star"></i></li>
-									</ul>';
-									switch (true) {
+						switch (true) {
 							case $rating > 0 && $rating <=10:
 						echo "<div class='one-star'></div>";
 								break;
