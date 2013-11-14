@@ -46,8 +46,11 @@ ini_set('display_errors','On');
 								$cost=$row['cost'];
 								$img=$row['image'];
 								$id=$row['id'];
-							
+								//$qty=$row['qty'];
+								//$qty = $_POST['qty'];
+
 								$subtotal = $cost + $subtotal ;
+								//$subtotal = ($cost*$qty) + $subtotal ;
 								$_SESSION['cart_total'] = $subtotal;
 								
 								}

@@ -103,7 +103,7 @@ ini_set('display_errors','On');
 									</li>
 									<li>
 										<a href='#' class='btn'>Update</a> 
-										<a onclick='javaScript:function_name()' class='btn'>Update2</a>
+										<a onclick='javaScript:function_qty()' class='btn'>Update2</a>
 									</li>
 								</ul>
 								

@@ -106,3 +106,37 @@ $(document).ready(function() {
 		}); //end submit function
 		
 });
+
+function function_qty() {
+
+	var qty = document.getElementById('qty').value;
+	console.log('Was Clicked');
+	//document.getElementById('qty').value = ''; //Clears text field on button click
+	
+	if (qty == "") { //check if there is value inside
+	console.log('There is nothing inside');
+	//return false;
+	}	
+	
+	else {
+	console.log ('there is value inside')
+	//new infor = typed up info 
+	//Takes typed info from text input one and places in the other
+	 document.getElementById('qty2').value = document.getElementById('qty').value;
+	 //Keep in same box
+	 document.getElementById('qty').value = document.getElementById('qty').value;
+	//return true;
+	}
+	
+
+}
+
+/* 	var query=function_qty();
+	if(parseFloat(qty) == NaN)
+	{
+	   console.log("query is a string");
+	}
+	else{
+	   console.log("query is numeric");
+	}
+	*/
