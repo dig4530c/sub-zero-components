@@ -85,8 +85,9 @@ ini_set('display_errors','On');
 										<li class='unit' width='400'>$product</li>
 										<li class='unit' width='50'>$cost</li>
 										<li class='unit' width='40'>
-										<input type='text' name='qty' value='qty' size='5' maxlength='2' /></li>
+										<input type='text' name='qty' value='1' id='qty' size='5' maxlength='2' /></li>
 									<li class='unit'><a href='is/remove.php?id={$id}&name={$product}' class='btn'>Remove</a></li>
+										<input type='text' id='qty2' size='5' maxlength='2'></li>
 									 </ul>
 								</li>
 								";
