@@ -88,7 +88,7 @@ function copy_ship_info(f) {
   
   else {
 	console.log('You Un Checked');
-	document.billing.billing_firstname.value=""; <!--- billing/form name?.input name--->
+	document.billing.billing_firstname.value=""; <!-- billing/form name?.input name-->
 	document.billing.billing_lastname.value="";
 	document.billing.billing_address.value="";
 	document.billing.billing_city.value="";
@@ -98,7 +98,54 @@ function copy_ship_info(f) {
 
 }
 
+<<<<<<< HEAD
+=======
+function function_name() {
+
+	var qty = document.getElementById('qty').value;
+	console.log('Was Clicked');
+	//document.getElementById('qty').value = ''; //Clears text field on button click
+	
+	if (qty == "") { //check if there is value inside
+	console.log('There is nothing inside');
+	//return false;
+	}	
+	
+	else {
+	console.log ('there is value inside')
+	//new infor = typed up info
+	 document.getElementById('qty2').value = document.getElementById('qty').value;
+	//return true;
+	}
+	
+
+}
+
+/* 	//var query=function_name();
+	if(parseFloat(qty) == NaN)
+	{
+	   console.log("query is a string");
+	}
+	else{
+	   console.log("query is numeric");
+	}
+	*/
+	
 </script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45306314-1', 'ucf.edu');
+  ga('send', 'pageview');
+
+>>>>>>> 3b6e8ffe09f4af1ed02b6fb0a97bb35370de2384
+</script>
+
 </head> 
 
 <body>
@@ -184,7 +231,7 @@ function copy_ship_info(f) {
 					<div id="scontain">
 						<form id="search" method="get" action="search.php">
 							<div class="test"><!--id='sbar' class="sbar" class="sbtn"-->
-								<input type="text" name="keyword" size="45" maxlength="120" placeholder="Search" class="sbar" />
+								<input type="text" name="keyword" size="45" maxlength="120" class="sbar" />
 								<input type="submit" value="Search"  />
 							</div>
 						</form>

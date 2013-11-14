@@ -121,8 +121,9 @@ include ('is/dash.php');
 								on this website and update the Effective Date of the policy to reflect the date of the changes. By 
 								continuing to use the Site after we post any such changes, you accept the Privacy Policy as modified.
 							</p>                    
-							<p>
+							
 								<h4>How We Collect and Use Information</h4>
+							<p>
 								We may collect and store personal or other information that you voluntarily supply to us online while 
 								using the Site (e.g., while on the Site or in responding via email to a feature provided on the Site). 
 								We only contact individuals who specifically request that we do so or in the event that they have signed 
@@ -198,8 +199,9 @@ include ('is/dash.php');
 								that we sell some or all of our assets, or one or more of our websites is acquired by another company, 
 								information about our users may be among the transferred assets.
 							</p>
-							<p>
+							
 								<h4>How do we store your information?</h4>
+							<p>
 								Our information is stored at the list server that delivers our newsletters. Your information can only be 
 								accessed by those who help manage those lists in order to deliver e-mail to those who would like to 
 								receive these newsletters.
