@@ -94,10 +94,14 @@
 									</ul>';
 			 }
 
+<<<<<<< HEAD
 
 
 						
 									switch (true) {
+=======
+						switch (true) {
+>>>>>>> a76a423d49045914fbb7d54360253631db53f023
 							case $rating > 0 && $rating <=10:
 						echo "<div class='one-star'></div>";
 								break;
@@ -180,4 +184,7 @@
 		}
 		echo "</div>"
 	?>
+<<<<<<< HEAD
 	</div>
+=======
+>>>>>>> a76a423d49045914fbb7d54360253631db53f023
